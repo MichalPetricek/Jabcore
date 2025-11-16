@@ -38,12 +38,13 @@ export default function Navigation({ theme, onToggleTheme }: NavigationProps) {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
         >
-          <Link to="/" className="flex items-center gap-2">
+          <Link to="/" className="flex items-center gap-3">
             <img 
-              src={theme === 'light' ? logoDark : logoLight} 
+              src={theme === 'light' ? logoLight : logoDark} 
               alt="Jabcore Logo" 
               className="h-8 w-auto transition-opacity duration-300"
             />
+            <span className="text-xl font-display font-bold gradient-text">Jabcore</span>
           </Link>
         </motion.div>
 
