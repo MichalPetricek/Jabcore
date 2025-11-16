@@ -70,7 +70,8 @@ export default function Hero() {
             className="text-lg sm:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed"
           >
             We build world-class digital products — from mobile apps to enterprise platforms. 
-            Trusted by businesses worldwide to deliver cutting-edge solutions that drive growth and innovation.
+            Trusted by businesses worldwide to deliver cutting-edge solutions that drive growth and innovation, 
+            including advanced AI integrations.
           </motion.p>
 
           <motion.div

@@ -13,7 +13,7 @@ const services = [
   {
     icon: Database,
     title: 'Corporate & Enterprise Systems',
-    description: 'Custom internal systems designed to streamline your operations. From business process automation and third-party integrations to real-time data dashboards and analytics platforms, we build scalable enterprise solutions that grow with your organization.',
+    description: 'Custom internal systems designed to streamline your operations. From business process automation and third-party integrations to real-time data dashboards and analytics platforms, we build scalable enterprise solutions that grow with your organization. We also integrate AI capabilities to automate workflows and enhance decision-making.',
   },
   {
     icon: Globe,
