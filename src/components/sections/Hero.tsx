@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/button'
-import { ArrowRight, Code, Sparkle, DeviceMobile, Database } from '@phosphor-icons/react'
+import { ArrowRight, Code, DeviceMobile, Database } from '@phosphor-icons/react'
 import { Link } from 'react-router-dom'
 
 export default function Hero() {
@@ -91,7 +91,6 @@ export default function Hero() {
             transition={{ duration: 0.6 }}
             className="inline-flex items-center justify-center gap-2 mb-8 px-6 py-3 rounded-full bg-accent/10 border border-accent/20 backdrop-blur-sm"
           >
-            <Sparkle className="w-5 h-5 text-accent" weight="fill" />
             <span className="text-accent font-semibold text-sm uppercase tracking-wider">
               Fast. Reliable. Affordable.
             </span>

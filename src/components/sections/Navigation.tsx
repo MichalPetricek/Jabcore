@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Moon, Sun, List } from '@phosphor-icons/react'
+import { Moon, Sun, List, GithubLogo, LinkedinLogo, TwitterLogo, InstagramLogo } from '@phosphor-icons/react'
 import { Button } from '@/components/ui/button'
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 import { useState } from 'react'
@@ -22,6 +22,13 @@ export default function Navigation({ theme, onToggleTheme }: NavigationProps) {
     { label: 'Studio', href: '/studio' },
     { label: 'About', href: '/about' },
     { label: 'Contact', href: '/contact' },
+  ]
+
+  const socialLinks = [
+    { icon: GithubLogo, label: 'GitHub', href: '#' },
+    { icon: LinkedinLogo, label: 'LinkedIn', href: '#' },
+    { icon: TwitterLogo, label: 'Twitter', href: '#' },
+    { icon: InstagramLogo, label: 'Instagram', href: '#' },
   ]
 
   const isActive = (href: string) => location.pathname === href
@@ -68,24 +75,45 @@ export default function Navigation({ theme, onToggleTheme }: NavigationProps) {
               </Link>
             </motion.div>
           ))}
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5 }}
-          >
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={onToggleTheme}
-              className="rounded-full"
+          <div className="flex items-center gap-2">
+            {socialLinks.map((social, index) => {
+              const Icon = social.icon
+              return (
+                <motion.div
+                  key={social.label}
+                  initial={{ opacity: 0, y: -20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.5 + index * 0.05 }}
+                >
+                  <a
+                    href={social.href}
+                    aria-label={social.label}
+                    className="text-foreground/60 hover:text-primary transition-colors"
+                  >
+                    <Icon className="h-5 w-5" />
+                  </a>
+                </motion.div>
+              )
+            })}
+            <motion.div
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.7 }}
             >
-              {theme === 'light' ? (
-                <Moon className="h-5 w-5" />
-              ) : (
-                <Sun className="h-5 w-5" />
-              )}
-            </Button>
-          </motion.div>
+              <Button
+                variant="ghost"
+                size="icon"
+                onClick={onToggleTheme}
+                className="rounded-full"
+              >
+                {theme === 'light' ? (
+                  <Moon className="h-5 w-5" />
+                ) : (
+                  <Sun className="h-5 w-5" />
+                )}
+              </Button>
+            </motion.div>
+          </div>
         </div>
 
         <div className="md:hidden flex items-center gap-2">
@@ -123,6 +151,21 @@ export default function Navigation({ theme, onToggleTheme }: NavigationProps) {
                     {item.label}
                   </Link>
                 ))}
+                <div className="flex gap-3 mt-6 pt-6 border-t border-border">
+                  {socialLinks.map((social) => {
+                    const Icon = social.icon
+                    return (
+                      <a
+                        key={social.label}
+                        href={social.href}
+                        aria-label={social.label}
+                        className="w-10 h-10 rounded-full bg-primary/10 hover:bg-primary/20 flex items-center justify-center transition-colors"
+                      >
+                        <Icon className="w-5 h-5 text-primary" />
+                      </a>
+                    )
+                  })}
+                </div>
               </div>
             </SheetContent>
           </Sheet>
