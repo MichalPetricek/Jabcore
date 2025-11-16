@@ -93,7 +93,7 @@ export default function Hero() {
           >
             <Sparkle className="w-5 h-5 text-accent" weight="fill" />
             <span className="text-accent font-semibold text-sm uppercase tracking-wider">
-              Premium Software Development
+              Fast. Reliable. Affordable.
             </span>
           </motion.div>
 
