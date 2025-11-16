@@ -24,12 +24,15 @@ export default function Footer({ theme, onToggleTheme }: FooterProps) {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <div>
-            <Link to="/" className="inline-block mb-4">
+            <Link to="/" className="inline-flex items-center gap-3 mb-4">
               <img 
                 src={theme === 'light' ? logoBlack : logoWhite} 
                 alt="Jabcore Logo" 
                 className="h-10 w-auto transition-opacity duration-300"
               />
+              <span className="font-display text-2xl font-bold gradient-text">
+                Jabcore
+              </span>
             </Link>
             <p className="text-muted-foreground mb-4">
               The core of your new app. Building world-class digital products since day one.
