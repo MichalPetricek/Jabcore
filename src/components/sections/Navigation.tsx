@@ -76,29 +76,10 @@ export default function Navigation({ theme, onToggleTheme }: NavigationProps) {
             </motion.div>
           ))}
           <div className="flex items-center gap-2">
-            {socialLinks.map((social, index) => {
-              const Icon = social.icon
-              return (
-                <motion.div
-                  key={social.label}
-                  initial={{ opacity: 0, y: -20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.5 + index * 0.05 }}
-                >
-                  <a
-                    href={social.href}
-                    aria-label={social.label}
-                    className="text-foreground/60 hover:text-primary transition-colors"
-                  >
-                    <Icon className="h-5 w-5" />
-                  </a>
-                </motion.div>
-              )
-            })}
             <motion.div
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.7 }}
+              transition={{ delay: 0.5 }}
             >
               <Button
                 variant="ghost"
@@ -113,6 +94,25 @@ export default function Navigation({ theme, onToggleTheme }: NavigationProps) {
                 )}
               </Button>
             </motion.div>
+            {socialLinks.map((social, index) => {
+              const Icon = social.icon
+              return (
+                <motion.div
+                  key={social.label}
+                  initial={{ opacity: 0, y: -20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.55 + index * 0.05 }}
+                >
+                  <a
+                    href={social.href}
+                    aria-label={social.label}
+                    className="text-foreground/60 hover:text-primary transition-colors"
+                  >
+                    <Icon className="h-5 w-5" />
+                  </a>
+                </motion.div>
+              )
+            })}
           </div>
         </div>
 
