@@ -1,8 +1,11 @@
 import { motion } from 'framer-motion'
-import { Moon, Sun, List, X } from '@phosphor-icons/react'
+import { Moon, Sun, List } from '@phosphor-icons/react'
 import { Button } from '@/components/ui/button'
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 import { useState } from 'react'
+import { Link, useLocation } from 'react-router-dom'
+import logoDark from '@/assets/images/dark.png'
+import logoLight from '@/assets/images/light.png'
 
 interface NavigationProps {
   theme: 'light' | 'dark'
@@ -11,21 +14,17 @@ interface NavigationProps {
 
 export default function Navigation({ theme, onToggleTheme }: NavigationProps) {
   const [isOpen, setIsOpen] = useState(false)
+  const location = useLocation()
 
   const navItems = [
-    { label: 'Services', href: '#services' },
-    { label: 'Studio', href: '#studio' },
-    { label: 'About', href: '#about' },
-    { label: 'Contact', href: '#contact' },
+    { label: 'Home', href: '/' },
+    { label: 'Services', href: '/services' },
+    { label: 'Studio', href: '/studio' },
+    { label: 'About', href: '/about' },
+    { label: 'Contact', href: '/contact' },
   ]
 
-  const scrollToSection = (href: string) => {
-    const element = document.querySelector(href)
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
-      setIsOpen(false)
-    }
-  }
+  const isActive = (href: string) => location.pathname === href
 
   return (
     <motion.header
@@ -39,28 +38,39 @@ export default function Navigation({ theme, onToggleTheme }: NavigationProps) {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
         >
-          <a href="#" className="text-2xl font-bold gradient-text">
-            Jabcore
-          </a>
+          <Link to="/" className="flex items-center gap-2">
+            <img 
+              src={theme === 'light' ? logoDark : logoLight} 
+              alt="Jabcore Logo" 
+              className="h-8 w-auto transition-opacity duration-300"
+            />
+          </Link>
         </motion.div>
 
         <div className="hidden md:flex items-center gap-8">
           {navItems.map((item, index) => (
-            <motion.button
+            <motion.div
               key={item.href}
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.1 * index }}
-              onClick={() => scrollToSection(item.href)}
-              className="text-foreground/80 hover:text-foreground transition-colors font-medium"
             >
-              {item.label}
-            </motion.button>
+              <Link
+                to={item.href}
+                className={`font-medium transition-colors ${
+                  isActive(item.href)
+                    ? 'text-primary'
+                    : 'text-foreground/80 hover:text-foreground'
+                }`}
+              >
+                {item.label}
+              </Link>
+            </motion.div>
           ))}
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4 }}
+            transition={{ delay: 0.5 }}
           >
             <Button
               variant="ghost"
@@ -99,13 +109,18 @@ export default function Navigation({ theme, onToggleTheme }: NavigationProps) {
             <SheetContent>
               <div className="flex flex-col gap-6 mt-8">
                 {navItems.map((item) => (
-                  <button
+                  <Link
                     key={item.href}
-                    onClick={() => scrollToSection(item.href)}
-                    className="text-xl font-medium text-foreground hover:text-primary transition-colors text-left"
+                    to={item.href}
+                    onClick={() => setIsOpen(false)}
+                    className={`text-xl font-medium transition-colors text-left ${
+                      isActive(item.href)
+                        ? 'text-primary'
+                        : 'text-foreground hover:text-primary'
+                    }`}
                   >
                     {item.label}
-                  </button>
+                  </Link>
                 ))}
               </div>
             </SheetContent>

@@ -8,43 +8,51 @@ A premium, modern website for Jabcore - a software development company that buil
 3. **Trustworthy** - Clean, accessible design with clear navigation and transparent service offerings that builds credibility
 
 **Complexity Level**: Light Application (multiple features with basic state)
-  - Multi-section marketing site with dark/light theme switching, contact form validation, scroll animations, and persistent user preferences
+  - Multi-page application with React Router, dark/light theme switching, contact form validation, page transitions, and persistent user preferences
 
 ## Essential Features
 
+### Multi-Page Routing
+- **Functionality**: Separate pages for Home, Services, Studio, About, and Contact with client-side routing
+- **Purpose**: Better organization, improved SEO potential, cleaner URLs, and professional multi-page experience
+- **Trigger**: User clicks navigation links or CTAs
+- **Progression**: User clicks link → React Router navigation → New page loads instantly → Scroll to top → Active nav state updates
+- **Success criteria**: Fast page transitions, browser back/forward works, active navigation indicators, URL updates correctly
+
 ### Theme Switcher
-- **Functionality**: Toggle between light and dark color modes
+- **Functionality**: Toggle between light and dark color modes with logo adaptation
 - **Purpose**: Provides user preference and demonstrates attention to detail
 - **Trigger**: Click theme toggle button in navigation/footer
-- **Progression**: User clicks toggle → Theme changes instantly with smooth transition → Preference saved to localStorage → Persists across sessions
-- **Success criteria**: Theme persists on reload, smooth transitions, accessible controls
+- **Progression**: User clicks toggle → Theme changes instantly with smooth transition → Logo switches (dark.png in light mode, light.png in dark mode) → Preference saved to localStorage → Persists across sessions
+- **Success criteria**: Theme persists on reload, smooth transitions, logos switch appropriately, accessible controls
+
+### Dynamic Logo System
+- **Functionality**: Navigation and footer logos change based on active theme
+- **Purpose**: Maintains visual hierarchy and brand consistency across themes
+- **Trigger**: Theme changes or page loads with saved theme
+- **Progression**: Theme state updates → Logo component re-renders with appropriate asset (dark.png/light.png in nav, black.png/white.png in footer)
+- **Success criteria**: Logos visible and appropriate for current theme, smooth transitions, proper contrast
 
 ### Contact Form
 - **Functionality**: Collects inquiries from potential clients with validation
 - **Purpose**: Primary conversion point for B2B leads
-- **Trigger**: User fills form in Contact section
+- **Trigger**: User navigates to /contact and fills form
 - **Progression**: User enters data → Real-time validation → Submit → Loading state → Success/error toast → Form reset on success
 - **Success criteria**: All fields validated, accessible error messages, smooth submission flow
 
-### Scroll Animations
-- **Functionality**: Elements fade in and slide up as user scrolls
-- **Purpose**: Creates engaging, dynamic experience that guides attention
-- **Trigger**: Elements enter viewport during scroll
-- **Progression**: User scrolls → Element detected in viewport → Animation triggers once → Element remains visible
-- **Success criteria**: Smooth 60fps animations, no jank, works on all devices
-
 ### Navigation System
-- **Functionality**: Sticky header with smooth scroll to sections
-- **Purpose**: Easy navigation throughout single-page site
+- **Functionality**: Sticky header with React Router links and active state indicators
+- **Purpose**: Easy navigation throughout multi-page site
 - **Trigger**: Click navigation links or CTA buttons
-- **Progression**: User clicks anchor link → Smooth scroll animation to section → Active state updates → Section in view
-- **Success criteria**: Smooth scrolling, mobile menu works, accessibility support
+- **Progression**: User clicks link → React Router navigation → Page changes → Active link highlights → Scroll to top
+- **Success criteria**: Active states work, mobile menu works, accessibility support, browser navigation supported
 
 ## Edge Case Handling
 
-- **No JavaScript**: Site remains functional with progressive enhancement, theme defaults to light
+- **Direct URL Access**: Each route accessible via direct URL, proper page rendering on refresh
+- **404 Handling**: Invalid routes redirect to home or show 404 page
 - **Slow Connection**: Critical content visible immediately, animations degrade gracefully
-- **Small Screens**: Mobile-first responsive design, hamburger menu on mobile, stacked layouts
+- **Small Screens**: Mobile-first responsive design, hamburger menu on mobile, stacked layouts, logos scale appropriately
 - **Form Errors**: Clear inline validation, accessible error messages, prevents submission until valid
 - **Missing localStorage**: Theme toggle still works, just doesn't persist across sessions
 

@@ -1,13 +1,14 @@
 import { useState, useEffect } from 'react'
-import { Moon, Sun } from '@phosphor-icons/react'
-import Hero from '@/components/sections/Hero'
-import Services from '@/components/sections/Services'
-import Studio from '@/components/sections/Studio'
-import About from '@/components/sections/About'
-import Contact from '@/components/sections/Contact'
-import Footer from '@/components/sections/Footer'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navigation from '@/components/sections/Navigation'
+import Footer from '@/components/sections/Footer'
+import ScrollToTop from '@/components/ScrollToTop'
 import { Toaster } from '@/components/ui/sonner'
+import HomePage from '@/pages/HomePage'
+import ServicesPage from '@/pages/ServicesPage'
+import StudioPage from '@/pages/StudioPage'
+import AboutPage from '@/pages/AboutPage'
+import ContactPage from '@/pages/ContactPage'
 
 function App() {
   const [theme, setTheme] = useState<'light' | 'dark'>('light')
@@ -33,18 +34,23 @@ function App() {
   }
 
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      <Navigation theme={theme} onToggleTheme={toggleTheme} />
-      <main>
-        <Hero />
-        <Services />
-        <Studio />
-        <About />
-        <Contact />
-      </main>
-      <Footer theme={theme} onToggleTheme={toggleTheme} />
-      <Toaster position="bottom-right" />
-    </div>
+    <Router>
+      <ScrollToTop />
+      <div className="min-h-screen bg-background text-foreground">
+        <Navigation theme={theme} onToggleTheme={toggleTheme} />
+        <main>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/services" element={<ServicesPage />} />
+            <Route path="/studio" element={<StudioPage />} />
+            <Route path="/about" element={<AboutPage />} />
+            <Route path="/contact" element={<ContactPage />} />
+          </Routes>
+        </main>
+        <Footer theme={theme} onToggleTheme={toggleTheme} />
+        <Toaster position="bottom-right" />
+      </div>
+    </Router>
   )
 }
 

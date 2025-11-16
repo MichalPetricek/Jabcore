@@ -1,22 +1,9 @@
 import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/button'
 import { ArrowRight, Sparkle } from '@phosphor-icons/react'
+import { Link } from 'react-router-dom'
 
 export default function Hero() {
-  const scrollToContact = () => {
-    const element = document.querySelector('#contact')
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
-    }
-  }
-
-  const scrollToServices = () => {
-    const element = document.querySelector('#services')
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
-    }
-  }
-
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-accent/10 animate-gradient" />
@@ -92,22 +79,24 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
-            <Button
-              size="lg"
-              onClick={scrollToContact}
-              className="bg-primary hover:bg-primary/90 text-primary-foreground group px-8 py-6 text-lg"
-            >
-              Get in Touch
-              <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              onClick={scrollToServices}
-              className="border-2 px-8 py-6 text-lg"
-            >
-              View Our Services
-            </Button>
+            <Link to="/contact">
+              <Button
+                size="lg"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground group px-8 py-6 text-lg"
+              >
+                Get in Touch
+                <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </Link>
+            <Link to="/services">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-2 px-8 py-6 text-lg"
+              >
+                View Our Services
+              </Button>
+            </Link>
           </motion.div>
         </div>
       </div>
