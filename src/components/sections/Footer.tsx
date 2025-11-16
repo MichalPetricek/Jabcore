@@ -30,7 +30,7 @@ export default function Footer({ theme, onToggleTheme }: FooterProps) {
                 alt="Jabcore Logo" 
                 className="h-10 w-auto transition-opacity duration-300"
               />
-              <span className="font-display text-2xl font-bold gradient-text">
+              <span className="font-display text-2xl font-bold text-foreground">
                 Jabcore
               </span>
             </Link>
