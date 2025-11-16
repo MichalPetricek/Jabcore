@@ -69,9 +69,9 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="text-lg sm:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed"
           >
-            We build world-class digital products — from mobile apps to enterprise platforms. 
-            Trusted by businesses worldwide to deliver cutting-edge solutions that drive growth and innovation, 
-            including advanced AI integrations.
+            We craft exceptional digital products that drive real business value. From intelligent mobile apps 
+            to enterprise-grade platforms with AI integration, we deliver solutions that transform how you work, 
+            scale, and succeed in the digital age.
           </motion.p>
 
           <motion.div

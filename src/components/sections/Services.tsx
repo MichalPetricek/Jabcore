@@ -8,22 +8,22 @@ const services = [
   {
     icon: DeviceMobile,
     title: 'Mobile App Development',
-    description: 'Native iOS and Android applications built with Swift and Kotlin, or cross-platform solutions using React Native and Flutter. We deliver pixel-perfect mobile experiences with seamless performance, intuitive UI/UX design, and comprehensive app scaling and maintenance support.',
+    description: 'Native iOS and Android applications built with Swift and Kotlin, or cross-platform solutions using React Native and Flutter. We deliver pixel-perfect mobile experiences with seamless performance, intuitive UI/UX design, and comprehensive scaling and maintenance support that keeps your app competitive.',
   },
   {
     icon: Database,
     title: 'Corporate & Enterprise Systems',
-    description: 'Custom internal systems designed to streamline your operations. From business process automation and third-party integrations to real-time data dashboards and analytics platforms, we build scalable enterprise solutions that grow with your organization. We also integrate AI capabilities to automate workflows and enhance decision-making.',
+    description: 'Custom internal systems designed to streamline your operations and multiply productivity. From intelligent business process automation and seamless third-party integrations to real-time data dashboards and predictive analytics platforms. We integrate AI capabilities to automate complex workflows, enhance decision-making, and unlock insights hidden in your data.',
   },
   {
     icon: Globe,
     title: 'Web Applications',
-    description: 'Modern SaaS platforms, admin panels, and customer portals built with cutting-edge technologies. Our web applications are secure, cloud-ready, and optimized for performance. We specialize in creating scalable solutions that handle millions of users.',
+    description: 'Modern SaaS platforms, admin panels, and customer portals built with cutting-edge technologies. Our web applications are secure, cloud-ready, and optimized for peak performance. We specialize in creating infinitely scalable solutions that handle millions of users while maintaining lightning-fast response times.',
   },
   {
     icon: Layout,
     title: 'Websites',
-    description: 'Professional company websites, stunning portfolios, and high-converting landing pages. Every site we build is SEO-optimized, fully responsive, and designed to showcase your brand. We focus on speed, accessibility, and user engagement to maximize your online presence.',
+    description: 'Professional company websites, stunning portfolios, and high-converting landing pages that turn visitors into customers. Every site we build is SEO-optimized, fully responsive across all devices, and designed to showcase your brand with impact. We obsess over speed, accessibility, and user engagement to maximize your online presence.',
   },
 ]
 

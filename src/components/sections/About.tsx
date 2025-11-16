@@ -6,23 +6,23 @@ import { CheckCircle, Target, Users, Lightbulb } from '@phosphor-icons/react'
 const values = [
   {
     icon: Target,
-    title: 'Mission-Driven',
-    description: 'We exist to transform ideas into exceptional digital products that create real value.',
+    title: 'Mission-Driven Excellence',
+    description: 'We exist to transform ambitious ideas into exceptional digital products that create measurable value and lasting impact.',
   },
   {
     icon: CheckCircle,
-    title: 'Quality First',
-    description: 'Every line of code, every pixel, every interaction is crafted with meticulous attention to detail.',
+    title: 'Uncompromising Quality',
+    description: 'Every line of code, every pixel, every interaction is crafted with obsessive attention to detail and architectural elegance.',
   },
   {
     icon: Users,
-    title: 'Client Partnership',
-    description: 'Your success is our success. We work as an extension of your team, not just a vendor.',
+    title: 'True Partnership',
+    description: 'Your success is our success. We work as a seamless extension of your team, fully invested in achieving your vision.',
   },
   {
     icon: Lightbulb,
-    title: 'Innovation Always',
-    description: 'We stay ahead of the curve, constantly learning and adopting the latest technologies.',
+    title: 'Relentless Innovation',
+    description: 'We stay ahead of the curve, constantly exploring emerging technologies and integrating AI to deliver tomorrow\'s solutions today.',
   },
 ]
 
@@ -54,23 +54,27 @@ export default function About() {
             <p>
               <span className="text-foreground font-semibold">Jabcore is where innovation meets execution.</span> We're a premium 
               software development company specializing in building world-class digital products for businesses of all sizes. 
-              From startups to Fortune 500 enterprises, we deliver solutions that drive growth, streamline operations, and 
-              create competitive advantages.
+              From ambitious startups to Fortune 500 enterprises, we deliver solutions that drive exponential growth, streamline 
+              complex operations, and create lasting competitive advantages in rapidly evolving markets.
             </p>
             <p>
               Our development philosophy is simple: <span className="text-foreground font-semibold">build it right, build it once.</span> We 
-              combine cutting-edge technology with proven engineering practices to create software that's not just functional, 
-              but maintainable, scalable, and future-proof. We don't just write code—we architect solutions that stand the test of time.
+              combine cutting-edge technology with battle-tested engineering practices to create software that's not just functional, 
+              but maintainable, infinitely scalable, and future-proof. We don't just write code—we architect elegant solutions that 
+              stand the test of time and adapt to your evolving needs.
             </p>
             <p>
-              Clients choose Jabcore because we treat every project as our own. Our team of experienced engineers, designers, 
-              and product managers work collaboratively to understand your unique challenges and deliver tailored solutions. 
-              We're not satisfied until you're thrilled with the results.
+              Clients choose Jabcore because we treat every project as if it were our own. Our team of seasoned engineers, 
+              creative designers, and strategic product managers work collaboratively to deeply understand your unique challenges 
+              and deliver tailored solutions that exceed expectations. We're not satisfied until you're thrilled with the results 
+              and seeing measurable business impact.
             </p>
             <p>
-              Beyond client work, we foster a culture of continuous learning and experimentation. Our team stays on the leading 
-              edge of technology, regularly contributing to open source, speaking at conferences, and building our own products. 
-              This commitment to innovation ensures that every project benefits from the latest best practices and breakthrough ideas.
+              Beyond client work, we cultivate a culture of relentless learning and fearless experimentation. Our team stays on the bleeding 
+              edge of technology, regularly contributing to open source projects, speaking at industry conferences, and building our own 
+              innovative products. We integrate AI capabilities across our solutions to automate workflows, enhance user experiences, 
+              and unlock intelligent insights. This commitment to innovation ensures that every project benefits from the latest 
+              breakthrough ideas and proven best practices.
             </p>
           </motion.div>
 

@@ -43,7 +43,7 @@ export default function Contact() {
     console.log('Form submitted:', data)
     
     toast.success('Message sent successfully!', {
-      description: "We'll get back to you within 24 hours.",
+      description: "We'll respond within 24 hours to discuss your project.",
     })
     
     form.reset()
@@ -60,10 +60,11 @@ export default function Contact() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl sm:text-5xl font-bold mb-4" style={{ fontFamily: 'var(--font-display)' }}>
-            Let's Build Something Together
+            Let's Build Something Extraordinary
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Ready to start your next project? Get in touch and let's discuss how we can help bring your vision to life.
+            Ready to transform your vision into reality? Get in touch and let's discuss how we can help create 
+            a digital solution that drives real business impact.
           </p>
         </motion.div>
 
@@ -75,9 +76,9 @@ export default function Contact() {
         >
           <Card className="border-2">
             <CardHeader>
-              <CardTitle className="text-2xl">Send us a message</CardTitle>
+              <CardTitle className="text-2xl">Start the Conversation</CardTitle>
               <CardDescription>
-                Fill out the form below and our team will get back to you within 24 hours.
+                Share your project details below and our team will respond within 24 hours with next steps.
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -146,7 +147,7 @@ export default function Contact() {
                         <FormLabel>Message *</FormLabel>
                         <FormControl>
                           <Textarea 
-                            placeholder="Tell us about your project..."
+                            placeholder="Tell us about your project vision, goals, and what you'd like to build..."
                             className="min-h-[150px] resize-none"
                             {...field}
                           />

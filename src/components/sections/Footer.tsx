@@ -35,7 +35,7 @@ export default function Footer({ theme, onToggleTheme }: FooterProps) {
               </span>
             </Link>
             <p className="text-muted-foreground mb-4">
-              The core of your new app. Building world-class digital products since day one.
+              Premium software development with AI integration. Building world-class digital products that transform businesses.
             </p>
             <div className="flex gap-3">
               {socialLinks.map((social) => {
@@ -126,7 +126,7 @@ export default function Footer({ theme, onToggleTheme }: FooterProps) {
         </div>
 
         <div className="pt-8 border-t border-border text-center text-muted-foreground">
-          <p>© {currentYear} Jabcore. All rights reserved. Made with precision by Jabcore.</p>
+          <p>© {currentYear} Jabcore. All rights reserved. Engineered with precision and passion.</p>
         </div>
       </div>
     </footer>

@@ -8,21 +8,21 @@ const products = [
   {
     icon: Lightbulb,
     title: 'TaskFlow AI',
-    description: 'Intelligent task management platform that learns from your workflow patterns and suggests optimal scheduling. Built with machine learning to boost team productivity by 40%.',
+    description: 'Intelligent task management platform powered by machine learning that learns from your team\'s workflow patterns and suggests optimal scheduling. Designed to boost productivity by 40% through smart prioritization and automated delegation.',
     status: 'Coming Q3 2024',
     color: 'from-blue-500 to-cyan-500',
   },
   {
     icon: Rocket,
     title: 'DevPulse',
-    description: 'Real-time development analytics dashboard for engineering teams. Track code quality, deployment frequency, and team velocity with beautiful visualizations and actionable insights.',
+    description: 'Real-time development analytics dashboard for modern engineering teams. Track code quality metrics, deployment frequency, team velocity, and sprint health with beautiful visualizations and AI-powered actionable insights that drive continuous improvement.',
     status: 'Beta Testing',
     color: 'from-purple-500 to-pink-500',
   },
   {
     icon: Sparkle,
     title: 'CloudSync Pro',
-    description: 'Next-generation file synchronization and collaboration platform. Secure, fast, and built for modern distributed teams. Features end-to-end encryption and intelligent conflict resolution.',
+    description: 'Next-generation file synchronization and collaboration platform built for distributed teams. Blazing-fast performance with end-to-end encryption, intelligent conflict resolution, and seamless real-time collaboration that feels like magic.',
     status: 'Coming 2025',
     color: 'from-orange-500 to-red-500',
   },
@@ -42,12 +42,12 @@ export default function Studio() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl sm:text-5xl font-bold mb-4" style={{ fontFamily: 'var(--font-display)' }}>
-            Innovation at Our Core
+            Innovation Lab
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Beyond client projects, Jabcore builds its own tools, apps, and digital experiences. 
-            Our studio explores new technologies, experiments with innovative ideas, and turns them into real products 
-            that push the boundaries of what's possible.
+            Beyond client projects, Jabcore builds its own cutting-edge tools and digital experiences. 
+            Our innovation lab is where we explore emerging technologies, experiment with bold ideas, and turn them 
+            into real products that push the boundaries of what's possible—many powered by advanced AI.
           </p>
         </motion.div>
 
