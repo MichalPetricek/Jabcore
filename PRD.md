@@ -1,6 +1,6 @@
 # Planning Guide
 
-A premium, modern website for Jabcore - a software development company that builds enterprise solutions for businesses and develops innovative digital products internally.
+A comprehensive, premium website for Jabcore - a software development company that builds enterprise solutions for businesses and develops innovative digital products internally. The website features rich, detailed content across all sections to provide visitors with in-depth information about services, capabilities, values, and processes.
 
 **Experience Qualities**: 
 1. **Professional** - Enterprise-grade presentation that instills confidence in potential B2B clients through polished design and clear value propositions
