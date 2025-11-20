@@ -20,7 +20,7 @@ export default function Navigation({ theme, onToggleTheme }: NavigationProps) {
     { label: 'Home', href: '/' },
     { label: 'Services', href: '/services' },
     { label: 'Products', href: '/products' },
-    { label: 'Studio', href: '/studio' },
+    { label: 'Stack', href: '/stack' },
     { label: 'About', href: '/about' },
     { label: 'Contact', href: '/contact' },
   ]
