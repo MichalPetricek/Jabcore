@@ -9,6 +9,7 @@ import {
   PencilLine,
   CheckCircle
 } from '@phosphor-icons/react'
+import TechIcon from '@/components/TechIcon'
 
 export default function StackPage() {
   const fadeInUp = {
@@ -41,10 +42,10 @@ export default function StackPage() {
       description: 'Build modern, responsive, and lightning-fast user interfaces with cutting-edge technologies. We create exceptional digital experiences that engage users and drive business results.',
       features: [],
       techs: [
-        { name: 'TypeScript', icon: '📘' },
-        { name: 'JavaScript', icon: '📜' },
-        { name: 'React', icon: '⚛️' },
-        { name: 'Vue.js', icon: '💚' }
+        { name: 'TypeScript' },
+        { name: 'JavaScript' },
+        { name: 'React' },
+        { name: 'Vue.js' }
       ]
     },
     {
@@ -55,10 +56,10 @@ export default function StackPage() {
       description: 'Robust, scalable, and secure server-side solutions that power your applications. We build high-performance backends that handle millions of requests with ease.',
       features: [],
       techs: [
-        { name: 'Python', icon: '🐍' },
-        { name: 'TypeScript', icon: '📘' },
-        { name: 'Node.js', icon: '🟢' },
-        { name: 'C#', icon: '🔷' }
+        { name: 'Python' },
+        { name: 'TypeScript' },
+        { name: 'Node.js' },
+        { name: 'C#' }
       ]
     },
     {
@@ -74,11 +75,11 @@ export default function StackPage() {
         'Cost-effective solutions'
       ],
       techs: [
-        { name: 'iOS', icon: '🍎' },
-        { name: 'Android', icon: '🤖' },
-        { name: 'Capacitor JS', icon: '⚡' },
-        { name: 'Swift', icon: '🦅' },
-        { name: 'Kotlin', icon: '🟣' }
+        { name: 'iOS' },
+        { name: 'Android' },
+        { name: 'Capacitor JS' },
+        { name: 'Swift' },
+        { name: 'Kotlin' }
       ]
     },
     {
@@ -89,10 +90,10 @@ export default function StackPage() {
       description: 'Harness the power of artificial intelligence to automate workflows, enhance decision-making, and create intelligent applications. We integrate cutting-edge AI technologies to give your business a competitive edge.',
       features: [],
       techs: [
-        { name: 'n8n', icon: '🔗' },
-        { name: 'OpenAI', icon: '🤖' },
-        { name: 'Gemini', icon: '✨' },
-        { name: 'Claude', icon: '🧠' }
+        { name: 'n8n' },
+        { name: 'OpenAI' },
+        { name: 'Gemini' },
+        { name: 'Claude' }
       ]
     },
     {
@@ -103,11 +104,11 @@ export default function StackPage() {
       description: 'Enterprise-grade cloud infrastructure that scales with your business. We implement automated deployment pipelines, monitoring, and security best practices to ensure your applications run flawlessly 24/7.',
       features: [],
       techs: [
-        { name: 'Ubuntu Server', icon: '🐧' },
-        { name: 'Azure', icon: '☁️' },
-        { name: 'Git', icon: '📦' },
-        { name: 'Docker', icon: '🐳' },
-        { name: 'CI/CD', icon: '🔄' }
+        { name: 'Ubuntu Server' },
+        { name: 'Azure' },
+        { name: 'Git' },
+        { name: 'Docker' },
+        { name: 'CI/CD' }
       ]
     },
     {
@@ -118,10 +119,10 @@ export default function StackPage() {
       description: 'Beautiful, intuitive interfaces that users love. We combine aesthetic excellence with usability principles to create designs that not only look stunning but also drive engagement and conversions.',
       features: [],
       techs: [
-        { name: 'Figma', icon: '🎨' },
-        { name: 'Web Design', icon: '🖼️' },
-        { name: 'Prototyping', icon: '📐' },
-        { name: 'User Testing', icon: '👥' }
+        { name: 'Figma' },
+        { name: 'Web Design' },
+        { name: 'Prototyping' },
+        { name: 'User Testing' }
       ]
     }
   ]
@@ -192,7 +193,7 @@ export default function StackPage() {
                                 whileHover={{ scale: 1.05, y: -2 }}
                                 className="bg-secondary/50 hover:bg-secondary px-4 py-2 rounded-lg flex items-center gap-2 border border-border/50 hover:border-primary/30 transition-all duration-200"
                               >
-                                <span className="text-xl">{item.icon}</span>
+                                <TechIcon name={item.name} className="w-5 h-5" />
                                 <span className="font-medium text-sm">{item.name}</span>
                               </motion.div>
                             ))}
