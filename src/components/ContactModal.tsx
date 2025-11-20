@@ -13,11 +13,11 @@ import { PaperPlaneRight } from '@phosphor-icons/react'
 
 const formSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters'),
-  company: z.string().min(2, 'Company name must be at least 2 characters'),
   email: z.string().email('Please enter a valid email address'),
   phonePrefix: z.string().min(1, 'Please select a country code'),
   phoneNumber: z.string().min(6, 'Phone number must be at least 6 digits').regex(/^[0-9]+$/, 'Phone number must contain only digits'),
   message: z.string().min(10, 'Message must be at least 10 characters'),
+  company: z.string().optional(),
 })
 
 type FormData = z.infer<typeof formSchema>
@@ -47,11 +47,11 @@ export default function ContactModal({ open, onOpenChange }: ContactModalProps) 
     resolver: zodResolver(formSchema),
     defaultValues: {
       name: '',
-      company: '',
       email: '',
       phonePrefix: '+420',
       phoneNumber: '',
       message: '',
+      company: '',
     },
   })
 
@@ -92,24 +92,6 @@ export default function ContactModal({ open, onOpenChange }: ContactModalProps) 
                   <FormControl>
                     <Input 
                       placeholder="John Doe" 
-                      {...field}
-                      className="h-12"
-                    />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-
-            <FormField
-              control={form.control}
-              name="company"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Company *</FormLabel>
-                  <FormControl>
-                    <Input 
-                      placeholder="Acme Corporation" 
                       {...field}
                       className="h-12"
                     />
@@ -196,8 +178,26 @@ export default function ContactModal({ open, onOpenChange }: ContactModalProps) 
                   <FormControl>
                     <Textarea 
                       placeholder="Tell us about your project vision, goals, and what you'd like to build..."
-                      className="min-h-[150px] resize-none"
+                      className="min-h-[150px] resize-y"
                       {...field}
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+
+            <FormField
+              control={form.control}
+              name="company"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Company</FormLabel>
+                  <FormControl>
+                    <Input 
+                      placeholder="Acme Corporation" 
+                      {...field}
+                      className="h-12"
                     />
                   </FormControl>
                   <FormMessage />
