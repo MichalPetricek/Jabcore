@@ -6,8 +6,7 @@ import {
   ShieldCheck, 
   ChartLine, 
   Users, 
-  Headset, 
-  Trophy,
+  Headset,
   BracketsAngle,
   Clock
 } from '@phosphor-icons/react'
@@ -50,12 +49,6 @@ const reasons = [
     gradient: 'from-indigo-500 to-violet-500',
   },
   {
-    icon: Trophy,
-    title: 'Proven Track Record',
-    description: 'Dozens of successful projects from startups to Fortune 500. Apps used by millions daily.',
-    gradient: 'from-amber-500 to-yellow-500',
-  },
-  {
     icon: Clock,
     title: 'Transparent Communication',
     description: 'Daily updates, weekly demos, real-time dashboards. Always know exactly where your project stands.',
@@ -85,26 +78,55 @@ export default function WhyChooseUs() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
-          {reasons.map((reason, index) => {
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+          {reasons.slice(0, 3).map((reason, index) => {
             const Icon = reason.icon
             return (
               <motion.div
                 key={reason.title}
                 initial={{ opacity: 0, y: 30 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
-                transition={{ duration: 0.5, delay: index * 0.05 }}
+                transition={{ duration: 0.5, delay: index * 0.08 }}
               >
-                <Card className="h-full hover:shadow-xl transition-all duration-300 group border-2 hover:border-primary/30 relative overflow-hidden">
-                  <div className={`absolute inset-0 bg-gradient-to-br ${reason.gradient} opacity-0 group-hover:opacity-5 transition-opacity duration-300`} />
-                  <CardContent className="pt-6 relative">
-                    <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${reason.gradient} flex items-center justify-center mb-4 shadow-lg group-hover:scale-110 transition-transform duration-300`}>
-                      <Icon className="w-7 h-7 text-white" weight="duotone" />
+                <Card className="h-full hover:shadow-2xl transition-all duration-300 group border-2 hover:border-primary/40 relative overflow-hidden bg-card/50 backdrop-blur-sm">
+                  <div className={`absolute inset-0 bg-gradient-to-br ${reason.gradient} opacity-0 group-hover:opacity-[0.08] transition-opacity duration-300`} />
+                  <CardContent className="pt-8 pb-8 px-6 relative">
+                    <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${reason.gradient} flex items-center justify-center mb-5 shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-300`}>
+                      <Icon className="w-8 h-8 text-white" weight="duotone" />
                     </div>
                     <h3 className="font-bold text-xl mb-3" style={{ fontFamily: 'var(--font-display)' }}>
                       {reason.title}
                     </h3>
-                    <p className="text-muted-foreground leading-relaxed text-sm">
+                    <p className="text-muted-foreground leading-relaxed">
+                      {reason.description}
+                    </p>
+                  </CardContent>
+                </Card>
+              </motion.div>
+            )
+          })}
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto mt-8">
+          {reasons.slice(3).map((reason, index) => {
+            const Icon = reason.icon
+            return (
+              <motion.div
+                key={reason.title}
+                initial={{ opacity: 0, y: 30 }}
+                animate={isInView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.5, delay: (index + 3) * 0.08 }}
+              >
+                <Card className="h-full hover:shadow-2xl transition-all duration-300 group border-2 hover:border-primary/40 relative overflow-hidden bg-card/50 backdrop-blur-sm">
+                  <div className={`absolute inset-0 bg-gradient-to-br ${reason.gradient} opacity-0 group-hover:opacity-[0.08] transition-opacity duration-300`} />
+                  <CardContent className="pt-8 pb-8 px-6 relative">
+                    <div className={`w-16 h-16 rounded-2xl bg-gradient-to-br ${reason.gradient} flex items-center justify-center mb-5 shadow-lg group-hover:scale-110 group-hover:rotate-3 transition-all duration-300`}>
+                      <Icon className="w-8 h-8 text-white" weight="duotone" />
+                    </div>
+                    <h3 className="font-bold text-xl mb-3" style={{ fontFamily: 'var(--font-display)' }}>
+                      {reason.title}
+                    </h3>
+                    <p className="text-muted-foreground leading-relaxed">
                       {reason.description}
                     </p>
                   </CardContent>
