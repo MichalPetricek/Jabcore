@@ -120,6 +120,24 @@ export default function ContactModal({ open, onOpenChange }: ContactModalProps) 
               )}
             />
 
+            <FormField
+              control={form.control}
+              name="company"
+              render={({ field }) => (
+                <FormItem>
+                  <FormLabel>Company</FormLabel>
+                  <FormControl>
+                    <Input 
+                      placeholder="Acme Corporation" 
+                      {...field}
+                      className="h-12"
+                    />
+                  </FormControl>
+                  <FormMessage />
+                </FormItem>
+              )}
+            />
+
             <div className="grid grid-cols-1 sm:grid-cols-[140px_1fr] gap-4">
               <FormField
                 control={form.control}
@@ -180,24 +198,6 @@ export default function ContactModal({ open, onOpenChange }: ContactModalProps) 
                       placeholder="Tell us about your project vision, goals, and what you'd like to build..."
                       className="min-h-[150px] resize-y"
                       {...field}
-                    />
-                  </FormControl>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-
-            <FormField
-              control={form.control}
-              name="company"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel>Company</FormLabel>
-                  <FormControl>
-                    <Input 
-                      placeholder="Acme Corporation" 
-                      {...field}
-                      className="h-12"
                     />
                   </FormControl>
                   <FormMessage />
