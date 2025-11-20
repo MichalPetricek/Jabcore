@@ -1,11 +1,9 @@
 import { motion } from 'framer-motion'
-import { Moon, Sun, List, GithubLogo, LinkedinLogo, TwitterLogo, InstagramLogo } from '@phosphor-icons/react'
+import { Moon, Sun, List, GithubLogo, LinkedinLogo, TwitterLogo, InstagramLogo, Code } from '@phosphor-icons/react'
 import { Button } from '@/components/ui/button'
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import logoDark from '@/assets/images/dark.png'
-import logoLight from '@/assets/images/light.png'
 
 interface NavigationProps {
   theme: 'light' | 'dark'
@@ -46,12 +44,10 @@ export default function Navigation({ theme, onToggleTheme }: NavigationProps) {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
         >
-          <Link to="/" className="flex items-center gap-3">
-            <img 
-              src={theme === 'light' ? logoLight : logoDark} 
-              alt="Jabcore Logo" 
-              className="h-8 w-auto transition-opacity duration-300"
-            />
+          <Link to="/" className="flex items-center gap-2">
+            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
+              <Code className="w-5 h-5 text-primary-foreground" weight="bold" />
+            </div>
             <span className="text-xl font-display font-bold gradient-text">Jabcore</span>
           </Link>
         </motion.div>
