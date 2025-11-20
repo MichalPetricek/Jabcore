@@ -14,37 +14,37 @@ const steps = [
   {
     number: '01',
     title: 'Initial Inquiry – No Commitment Required',
-    description: 'Just a few clicks in our contact form or a quick phone call. Share your project vision with us and we\'ll respond immediately. No obligations, just a fast start to exploring possibilities together.',
+    description: 'Just a few simple clicks in our contact form or a quick phone call to get started. Share your project vision, challenges, and goals with us, and we\'ll respond immediately with thoughtful questions and initial insights. There are absolutely no obligations, no pressure, and no commitments at this stage—just a fast, friendly start to exploring exciting possibilities together and determining if we\'re the right fit for your needs.',
     icon: ChatCircleDots,
   },
   {
     number: '02',
     title: 'Discovery Meeting – Understanding Your Vision',
-    description: 'We meet online or in person to dive deep into your goals, desired features, and the real business value you want to create. We help you clarify priorities, suggest strategic directions, and recommend solutions that actually make sense for your objectives.',
+    description: 'We meet online via video call or in person at your location to dive deep into your specific goals, desired features and functionality, target audience characteristics, competitive landscape, and the real business value and measurable outcomes you want to create. We actively help you clarify priorities, identify potential challenges early, suggest strategic technical directions based on our experience, and recommend proven solutions and approaches that actually make sense for your unique objectives and constraints.',
     icon: Handshake,
   },
   {
     number: '03',
     title: 'Professional Proposal & Solution Design',
-    description: 'Based on our meeting, we create a detailed application architecture, initial UI/UX design mockups, and a transparent proposal with pricing and timeline. You\'ll know exactly what you\'re getting, how much it costs, and how the project will unfold—clear, transparent, with zero hidden surprises.',
+    description: 'Based on our comprehensive discovery meeting insights, we create a detailed technical application architecture document, initial UI/UX design mockups and wireframes that visualize your solution, a technology stack recommendation with justification, and a transparent, itemized proposal with clear pricing breakdown and realistic timeline milestones. You\'ll know exactly what you\'re getting, precisely how much it costs with no hidden fees, how the entire project will unfold from start to finish, and what success looks like—completely clear, totally transparent, with absolutely zero unexpected surprises along the way.',
     icon: FileText,
   },
   {
     number: '04',
     title: 'Approval & Official Development Kickoff',
-    description: 'Once you approve the proposal and budget, we hit the ground running. We prepare a detailed development roadmap, break the project into manageable phases, and give you continuous visibility into what we\'re building at every step.',
+    description: 'Once you approve the comprehensive proposal, budget allocation, and timeline commitments, we immediately hit the ground running with full momentum. We prepare a granular development roadmap with specific deliverables, break the entire project into manageable sprint phases with clear goals, set up collaborative project management tools for seamless communication, and give you continuous real-time visibility into what we\'re building, what decisions we\'re making, and why—at every single step of the journey.',
     icon: RocketLaunch,
   },
   {
     number: '05',
     title: 'First Prototype – Collaborative Refinement',
-    description: 'In a relatively short time, we deliver your first functional or visual prototype. We review it together, refine the details, adjust features, and ensure the final product will precisely match your requirements and exceed your users\' expectations.',
+    description: 'In a relatively short timeframe, we deliver your first functional interactive prototype or high-fidelity visual mockup that brings your vision to life. We schedule dedicated review sessions together, carefully examine the details and user flows, gather your valuable feedback and insights, refine subtle interactions and visual elements, adjust features based on new discoveries, and iteratively ensure the final product will precisely match your exact requirements while exceeding your users\' highest expectations for quality and usability.',
     icon: PaintBrush,
   },
   {
     number: '06',
     title: 'Final Delivery – Your Solution Goes Live',
-    description: 'You receive a production-ready solution, fully tested and ready to use. We walk you through everything, explain how it works, and provide recommendations for future growth. If needed, we set up hosting, ongoing support, monitoring, and integrations to ensure long-term success.',
+    description: 'You receive a fully polished, production-ready solution that\'s been rigorously tested across devices, browsers, and edge cases, and is completely ready to delight your users. We conduct thorough walkthrough sessions to explain how everything works, provide comprehensive documentation for future reference and maintenance, share expert recommendations for sustainable future growth and feature expansion, and if needed, we professionally set up secure hosting infrastructure, configure ongoing technical support agreements, implement proactive monitoring and alerting systems, and establish seamless third-party integrations to ensure your long-term success and peace of mind.',
     icon: CheckCircle,
   },
 ]

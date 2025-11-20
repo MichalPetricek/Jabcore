@@ -25,7 +25,7 @@ export default function StackPage() {
       title: 'Solution Architecture',
       color: 'text-blue-500',
       bgColor: 'bg-blue-500/10',
-      description: 'We design comprehensive solutions tailored to your business needs. Our architects think strategically about every aspect of your project and bring innovative ideas for continuous improvement.',
+      description: 'We design comprehensive, forward-thinking solutions meticulously tailored to your unique business challenges and opportunities. Our seasoned architects approach every project with strategic vision, analyzing your entire technology ecosystem to craft scalable, maintainable systems. We don\'t just solve today\'s problems—we anticipate tomorrow\'s needs, ensuring your infrastructure evolves seamlessly with your business growth. Through collaborative workshops, technical deep-dives, and continuous refinement, we transform complex requirements into elegant, efficient architectures that deliver measurable business value.',
       features: [
         'Technical analysis & strategic planning',
         'Proof of concept development',
@@ -39,7 +39,7 @@ export default function StackPage() {
       title: 'Frontend Development',
       color: 'text-purple-500',
       bgColor: 'bg-purple-500/10',
-      description: 'Build modern, responsive, and lightning-fast user interfaces with cutting-edge technologies. We create exceptional digital experiences that engage users and drive business results.',
+      description: 'Build modern, responsive, and lightning-fast user interfaces that captivate users and drive meaningful engagement. Our frontend expertise spans the entire spectrum of web technologies, from pixel-perfect responsive layouts to complex single-page applications with real-time data synchronization. We leverage cutting-edge frameworks and libraries to create exceptional digital experiences that load instantly, respond smoothly, and work flawlessly across every device and browser. Every interface we craft is optimized for performance, accessibility, and SEO, ensuring your users enjoy premium experiences while your business achieves measurable results.',
       features: [],
       techs: [
         { name: 'TypeScript' },
@@ -53,7 +53,7 @@ export default function StackPage() {
       title: 'Backend Development',
       color: 'text-green-500',
       bgColor: 'bg-green-500/10',
-      description: 'Robust, scalable, and secure server-side solutions that power your applications. We build high-performance backends that handle millions of requests with ease.',
+      description: 'Robust, scalable, and secure server-side solutions that form the backbone of your digital operations. We architect and build high-performance backends capable of handling millions of concurrent requests while maintaining sub-second response times. Our expertise covers everything from RESTful APIs and GraphQL services to real-time websocket connections and microservices architectures. We implement industry-leading security practices, comprehensive error handling, and intelligent caching strategies to ensure your data remains protected and your services stay responsive under any load. With automated testing, monitoring, and deployment pipelines, we deliver backend systems you can trust.',
       features: [],
       techs: [
         { name: 'Python' },
@@ -67,7 +67,7 @@ export default function StackPage() {
       title: 'Mobile Applications',
       color: 'text-pink-500',
       bgColor: 'bg-pink-500/10',
-      description: 'Native and cross-platform mobile apps that deliver exceptional user experiences. We have production-ready mobile templates that can be customized to match your brand identity, significantly reducing development time and costs while maintaining premium quality.',
+      description: 'Native and cross-platform mobile applications that deliver exceptional experiences users love to engage with daily. We specialize in building polished, performant mobile apps that feel native to each platform while maximizing code reuse and development efficiency. Our team has extensive experience with both iOS and Android ecosystems, from SwiftUI and Kotlin Compose to cross-platform solutions using Capacitor JS. We offer production-ready mobile templates that can be customized to match your brand identity perfectly, significantly reducing time-to-market and development costs while maintaining the premium quality your users expect. Every app we build integrates seamlessly with platform features, follows design guidelines, and delivers smooth, intuitive experiences.',
       features: [
         'Ready-to-deploy mobile templates',
         'Custom design & branding',
@@ -87,7 +87,7 @@ export default function StackPage() {
       title: 'AI Integration',
       color: 'text-orange-500',
       bgColor: 'bg-orange-500/10',
-      description: 'Harness the power of artificial intelligence to automate workflows, enhance decision-making, and create intelligent applications. We integrate cutting-edge AI technologies to give your business a competitive edge.',
+      description: 'Harness the transformative power of artificial intelligence to automate complex workflows, enhance decision-making capabilities, and create intelligent applications that adapt and learn. We integrate cutting-edge AI technologies from leading providers like OpenAI, Google Gemini, and Anthropic Claude to give your business a decisive competitive advantage. From natural language processing and content generation to predictive analytics and intelligent automation, we design AI solutions that augment human capabilities and unlock new possibilities. Our expertise includes building sophisticated automation workflows using n8n, implementing custom AI models, and creating conversational interfaces that understand context and intent, transforming how your organization operates and serves customers.',
       features: [],
       techs: [
         { name: 'n8n' },
@@ -101,7 +101,7 @@ export default function StackPage() {
       title: 'Cloud & Infrastructure',
       color: 'text-cyan-500',
       bgColor: 'bg-cyan-500/10',
-      description: 'Enterprise-grade cloud infrastructure that scales with your business. We implement automated deployment pipelines, monitoring, and security best practices to ensure your applications run flawlessly 24/7.',
+      description: 'Enterprise-grade cloud infrastructure engineered to scale effortlessly with your business growth and evolving demands. We design and implement robust, highly available systems using industry-leading cloud platforms and infrastructure-as-code principles. Our comprehensive approach includes automated CI/CD deployment pipelines that enable rapid, reliable releases, containerization strategies using Docker for consistent environments, advanced monitoring and alerting systems that catch issues before they impact users, and multi-layered security architectures that protect your valuable data. We handle everything from initial server provisioning and configuration to ongoing optimization, ensuring your applications run flawlessly 24/7 with exceptional performance and minimal operational overhead.',
       features: [],
       techs: [
         { name: 'Ubuntu Server' },
@@ -116,7 +116,7 @@ export default function StackPage() {
       title: 'UX/UI Design',
       color: 'text-rose-500',
       bgColor: 'bg-rose-500/10',
-      description: 'Beautiful, intuitive interfaces that users love. We combine aesthetic excellence with usability principles to create designs that not only look stunning but also drive engagement and conversions.',
+      description: 'Beautiful, intuitive interfaces that users genuinely love to interact with, transforming casual visitors into engaged, loyal customers. We blend aesthetic excellence with deep usability research and human-centered design principles to create experiences that feel effortless and delightful. Our design process encompasses comprehensive user research, iterative prototyping, rigorous usability testing, and meticulous attention to every visual detail. Using industry-standard tools like Figma, we craft pixel-perfect designs that not only look stunning but also guide users naturally toward their goals, reduce friction in key workflows, and ultimately drive measurable improvements in engagement, conversion rates, and customer satisfaction. Every color, spacing, and interaction is purposefully chosen to create cohesive experiences that reinforce your brand.',
       features: [],
       techs: [
         { name: 'Figma' },

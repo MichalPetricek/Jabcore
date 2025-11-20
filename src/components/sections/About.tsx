@@ -7,22 +7,22 @@ const values = [
   {
     icon: Target,
     title: 'Mission-Driven Excellence',
-    description: 'We exist to transform ambitious ideas into exceptional digital products that create measurable value and lasting impact.',
+    description: 'We exist to transform ambitious ideas and visionary concepts into exceptional digital products that create measurable business value, drive meaningful user engagement, and generate lasting impact in competitive markets. Every project we undertake is guided by a relentless pursuit of excellence and a commitment to delivering outcomes that exceed expectations.',
   },
   {
     icon: CheckCircle,
     title: 'Uncompromising Quality',
-    description: 'Every line of code, every pixel, every interaction is crafted with obsessive attention to detail and architectural elegance.',
+    description: 'Every single line of code, every carefully considered pixel, every thoughtfully designed interaction is crafted with obsessive attention to detail, architectural elegance, and long-term maintainability. We believe quality is not just about avoiding bugs—it\'s about building software that is intuitive, performant, secure, scalable, and genuinely delightful to use.',
   },
   {
     icon: Users,
     title: 'True Partnership',
-    description: 'Your success is our success. We work as a seamless extension of your team, fully invested in achieving your vision.',
+    description: 'Your success is fundamentally our success. We work as a seamless, collaborative extension of your team, fully invested in understanding your unique challenges, achieving your strategic vision, and celebrating your victories. We build lasting relationships based on transparency, trust, open communication, and shared commitment to excellence.',
   },
   {
     icon: Lightbulb,
     title: 'Relentless Innovation',
-    description: 'We stay ahead of the curve, constantly exploring emerging technologies and integrating AI to deliver tomorrow\'s solutions today.',
+    description: 'We stay ahead of the rapidly evolving technology curve, constantly exploring emerging frameworks, methodologies, and breakthrough technologies. We integrate cutting-edge AI capabilities, experiment with novel approaches, contribute to open-source communities, and continuously refine our craft to deliver tomorrow\'s innovative solutions today, ensuring your product remains competitive for years to come.',
   },
 ]
 

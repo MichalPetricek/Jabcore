@@ -122,9 +122,10 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="text-lg sm:text-xl lg:text-2xl text-muted-foreground mb-12 max-w-4xl mx-auto leading-relaxed font-medium"
           >
-            We craft exceptional digital products that drive real business value. From intelligent mobile apps 
-            to enterprise-grade platforms with AI integration, we deliver solutions that transform how you work, 
-            scale, and succeed in the digital age.
+            We craft exceptional digital products that drive real, measurable business value and transform how organizations operate. 
+            From intelligent mobile applications with seamless user experiences to enterprise-grade platforms powered by cutting-edge 
+            AI integration, we deliver comprehensive solutions that fundamentally transform how you work, scale operations efficiently, 
+            engage customers meaningfully, and succeed in the rapidly evolving digital age.
           </motion.p>
 
           <motion.div

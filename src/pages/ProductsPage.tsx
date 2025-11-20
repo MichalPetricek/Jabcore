@@ -10,7 +10,7 @@ export default function ProductsPage() {
       id: 1,
       name: 'Pillsee',
       tagline: 'Your Personal Medication Assistant',
-      description: 'Pillsee is an innovative medication scanning application that helps you manage your prescriptions effortlessly. Simply scan your medication labels to instantly access detailed information, set reminders, track your doses, and ensure you never miss taking your medicine on time.',
+      description: 'Pillsee is an innovative medication scanning and management application that revolutionizes how you track and manage your prescriptions effortlessly. Simply scan your medication labels using advanced AI-powered optical character recognition to instantly access comprehensive medication information including dosage instructions, potential side effects, and important warnings. Set intelligent reminders that adapt to your schedule and ensure you never miss taking your medicine at the right time. Track your medication history over time, monitor adherence patterns, receive alerts for potential drug interactions when adding new prescriptions, and share detailed reports with your healthcare providers. With an intuitive interface designed for all ages and seamless synchronization across all your devices, Pillsee becomes your trusted companion for maintaining medication compliance and taking control of your health journey.',
       icon: Pill,
       features: [
         'AI-powered medication recognition',
