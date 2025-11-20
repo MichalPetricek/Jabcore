@@ -120,11 +120,11 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="text-lg sm:text-xl lg:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed font-medium"
+            className="text-lg sm:text-xl lg:text-2xl text-muted-foreground mb-12 max-w-4xl mx-auto leading-relaxed font-medium"
           >
-            Digital products built for growth.
-          </motion.p>
-
+            We craft digital products engineered for explosive growth. From concept to scale, 
+            we build high-performance web and mobile applications that drive revenue, delight 
+            users, and position your business ahead of the competition.
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
