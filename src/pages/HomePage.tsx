@@ -11,8 +11,8 @@ export default function HomePage() {
       <Hero />
       <ServicesPreview />
       <WhyChooseUs />
-      <TechStack />
       <CollaborationProcess />
+      <TechStack />
       <CTA />
     </div>
   )
