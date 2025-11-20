@@ -215,7 +215,7 @@ export default function Contact() {
                         <FormControl>
                           <Textarea 
                             placeholder="Tell us about your project vision, goals, and what you'd like to build..."
-                            className="min-h-[150px] resize-none"
+                            className="min-h-[150px] resize-y"
                             {...field}
                           />
                         </FormControl>
