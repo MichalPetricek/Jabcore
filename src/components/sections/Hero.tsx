@@ -2,8 +2,11 @@ import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/button'
 import { ArrowRight, Code, DeviceMobile, Database } from '@phosphor-icons/react'
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
+import ContactModal from '@/components/ContactModal'
 
 export default function Hero() {
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false)
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-accent/5" />
@@ -131,15 +134,14 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="flex flex-col sm:flex-row gap-5 justify-center items-center mb-16"
           >
-            <Link to="/contact">
-              <Button
-                size="lg"
-                className="bg-primary hover:bg-primary/90 text-primary-foreground group px-10 py-7 text-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-300"
-              >
-                Get in Touch
-                <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" weight="bold" />
-              </Button>
-            </Link>
+            <Button
+              size="lg"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground group px-10 py-7 text-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-300"
+              onClick={() => setIsContactModalOpen(true)}
+            >
+              Get in Touch
+              <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" weight="bold" />
+            </Button>
             <Link to="/services">
               <Button
                 size="lg"
@@ -196,6 +198,8 @@ export default function Hero() {
           />
         </motion.div>
       </motion.div>
+
+      <ContactModal open={isContactModalOpen} onOpenChange={setIsContactModalOpen} />
     </section>
   )
 }

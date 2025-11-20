@@ -2,8 +2,11 @@ import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/button'
 import { ArrowRight, Sparkle } from '@phosphor-icons/react'
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
+import ContactModal from '@/components/ContactModal'
 
 export default function CTA() {
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false)
   return (
     <section className="py-24 sm:py-32 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-accent/5 to-primary/10" />
@@ -51,15 +54,14 @@ export default function CTA() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
-            <Link to="/contact">
-              <Button
-                size="lg"
-                className="bg-primary hover:bg-primary/90 text-primary-foreground group px-10 py-7 text-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-300"
-              >
-                Start Your Project
-                <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" weight="bold" />
-              </Button>
-            </Link>
+            <Button
+              size="lg"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground group px-10 py-7 text-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-300"
+              onClick={() => setIsContactModalOpen(true)}
+            >
+              Start Your Project
+              <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" weight="bold" />
+            </Button>
             <Link to="/services">
               <Button
                 size="lg"
@@ -82,6 +84,8 @@ export default function CTA() {
           </motion.p>
         </motion.div>
       </div>
+
+      <ContactModal open={isContactModalOpen} onOpenChange={setIsContactModalOpen} />
     </section>
   )
 }
