@@ -122,7 +122,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="text-lg sm:text-xl lg:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed font-medium"
           >
-            We build digital products that work—fast, reliable, and built for growth.
+            Digital products built for growth.
           </motion.p>
 
           <motion.div
