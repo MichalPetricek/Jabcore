@@ -14,8 +14,8 @@ import { PaperPlaneRight } from '@phosphor-icons/react'
 
 const formSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters'),
-  company: z.string().min(2, 'Company name must be at least 2 characters'),
   email: z.string().email('Please enter a valid email address'),
+  company: z.string().optional(),
   phonePrefix: z.string().min(1, 'Please select a country code'),
   phoneNumber: z.string().min(6, 'Phone number must be at least 6 digits').regex(/^[0-9]+$/, 'Phone number must contain only digits'),
   message: z.string().min(10, 'Message must be at least 10 characters'),
@@ -122,13 +122,14 @@ export default function Contact() {
 
                   <FormField
                     control={form.control}
-                    name="company"
+                    name="email"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Company *</FormLabel>
+                        <FormLabel>Email *</FormLabel>
                         <FormControl>
                           <Input 
-                            placeholder="Acme Corporation" 
+                            type="email"
+                            placeholder="john@example.com" 
                             {...field}
                             className="h-12"
                           />
@@ -140,14 +141,13 @@ export default function Contact() {
 
                   <FormField
                     control={form.control}
-                    name="email"
+                    name="company"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Email *</FormLabel>
+                        <FormLabel>Company</FormLabel>
                         <FormControl>
                           <Input 
-                            type="email"
-                            placeholder="john@example.com" 
+                            placeholder="Acme Corporation" 
                             {...field}
                             className="h-12"
                           />
