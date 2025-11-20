@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
-import { AppleLogo, GooglePlayLogo, Pill } from '@phosphor-icons/react'
+import { AppleLogo, GooglePlayLogo, Pill, Globe } from '@phosphor-icons/react'
 
 export default function ProductsPage() {
   const products = [
@@ -20,6 +20,7 @@ export default function ProductsPage() {
       ],
       appStoreUrl: '#',
       playStoreUrl: '#',
+      websiteUrl: 'https://pillsee.app',
       color: 'from-blue-500 to-cyan-400',
       available: true
     }
@@ -118,6 +119,17 @@ export default function ProductsPage() {
                     <div className="flex flex-col sm:flex-row gap-3 pt-4">
                       <Button 
                         asChild 
+                        className="flex-1 gap-2 group/btn"
+                        size="lg"
+                      >
+                        <a href={product.websiteUrl} target="_blank" rel="noopener noreferrer">
+                          <Globe weight="fill" className="group-hover/btn:scale-110 transition-transform" />
+                          Website
+                        </a>
+                      </Button>
+                      <Button 
+                        asChild 
+                        variant="outline" 
                         className="flex-1 gap-2 group/btn"
                         size="lg"
                       >
