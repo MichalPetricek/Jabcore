@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
-import { AppleLogo, GooglePlayLogo, DeviceMobile, Pill } from '@phosphor-icons/react'
+import { AppleLogo, GooglePlayLogo, Pill } from '@phosphor-icons/react'
 
 export default function ProductsPage() {
   const products = [
@@ -72,67 +72,68 @@ export default function ProductsPage() {
             const Icon = product.icon
             return (
               <motion.div key={product.id} variants={itemVariants}>
-                <Card className="overflow-hidden h-full hover:shadow-xl transition-shadow duration-300 border-2">
-                  <div className={`h-48 bg-gradient-to-br ${product.color} relative`}>
-                    <div className="absolute inset-0 bg-black/10" />
-                    <div className="absolute inset-0 flex items-center justify-center">
+                <Card className="overflow-hidden h-full hover:shadow-2xl transition-all duration-300 border-2 group">
+                  <CardContent className="p-8 space-y-6">
+                    <div className="flex items-start gap-6">
                       <motion.div
-                        whileHover={{ scale: 1.1, rotate: 5 }}
-                        transition={{ type: "spring", stiffness: 300 }}
+                        whileHover={{ scale: 1.05 }}
+                        transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                        className={`flex-shrink-0 w-20 h-20 rounded-2xl bg-gradient-to-br ${product.color} p-4 shadow-lg group-hover:shadow-xl transition-shadow`}
                       >
-                        <Icon className="w-24 h-24 text-white drop-shadow-lg" weight="duotone" />
+                        <Icon className="w-full h-full text-white" weight="duotone" />
                       </motion.div>
-                    </div>
-                    {product.available && (
-                      <Badge className="absolute top-4 right-4 bg-white/20 backdrop-blur-sm text-white border-white/30">
-                        Available Now
-                      </Badge>
-                    )}
-                  </div>
-                  
-                  <CardContent className="p-6 space-y-6">
-                    <div>
-                      <div className="flex items-center gap-3 mb-2">
-                        <DeviceMobile className="w-6 h-6 text-primary" weight="duotone" />
-                        <h2 className="text-2xl font-display font-bold">{product.name}</h2>
+                      
+                      <div className="flex-1 min-w-0">
+                        <div className="flex items-start justify-between gap-2 mb-2">
+                          <h2 className="text-2xl font-display font-bold">{product.name}</h2>
+                          {product.available && (
+                            <Badge className="bg-green-500/10 text-green-600 border-green-500/20 flex-shrink-0">
+                              Available
+                            </Badge>
+                          )}
+                        </div>
+                        <p className="text-sm text-primary font-medium">{product.tagline}</p>
                       </div>
-                      <p className="text-sm text-primary font-medium mb-3">{product.tagline}</p>
-                      <p className="text-muted-foreground leading-relaxed">
-                        {product.description}
-                      </p>
                     </div>
 
-                    <div className="space-y-2">
-                      <h3 className="text-sm font-semibold text-foreground/80 uppercase tracking-wide">
+                    <p className="text-muted-foreground leading-relaxed">
+                      {product.description}
+                    </p>
+
+                    <div className="space-y-3">
+                      <h3 className="text-sm font-semibold text-foreground/80 uppercase tracking-wide flex items-center gap-2">
+                        <span className="w-1 h-4 bg-primary rounded-full" />
                         Key Features
                       </h3>
-                      <ul className="space-y-1.5">
+                      <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                         {product.features.map((feature, idx) => (
-                          <li key={idx} className="flex items-start gap-2 text-sm text-muted-foreground">
-                            <span className="text-primary mt-0.5">•</span>
+                          <div key={idx} className="flex items-start gap-2 text-sm text-muted-foreground bg-muted/30 px-3 py-2 rounded-lg">
+                            <span className="text-primary mt-0.5 font-bold">✓</span>
                             <span>{feature}</span>
-                          </li>
+                          </div>
                         ))}
-                      </ul>
+                      </div>
                     </div>
 
-                    <div className="flex flex-col sm:flex-row gap-3 pt-4 border-t border-border">
+                    <div className="flex flex-col sm:flex-row gap-3 pt-4">
                       <Button 
                         asChild 
-                        className="flex-1 gap-2"
+                        className="flex-1 gap-2 group/btn"
+                        size="lg"
                       >
                         <a href={product.appStoreUrl} target="_blank" rel="noopener noreferrer">
-                          <AppleLogo weight="fill" />
+                          <AppleLogo weight="fill" className="group-hover/btn:scale-110 transition-transform" />
                           App Store
                         </a>
                       </Button>
                       <Button 
                         asChild 
                         variant="outline" 
-                        className="flex-1 gap-2"
+                        className="flex-1 gap-2 group/btn"
+                        size="lg"
                       >
                         <a href={product.playStoreUrl} target="_blank" rel="noopener noreferrer">
-                          <GooglePlayLogo weight="fill" />
+                          <GooglePlayLogo weight="fill" className="group-hover/btn:scale-110 transition-transform" />
                           Google Play
                         </a>
                       </Button>
