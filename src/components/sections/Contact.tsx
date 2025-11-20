@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form'
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
 import { toast } from 'sonner'
 import { PaperPlaneRight } from '@phosphor-icons/react'
@@ -15,10 +16,25 @@ const formSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters'),
   company: z.string().min(2, 'Company name must be at least 2 characters'),
   email: z.string().email('Please enter a valid email address'),
+  phonePrefix: z.string().min(1, 'Please select a country code'),
+  phoneNumber: z.string().min(6, 'Phone number must be at least 6 digits').regex(/^[0-9]+$/, 'Phone number must contain only digits'),
   message: z.string().min(10, 'Message must be at least 10 characters'),
 })
 
 type FormData = z.infer<typeof formSchema>
+
+const phoneCountries = [
+  { code: '+420', country: 'Czech Republic', flag: '🇨🇿' },
+  { code: '+421', country: 'Slovakia', flag: '🇸🇰' },
+  { code: '+48', country: 'Poland', flag: '🇵🇱' },
+  { code: '+49', country: 'Germany', flag: '🇩🇪' },
+  { code: '+43', country: 'Austria', flag: '🇦🇹' },
+  { code: '+44', country: 'United Kingdom', flag: '🇬🇧' },
+  { code: '+1', country: 'United States', flag: '🇺🇸' },
+  { code: '+33', country: 'France', flag: '🇫🇷' },
+  { code: '+39', country: 'Italy', flag: '🇮🇹' },
+  { code: '+34', country: 'Spain', flag: '🇪🇸' },
+]
 
 export default function Contact() {
   const ref = useRef(null)
@@ -31,6 +47,8 @@ export default function Contact() {
       name: '',
       company: '',
       email: '',
+      phonePrefix: '+420',
+      phoneNumber: '',
       message: '',
     },
   })
@@ -138,6 +156,55 @@ export default function Contact() {
                       </FormItem>
                     )}
                   />
+
+                  <div className="grid grid-cols-1 sm:grid-cols-[140px_1fr] gap-4">
+                    <FormField
+                      control={form.control}
+                      name="phonePrefix"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>Country</FormLabel>
+                          <Select onValueChange={field.onChange} defaultValue={field.value}>
+                            <FormControl>
+                              <SelectTrigger className="h-12">
+                                <SelectValue placeholder="Code" />
+                              </SelectTrigger>
+                            </FormControl>
+                            <SelectContent>
+                              {phoneCountries.map((country) => (
+                                <SelectItem key={country.code} value={country.code}>
+                                  <span className="flex items-center gap-2">
+                                    <span>{country.flag}</span>
+                                    <span>{country.code}</span>
+                                  </span>
+                                </SelectItem>
+                              ))}
+                            </SelectContent>
+                          </Select>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+
+                    <FormField
+                      control={form.control}
+                      name="phoneNumber"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>Phone Number *</FormLabel>
+                          <FormControl>
+                            <Input 
+                              type="tel"
+                              placeholder="123456789" 
+                              {...field}
+                              className="h-12"
+                            />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+                  </div>
 
                   <FormField
                     control={form.control}
