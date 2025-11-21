@@ -161,9 +161,9 @@ export default function Navigation({ theme, onToggleTheme }: NavigationProps) {
                 </AnimatePresence>
               </Button>
             </SheetTrigger>
-            <SheetContent side="right" className="w-[300px] sm:w-[350px]">
+            <SheetContent side="right" className="w-[300px] sm:w-[350px] p-6">
               <div className="flex flex-col h-full">
-                <div className="flex-1 flex flex-col gap-2 mt-12">
+                <div className="flex-1 flex flex-col gap-1 mt-12">
                   {navItems.map((item, index) => (
                     <motion.div
                       key={item.href}
@@ -174,10 +174,10 @@ export default function Navigation({ theme, onToggleTheme }: NavigationProps) {
                       <Link
                         to={item.href}
                         onClick={() => setIsOpen(false)}
-                        className={`block px-4 py-3 rounded-lg text-lg font-medium transition-all duration-200 ${
+                        className={`block px-3 py-2.5 rounded-md text-base font-normal transition-colors ${
                           isActive(item.href)
-                            ? 'bg-primary text-primary-foreground shadow-md'
-                            : 'text-foreground hover:bg-accent/10 hover:text-accent'
+                            ? 'text-primary font-medium'
+                            : 'text-foreground/70 hover:text-foreground hover:bg-muted/50'
                         }`}
                       >
                         {item.label}
@@ -194,14 +194,14 @@ export default function Navigation({ theme, onToggleTheme }: NavigationProps) {
                 >
                   <Button
                     onClick={handleContactClick}
-                    className="w-full h-12 text-base bg-primary hover:bg-primary/90 text-primary-foreground"
+                    className="w-full h-11 text-base"
                     size="lg"
                   >
-                    <Envelope className="mr-2" weight="bold" />
+                    <Envelope className="mr-2" />
                     Contact Us
                   </Button>
                   
-                  <div className="px-4">
+                  <div>
                     <p className="text-xs text-muted-foreground mb-3">
                       Follow us
                     </p>
