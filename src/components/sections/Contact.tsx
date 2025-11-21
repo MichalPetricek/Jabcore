@@ -10,7 +10,7 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
 import { toast } from 'sonner'
-import { PaperPlaneRight } from '@phosphor-icons/react'
+import { PaperPlaneRight, EnvelopeSimple, Phone } from '@phosphor-icons/react'
 
 const formSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters'),
@@ -89,7 +89,61 @@ export default function Contact() {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 0.2 }}
+          transition={{ duration: 0.6, delay: 0.15 }}
+          className="max-w-4xl mx-auto mb-12"
+        >
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <Card className="border-2 hover:border-primary/50 transition-colors">
+              <CardContent className="pt-6 text-center">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <EnvelopeSimple size={24} className="text-primary" weight="bold" />
+                </div>
+                <h3 className="font-semibold mb-2 text-sm text-muted-foreground">General Inquiries</h3>
+                <a 
+                  href="mailto:info@jabcore.cz" 
+                  className="text-foreground hover:text-primary transition-colors font-medium"
+                >
+                  info@jabcore.cz
+                </a>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 hover:border-primary/50 transition-colors">
+              <CardContent className="pt-6 text-center">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <EnvelopeSimple size={24} className="text-primary" weight="bold" />
+                </div>
+                <h3 className="font-semibold mb-2 text-sm text-muted-foreground">Development Team</h3>
+                <a 
+                  href="mailto:dev@jabcore.cz" 
+                  className="text-foreground hover:text-primary transition-colors font-medium"
+                >
+                  dev@jabcore.cz
+                </a>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 hover:border-primary/50 transition-colors">
+              <CardContent className="pt-6 text-center">
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
+                  <Phone size={24} className="text-primary" weight="bold" />
+                </div>
+                <h3 className="font-semibold mb-2 text-sm text-muted-foreground">Phone</h3>
+                <a 
+                  href="tel:+420792219454" 
+                  className="text-foreground hover:text-primary transition-colors font-medium"
+                >
+                  +420 792 219 454
+                </a>
+              </CardContent>
+            </Card>
+          </div>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 0.3 }}
           className="max-w-2xl mx-auto"
         >
           <Card className="border-2">
