@@ -52,10 +52,10 @@ export default function About() {
             className="mb-16 space-y-6 text-lg leading-relaxed text-muted-foreground"
           >
             <p>
-              <span className="text-foreground font-semibold">Jabcore is where innovation meets execution.</span> We're a premium 
-              software development company specializing in building world-class digital products for businesses of all sizes. 
-              From ambitious startups to Fortune 500 enterprises, we deliver solutions that drive exponential growth, streamline 
-              complex operations, and create lasting competitive advantages in rapidly evolving markets.
+              <span className="text-foreground font-semibold">Jabcore is where innovation meets execution.</span> We're a lean 
+              software development team of three passionate engineers specializing in building world-class digital products for businesses 
+              of all sizes. From ambitious startups to established enterprises, we deliver solutions that drive exponential growth, 
+              streamline complex operations, and create lasting competitive advantages in rapidly evolving markets.
             </p>
             <p>
               Our development philosophy is simple: <span className="text-foreground font-semibold">build it right, build it once.</span> We 
@@ -64,17 +64,16 @@ export default function About() {
               stand the test of time and adapt to your evolving needs.
             </p>
             <p>
-              Clients choose Jabcore because we treat every project as if it were our own. Our team of seasoned engineers, 
-              creative designers, and strategic product managers work collaboratively to deeply understand your unique challenges 
-              and deliver tailored solutions that exceed expectations. We're not satisfied until you're thrilled with the results 
-              and seeing measurable business impact.
+              <span className="text-foreground font-semibold">We're a team of three—no managers, no overhead.</span> This lean structure 
+              means every member is deeply involved in your project from start to finish, and you get direct access to the people actually 
+              building your product. More importantly, it allows us to offer <span className="text-foreground font-semibold">highly competitive 
+              pricing</span> without compromising on quality. You're paying for exceptional engineering talent, not corporate bureaucracy.
             </p>
             <p>
               Beyond client work, we cultivate a culture of relentless learning and fearless experimentation. Our team stays on the bleeding 
-              edge of technology, regularly contributing to open source projects, speaking at industry conferences, and building our own 
-              innovative products. We integrate AI capabilities across our solutions to automate workflows, enhance user experiences, 
-              and unlock intelligent insights. This commitment to innovation ensures that every project benefits from the latest 
-              breakthrough ideas and proven best practices.
+              edge of technology, regularly contributing to open source projects, and building our own innovative products. We integrate 
+              AI capabilities across our solutions to automate workflows, enhance user experiences, and unlock intelligent insights. This 
+              commitment to innovation ensures that every project benefits from the latest breakthrough ideas and proven best practices.
             </p>
           </motion.div>
 
