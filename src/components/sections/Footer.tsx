@@ -1,5 +1,4 @@
-import { Button } from '@/components/ui/button'
-import { Moon, Sun, GithubLogo, LinkedinLogo, TwitterLogo, InstagramLogo, Code } from '@phosphor-icons/react'
+import { GithubLogo, LinkedinLogo, TwitterLogo, InstagramLogo, Code, EnvelopeSimple, Phone } from '@phosphor-icons/react'
 import { Link } from 'react-router-dom'
 
 interface FooterProps {
@@ -15,6 +14,27 @@ export default function Footer({ theme, onToggleTheme }: FooterProps) {
     { icon: LinkedinLogo, label: 'LinkedIn', href: '#' },
     { icon: TwitterLogo, label: 'Twitter', href: '#' },
     { icon: InstagramLogo, label: 'Instagram', href: '#' },
+  ]
+
+  const contactInfo = [
+    {
+      icon: EnvelopeSimple,
+      label: 'General Inquiries',
+      value: 'info@jabcore.cz',
+      href: 'mailto:info@jabcore.cz',
+    },
+    {
+      icon: EnvelopeSimple,
+      label: 'Development Team',
+      value: 'dev@jabcore.cz',
+      href: 'mailto:dev@jabcore.cz',
+    },
+    {
+      icon: Phone,
+      label: 'Phone',
+      value: '+420 792 219 454',
+      href: 'tel:+420792219454',
+    },
   ]
 
   return (
@@ -71,10 +91,18 @@ export default function Footer({ theme, onToggleTheme }: FooterProps) {
               </li>
               <li>
                 <Link
-                  to="/studio"
+                  to="/products"
                   className="text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  Studio
+                  Products
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/stack"
+                  className="text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  Stack
                 </Link>
               </li>
               <li>
@@ -97,27 +125,30 @@ export default function Footer({ theme, onToggleTheme }: FooterProps) {
           </div>
 
           <div>
-            <h4 className="font-semibold text-lg mb-4">Theme</h4>
-            <div className="flex items-center gap-3">
-              <Button
-                onClick={onToggleTheme}
-                variant="outline"
-                size="lg"
-                className="gap-2"
-              >
-                {theme === 'light' ? (
-                  <>
-                    <Moon className="h-5 w-5" />
-                    Dark Mode
-                  </>
-                ) : (
-                  <>
-                    <Sun className="h-5 w-5" />
-                    Light Mode
-                  </>
-                )}
-              </Button>
-            </div>
+            <h4 className="font-semibold text-lg mb-4">Contact Us</h4>
+            <ul className="space-y-3">
+              {contactInfo.map((info, index) => {
+                const Icon = info.icon
+                return (
+                  <li key={index}>
+                    <a
+                      href={info.href}
+                      className="flex items-start gap-2 text-muted-foreground hover:text-foreground transition-colors group"
+                    >
+                      <Icon className="w-5 h-5 text-primary mt-0.5 flex-shrink-0 group-hover:scale-110 transition-transform" weight="bold" />
+                      <div className="flex flex-col">
+                        <span className="text-xs text-muted-foreground/80 uppercase tracking-wide">
+                          {info.label}
+                        </span>
+                        <span className="font-medium">
+                          {info.value}
+                        </span>
+                      </div>
+                    </a>
+                  </li>
+                )
+              })}
+            </ul>
           </div>
         </div>
 
