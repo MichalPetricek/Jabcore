@@ -10,7 +10,7 @@ import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
 import { toast } from 'sonner'
-import { PaperPlaneRight, EnvelopeSimple, Phone } from '@phosphor-icons/react'
+import { PaperPlaneRight, EnvelopeSimple, Phone, MapPin, Clock, Copy, Check } from '@phosphor-icons/react'
 
 const formSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters'),
@@ -36,10 +36,35 @@ const phoneCountries = [
   { code: '+34', country: 'Spain', flag: '🇪🇸' },
 ]
 
+const contactInfo = [
+  {
+    icon: EnvelopeSimple,
+    label: 'General Inquiries',
+    value: 'info@jabcore.cz',
+    href: 'mailto:info@jabcore.cz',
+    description: 'For general questions and business inquiries',
+  },
+  {
+    icon: EnvelopeSimple,
+    label: 'Development Team',
+    value: 'dev@jabcore.cz',
+    href: 'mailto:dev@jabcore.cz',
+    description: 'Technical support and development questions',
+  },
+  {
+    icon: Phone,
+    label: 'Phone',
+    value: '+420 792 219 454',
+    href: 'tel:+420792219454',
+    description: 'Mon-Fri, 9:00 AM - 6:00 PM CET',
+  },
+]
+
 export default function Contact() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: '-100px' })
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const [copiedIndex, setCopiedIndex] = useState<number | null>(null)
 
   const form = useForm<FormData>({
     resolver: zodResolver(formSchema),
@@ -52,6 +77,13 @@ export default function Contact() {
       message: '',
     },
   })
+
+  const handleCopy = async (text: string, index: number) => {
+    await navigator.clipboard.writeText(text)
+    setCopiedIndex(index)
+    toast.success('Copied to clipboard!')
+    setTimeout(() => setCopiedIndex(null), 2000)
+  }
 
   const onSubmit = async (data: FormData) => {
     setIsSubmitting(true)
@@ -90,51 +122,101 @@ export default function Contact() {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6, delay: 0.15 }}
-          className="max-w-4xl mx-auto mb-12"
+          className="max-w-5xl mx-auto mb-16"
         >
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <Card className="border-2 hover:border-primary/50 transition-colors">
-              <CardContent className="pt-6 text-center">
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <EnvelopeSimple size={24} className="text-primary" weight="bold" />
-                </div>
-                <h3 className="font-semibold mb-2 text-sm text-muted-foreground">General Inquiries</h3>
-                <a 
-                  href="mailto:info@jabcore.cz" 
-                  className="text-foreground hover:text-primary transition-colors font-medium"
+            {contactInfo.map((info, index) => {
+              const Icon = info.icon
+              return (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={isInView ? { opacity: 1, y: 0 } : {}}
+                  transition={{ duration: 0.5, delay: 0.2 + index * 0.1 }}
                 >
-                  info@jabcore.cz
-                </a>
+                  <Card className="border-2 hover:border-primary/50 hover:shadow-lg transition-all duration-300 h-full group">
+                    <CardContent className="pt-6 pb-6">
+                      <div className="flex flex-col items-center text-center">
+                        <div className="w-14 h-14 bg-gradient-to-br from-primary/20 to-accent/20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                          <Icon size={28} className="text-primary" weight="bold" />
+                        </div>
+                        <h3 className="font-semibold mb-1 text-sm text-muted-foreground uppercase tracking-wide">
+                          {info.label}
+                        </h3>
+                        <a 
+                          href={info.href}
+                          className="text-foreground hover:text-primary transition-colors font-semibold text-lg mb-2 break-all"
+                        >
+                          {info.value}
+                        </a>
+                        <p className="text-sm text-muted-foreground mb-3">
+                          {info.description}
+                        </p>
+                        <Button
+                          variant="outline"
+                          size="sm"
+                          onClick={() => handleCopy(info.value, index)}
+                          className="gap-2"
+                        >
+                          {copiedIndex === index ? (
+                            <>
+                              <Check size={16} weight="bold" />
+                              Copied
+                            </>
+                          ) : (
+                            <>
+                              <Copy size={16} />
+                              Copy
+                            </>
+                          )}
+                        </Button>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+              )
+            })}
+          </div>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 0.45 }}
+          className="max-w-5xl mx-auto mb-16"
+        >
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <Card className="border-2 bg-gradient-to-br from-card to-muted/30">
+              <CardContent className="pt-6">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <MapPin size={24} className="text-primary" weight="bold" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-2 text-lg">Our Location</h3>
+                    <p className="text-muted-foreground leading-relaxed">
+                      Prague, Czech Republic<br />
+                      <span className="text-sm">Remote-first team available worldwide</span>
+                    </p>
+                  </div>
+                </div>
               </CardContent>
             </Card>
 
-            <Card className="border-2 hover:border-primary/50 transition-colors">
-              <CardContent className="pt-6 text-center">
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <EnvelopeSimple size={24} className="text-primary" weight="bold" />
+            <Card className="border-2 bg-gradient-to-br from-card to-muted/30">
+              <CardContent className="pt-6">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Clock size={24} className="text-primary" weight="bold" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold mb-2 text-lg">Business Hours</h3>
+                    <p className="text-muted-foreground leading-relaxed">
+                      Monday - Friday: 9:00 AM - 6:00 PM<br />
+                      <span className="text-sm">CET/CEST (Prague Time)</span>
+                    </p>
+                  </div>
                 </div>
-                <h3 className="font-semibold mb-2 text-sm text-muted-foreground">Development Team</h3>
-                <a 
-                  href="mailto:dev@jabcore.cz" 
-                  className="text-foreground hover:text-primary transition-colors font-medium"
-                >
-                  dev@jabcore.cz
-                </a>
-              </CardContent>
-            </Card>
-
-            <Card className="border-2 hover:border-primary/50 transition-colors">
-              <CardContent className="pt-6 text-center">
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
-                  <Phone size={24} className="text-primary" weight="bold" />
-                </div>
-                <h3 className="font-semibold mb-2 text-sm text-muted-foreground">Phone</h3>
-                <a 
-                  href="tel:+420792219454" 
-                  className="text-foreground hover:text-primary transition-colors font-medium"
-                >
-                  +420 792 219 454
-                </a>
               </CardContent>
             </Card>
           </div>
@@ -143,13 +225,13 @@ export default function Contact() {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.6, delay: 0.3 }}
-          className="max-w-2xl mx-auto"
+          transition={{ duration: 0.6, delay: 0.6 }}
+          className="max-w-3xl mx-auto"
         >
-          <Card className="border-2">
-            <CardHeader>
-              <CardTitle className="text-2xl">Start the Conversation</CardTitle>
-              <CardDescription>
+          <Card className="border-2 shadow-xl">
+            <CardHeader className="text-center pb-6">
+              <CardTitle className="text-3xl">Start the Conversation</CardTitle>
+              <CardDescription className="text-base">
                 Share your project details below and our team will respond within 24 hours with next steps.
               </CardDescription>
             </CardHeader>
