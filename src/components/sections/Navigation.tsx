@@ -1,5 +1,5 @@
-import { motion } from 'framer-motion'
-import { Moon, Sun, List, GithubLogo, LinkedinLogo, TwitterLogo, InstagramLogo, Code } from '@phosphor-icons/react'
+import { motion, AnimatePresence } from 'framer-motion'
+import { Moon, Sun, List, X, GithubLogo, LinkedinLogo, TwitterLogo, InstagramLogo, Code } from '@phosphor-icons/react'
 import { Button } from '@/components/ui/button'
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 import { useState } from 'react'
@@ -128,41 +128,85 @@ export default function Navigation({ theme, onToggleTheme }: NavigationProps) {
           </Button>
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon">
-                <List className="h-6 w-6" />
+              <Button variant="ghost" size="icon" className="relative">
+                <AnimatePresence mode="wait">
+                  {!isOpen ? (
+                    <motion.div
+                      key="menu"
+                      initial={{ rotate: -90, opacity: 0 }}
+                      animate={{ rotate: 0, opacity: 1 }}
+                      exit={{ rotate: 90, opacity: 0 }}
+                      transition={{ duration: 0.2 }}
+                    >
+                      <List className="h-6 w-6" />
+                    </motion.div>
+                  ) : (
+                    <motion.div
+                      key="close"
+                      initial={{ rotate: 90, opacity: 0 }}
+                      animate={{ rotate: 0, opacity: 1 }}
+                      exit={{ rotate: -90, opacity: 0 }}
+                      transition={{ duration: 0.2 }}
+                    >
+                      <X className="h-6 w-6" />
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </Button>
             </SheetTrigger>
-            <SheetContent>
-              <div className="flex flex-col gap-6 mt-8">
-                {navItems.map((item) => (
-                  <Link
-                    key={item.href}
-                    to={item.href}
-                    onClick={() => setIsOpen(false)}
-                    className={`text-xl font-medium transition-colors text-left ${
-                      isActive(item.href)
-                        ? 'text-primary'
-                        : 'text-foreground hover:text-primary'
-                    }`}
-                  >
-                    {item.label}
-                  </Link>
-                ))}
-                <div className="flex gap-3 mt-6 pt-6 border-t border-border">
-                  {socialLinks.map((social) => {
-                    const Icon = social.icon
-                    return (
-                      <a
-                        key={social.label}
-                        href={social.href}
-                        aria-label={social.label}
-                        className="w-10 h-10 rounded-full bg-primary/10 hover:bg-primary/20 flex items-center justify-center transition-colors"
+            <SheetContent side="right" className="w-[300px] sm:w-[350px]">
+              <div className="flex flex-col h-full">
+                <div className="flex-1 flex flex-col gap-2 mt-12">
+                  {navItems.map((item, index) => (
+                    <motion.div
+                      key={item.href}
+                      initial={{ opacity: 0, x: 20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ delay: index * 0.05, duration: 0.3 }}
+                    >
+                      <Link
+                        to={item.href}
+                        onClick={() => setIsOpen(false)}
+                        className={`block px-4 py-3 rounded-lg text-lg font-medium transition-all duration-200 ${
+                          isActive(item.href)
+                            ? 'bg-primary text-primary-foreground shadow-md'
+                            : 'text-foreground hover:bg-accent/10 hover:text-accent'
+                        }`}
                       >
-                        <Icon className="w-5 h-5 text-primary" />
-                      </a>
-                    )
-                  })}
+                        {item.label}
+                      </Link>
+                    </motion.div>
+                  ))}
                 </div>
+                
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.3, duration: 0.3 }}
+                  className="pt-6 border-t border-border"
+                >
+                  <p className="text-xs text-muted-foreground uppercase tracking-wider font-semibold mb-4 px-4">
+                    Connect With Us
+                  </p>
+                  <div className="flex gap-2 px-4">
+                    {socialLinks.map((social, index) => {
+                      const Icon = social.icon
+                      return (
+                        <motion.a
+                          key={social.label}
+                          href={social.href}
+                          aria-label={social.label}
+                          initial={{ opacity: 0, scale: 0.8 }}
+                          animate={{ opacity: 1, scale: 1 }}
+                          transition={{ delay: 0.4 + index * 0.05, duration: 0.2 }}
+                          className="flex-1 h-12 rounded-lg bg-gradient-to-br from-primary/10 to-accent/10 hover:from-primary/20 hover:to-accent/20 flex items-center justify-center transition-all duration-200 hover:scale-105 active:scale-95"
+                        >
+                          <Icon className="w-5 h-5 text-primary" />
+                        </motion.a>
+                      )
+                    })}
+                  </div>
+                </motion.div>
               </div>
             </SheetContent>
           </Sheet>

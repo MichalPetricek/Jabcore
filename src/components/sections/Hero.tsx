@@ -11,12 +11,12 @@ export default function Hero() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-accent/5" />
       
-      <div className="absolute inset-0 overflow-hidden opacity-40">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/20 rounded-full blur-3xl" />
+      <div className="absolute inset-0 overflow-hidden opacity-40 md:opacity-40">
+        <div className="absolute top-1/4 left-1/4 w-64 h-64 md:w-96 md:h-96 bg-primary/20 rounded-full blur-3xl" />
+        <div className="absolute bottom-1/4 right-1/4 w-64 h-64 md:w-96 md:h-96 bg-accent/20 rounded-full blur-3xl" />
       </div>
 
-      <div className="absolute inset-0 overflow-hidden">
+      <div className="absolute inset-0 overflow-hidden hidden md:block">
         {[...Array(30)].map((_, i) => (
           <motion.div
             key={i}
@@ -40,7 +40,7 @@ export default function Hero() {
         ))}
       </div>
 
-      <div className="absolute top-20 left-10 opacity-20">
+      <div className="absolute top-20 left-10 opacity-20 hidden md:block">
         <motion.div
           animate={{ 
             rotate: 360,
@@ -55,7 +55,7 @@ export default function Hero() {
         </motion.div>
       </div>
 
-      <div className="absolute bottom-32 right-16 opacity-20">
+      <div className="absolute bottom-32 right-16 opacity-20 hidden md:block">
         <motion.div
           animate={{ 
             rotate: -360,
@@ -70,7 +70,7 @@ export default function Hero() {
         </motion.div>
       </div>
 
-      <div className="absolute top-1/3 right-1/4 opacity-20">
+      <div className="absolute top-1/3 right-1/4 opacity-20 hidden md:block">
         <motion.div
           animate={{ 
             y: [0, -20, 0],
