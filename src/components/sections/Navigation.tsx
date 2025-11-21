@@ -1,9 +1,10 @@
 import { motion, AnimatePresence } from 'framer-motion'
-import { Moon, Sun, List, X, GithubLogo, LinkedinLogo, TwitterLogo, InstagramLogo, Code } from '@phosphor-icons/react'
+import { Moon, Sun, List, X, GithubLogo, LinkedinLogo, TwitterLogo, InstagramLogo, Code, Envelope } from '@phosphor-icons/react'
 import { Button } from '@/components/ui/button'
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
+import ContactModal from '@/components/ContactModal'
 
 interface NavigationProps {
   theme: 'light' | 'dark'
@@ -12,6 +13,7 @@ interface NavigationProps {
 
 export default function Navigation({ theme, onToggleTheme }: NavigationProps) {
   const [isOpen, setIsOpen] = useState(false)
+  const [isContactOpen, setIsContactOpen] = useState(false)
   const location = useLocation()
 
   const navItems = [
@@ -31,6 +33,11 @@ export default function Navigation({ theme, onToggleTheme }: NavigationProps) {
   ]
 
   const isActive = (href: string) => location.pathname === href
+
+  const handleContactClick = () => {
+    setIsOpen(false)
+    setIsContactOpen(true)
+  }
 
   return (
     <motion.header
@@ -183,28 +190,39 @@ export default function Navigation({ theme, onToggleTheme }: NavigationProps) {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.3, duration: 0.3 }}
-                  className="pt-6 border-t border-border"
+                  className="space-y-4 pt-6 border-t border-border"
                 >
-                  <p className="text-xs text-muted-foreground uppercase tracking-wider font-semibold mb-4 px-4">
-                    Connect With Us
-                  </p>
-                  <div className="flex gap-2 px-4">
-                    {socialLinks.map((social, index) => {
-                      const Icon = social.icon
-                      return (
-                        <motion.a
-                          key={social.label}
-                          href={social.href}
-                          aria-label={social.label}
-                          initial={{ opacity: 0, scale: 0.8 }}
-                          animate={{ opacity: 1, scale: 1 }}
-                          transition={{ delay: 0.4 + index * 0.05, duration: 0.2 }}
-                          className="flex-1 h-12 rounded-lg bg-gradient-to-br from-primary/10 to-accent/10 hover:from-primary/20 hover:to-accent/20 flex items-center justify-center transition-all duration-200 hover:scale-105 active:scale-95"
-                        >
-                          <Icon className="w-5 h-5 text-primary" />
-                        </motion.a>
-                      )
-                    })}
+                  <Button
+                    onClick={handleContactClick}
+                    className="w-full h-12 text-base bg-primary hover:bg-primary/90 text-primary-foreground"
+                    size="lg"
+                  >
+                    <Envelope className="mr-2" weight="bold" />
+                    Contact Us
+                  </Button>
+                  
+                  <div className="px-4">
+                    <p className="text-xs text-muted-foreground mb-3">
+                      Follow us
+                    </p>
+                    <div className="flex gap-3">
+                      {socialLinks.map((social, index) => {
+                        const Icon = social.icon
+                        return (
+                          <motion.a
+                            key={social.label}
+                            href={social.href}
+                            aria-label={social.label}
+                            initial={{ opacity: 0, y: 10 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 0.4 + index * 0.05, duration: 0.2 }}
+                            className="text-muted-foreground hover:text-primary transition-colors"
+                          >
+                            <Icon className="w-5 h-5" />
+                          </motion.a>
+                        )
+                      })}
+                    </div>
                   </div>
                 </motion.div>
               </div>
@@ -212,6 +230,7 @@ export default function Navigation({ theme, onToggleTheme }: NavigationProps) {
           </Sheet>
         </div>
       </nav>
+      <ContactModal open={isContactOpen} onOpenChange={setIsContactOpen} />
     </motion.header>
   )
 }
