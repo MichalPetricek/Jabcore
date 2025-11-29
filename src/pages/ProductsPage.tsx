@@ -3,21 +3,19 @@ import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { AppleLogo, GooglePlayLogo, Pill, Globe } from '@phosphor-icons/react'
+import { useTranslation } from 'react-i18next'
 
 export default function ProductsPage() {
+  const { t } = useTranslation()
+  
   const products = [
     {
       id: 1,
-      name: 'Pillsee',
-      tagline: 'Your Personal Medication Assistant',
-      description: 'Pillsee is an innovative medication scanning and management application that revolutionizes how you track and manage your prescriptions effortlessly. Simply scan your medication labels using advanced AI-powered optical character recognition to instantly access comprehensive medication information including dosage instructions, potential side effects, and important warnings. Set intelligent reminders that adapt to your schedule and ensure you never miss taking your medicine at the right time. Track your medication history over time, monitor adherence patterns, receive alerts for potential drug interactions when adding new prescriptions, and share detailed reports with your healthcare providers. With an intuitive interface designed for all ages and seamless synchronization across all your devices, Pillsee becomes your trusted companion for maintaining medication compliance and taking control of your health journey.',
+      name: t('products.pillsee.name'),
+      tagline: t('products.pillsee.tagline'),
+      description: t('products.pillsee.description'),
       icon: Pill,
-      features: [
-        'AI-powered medication recognition',
-        'Smart dosage reminders',
-        'Drug interaction warnings',
-        'Prescription history tracking'
-      ],
+      features: t('products.pillsee.features', { returnObjects: true }) as string[],
       appStoreUrl: '#',
       playStoreUrl: '#',
       websiteUrl: 'https://pillsee.app',
@@ -53,13 +51,12 @@ export default function ProductsPage() {
           animate={{ opacity: 1, y: 0 }}
           className="text-center mb-16"
         >
-          <Badge className="mb-4 px-4 py-1.5 text-sm font-medium">Our Products</Badge>
+          <Badge className="mb-4 px-4 py-1.5 text-sm font-medium">{t('products.badge')}</Badge>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold mb-6">
-            Apps We've Built <span className="gradient-text">For You</span>
+            {t('products.title').split(' ').slice(0, -2).join(' ')} <span className="gradient-text">{t('products.title').split(' ').slice(-2).join(' ')}</span>
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Discover our suite of innovative applications designed to simplify your daily life. 
-            Built with passion, precision, and user experience at the core.
+            {t('products.subtitle')}
           </p>
         </motion.div>
 
@@ -89,7 +86,7 @@ export default function ProductsPage() {
                           <h2 className="text-2xl font-display font-bold">{product.name}</h2>
                           {product.available && (
                             <Badge className="bg-green-500/10 text-green-600 border-green-500/20 flex-shrink-0">
-                              Available
+                              {t('products.pillsee.available')}
                             </Badge>
                           )}
                         </div>
@@ -104,7 +101,7 @@ export default function ProductsPage() {
                     <div className="space-y-3">
                       <h3 className="text-sm font-semibold text-foreground/80 uppercase tracking-wide flex items-center gap-2">
                         <span className="w-1 h-4 bg-primary rounded-full" />
-                        Key Features
+                        {t('products.pillsee.keyFeatures')}
                       </h3>
                       <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                         {product.features.map((feature, idx) => (
@@ -124,7 +121,7 @@ export default function ProductsPage() {
                       >
                         <a href={product.websiteUrl} target="_blank" rel="noopener noreferrer">
                           <Globe weight="fill" className="group-hover/btn:scale-110 transition-transform" />
-                          Website
+                          {t('products.pillsee.website')}
                         </a>
                       </Button>
                       <Button 
@@ -135,7 +132,7 @@ export default function ProductsPage() {
                       >
                         <a href={product.appStoreUrl} target="_blank" rel="noopener noreferrer">
                           <AppleLogo weight="fill" className="group-hover/btn:scale-110 transition-transform" />
-                          App Store
+                          {t('products.pillsee.appStore')}
                         </a>
                       </Button>
                       <Button 
@@ -146,7 +143,7 @@ export default function ProductsPage() {
                       >
                         <a href={product.playStoreUrl} target="_blank" rel="noopener noreferrer">
                           <GooglePlayLogo weight="fill" className="group-hover/btn:scale-110 transition-transform" />
-                          Google Play
+                          {t('products.pillsee.googlePlay')}
                         </a>
                       </Button>
                     </div>
@@ -164,9 +161,9 @@ export default function ProductsPage() {
           className="text-center mt-16"
         >
           <div className="inline-block p-6 rounded-2xl bg-muted/50 border border-border">
-            <p className="text-muted-foreground mb-2">More amazing apps coming soon...</p>
+            <p className="text-muted-foreground mb-2">{t('products.comingSoon')}</p>
             <p className="text-sm text-muted-foreground/70">
-              Stay tuned for updates on our latest innovations
+              {t('products.stayTuned')}
             </p>
           </div>
         </motion.div>

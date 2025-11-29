@@ -10,8 +10,11 @@ import {
   CheckCircle
 } from '@phosphor-icons/react'
 import TechIcon from '@/components/TechIcon'
+import { useTranslation } from 'react-i18next'
 
 export default function StackPage() {
+  const { t } = useTranslation()
+  
   const fadeInUp = {
     initial: { opacity: 0, y: 60 },
     whileInView: { opacity: 1, y: 0 },
@@ -22,24 +25,19 @@ export default function StackPage() {
   const technologies = [
     {
       icon: Cube,
-      title: 'Solution Architecture',
+      title: t('stack.technologies.solutionArchitecture.title'),
       color: 'text-blue-500',
       bgColor: 'bg-blue-500/10',
-      description: 'We design comprehensive solutions tailored to your business challenges. Our architects analyze your technology ecosystem to craft scalable, maintainable systems that evolve with your growth.',
-      features: [
-        'Technical analysis & strategic planning',
-        'Proof of concept development',
-        'Continuous architecture ownership',
-        'Scalability & performance optimization'
-      ],
+      description: t('stack.technologies.solutionArchitecture.description'),
+      features: t('stack.technologies.solutionArchitecture.features', { returnObjects: true }) as string[],
       techs: []
     },
     {
       icon: Code,
-      title: 'Frontend Development',
+      title: t('stack.technologies.frontendDev.title'),
       color: 'text-purple-500',
       bgColor: 'bg-purple-500/10',
-      description: 'Build modern, responsive user interfaces that captivate users. We create exceptional digital experiences using cutting-edge frameworks, optimized for performance, accessibility, and SEO across all devices.',
+      description: t('stack.technologies.frontendDev.description'),
       features: [],
       techs: [
         { name: 'TypeScript' },
@@ -50,10 +48,10 @@ export default function StackPage() {
     },
     {
       icon: Database,
-      title: 'Backend Development',
+      title: t('stack.technologies.backendDev.title'),
       color: 'text-green-500',
       bgColor: 'bg-green-500/10',
-      description: 'Robust, scalable server-side solutions that handle millions of requests with sub-second response times. We build secure backends with RESTful APIs, GraphQL, and microservices architectures.',
+      description: t('stack.technologies.backendDev.description'),
       features: [],
       techs: [
         { name: 'Python' },
@@ -64,16 +62,11 @@ export default function StackPage() {
     },
     {
       icon: DeviceMobile,
-      title: 'Mobile Applications',
+      title: t('stack.technologies.mobileApps.title'),
       color: 'text-pink-500',
       bgColor: 'bg-pink-500/10',
-      description: 'Native and cross-platform mobile apps that deliver exceptional user experiences. We specialize in iOS, Android, and cross-platform solutions with production-ready templates for fast deployment.',
-      features: [
-        'Ready-to-deploy mobile templates',
-        'Custom design & branding',
-        'Fast time-to-market',
-        'Cost-effective solutions'
-      ],
+      description: t('stack.technologies.mobileApps.description'),
+      features: t('stack.technologies.mobileApps.features', { returnObjects: true }) as string[],
       techs: [
         { name: 'iOS' },
         { name: 'Android' },
@@ -84,10 +77,10 @@ export default function StackPage() {
     },
     {
       icon: Brain,
-      title: 'AI Integration',
+      title: t('stack.technologies.aiIntegration.title'),
       color: 'text-orange-500',
       bgColor: 'bg-orange-500/10',
-      description: 'Harness artificial intelligence to automate workflows and enhance decision-making. We integrate cutting-edge AI from OpenAI, Google Gemini, and Claude to unlock new possibilities for your business.',
+      description: t('stack.technologies.aiIntegration.description'),
       features: [],
       techs: [
         { name: 'n8n' },
@@ -98,10 +91,10 @@ export default function StackPage() {
     },
     {
       icon: Cloud,
-      title: 'Cloud & Infrastructure',
+      title: t('stack.technologies.cloudInfra.title'),
       color: 'text-cyan-500',
       bgColor: 'bg-cyan-500/10',
-      description: 'Enterprise-grade cloud infrastructure that scales with your business. We implement robust systems with automated CI/CD pipelines, containerization, monitoring, and multi-layered security.',
+      description: t('stack.technologies.cloudInfra.description'),
       features: [],
       techs: [
         { name: 'Ubuntu Server' },
@@ -113,10 +106,10 @@ export default function StackPage() {
     },
     {
       icon: PencilLine,
-      title: 'UX/UI Design',
+      title: t('stack.technologies.uxui.title'),
       color: 'text-rose-500',
       bgColor: 'bg-rose-500/10',
-      description: 'Beautiful, intuitive interfaces that users love. We blend aesthetic excellence with usability research to create pixel-perfect designs that guide users naturally and drive engagement.',
+      description: t('stack.technologies.uxui.description'),
       features: [],
       techs: [
         { name: 'Figma' },
@@ -138,11 +131,10 @@ export default function StackPage() {
             className="text-center max-w-3xl mx-auto mb-20"
           >
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold mb-6">
-              Our <span className="gradient-text">Modern Stack</span>
+              {t('stack.title').split(' ').slice(0, -2).join(' ')} <span className="gradient-text">{t('stack.title').split(' ').slice(-2).join(' ')}</span>
             </h1>
             <p className="text-lg text-muted-foreground">
-              Cutting-edge technologies and proven methodologies that power exceptional digital solutions. 
-              We combine the best tools with deep expertise to build products that scale.
+              {t('stack.subtitle')}
             </p>
           </motion.div>
 
@@ -214,11 +206,10 @@ export default function StackPage() {
           >
             <div className="bg-gradient-to-br from-primary/10 to-accent/10 border border-primary/20 rounded-2xl p-12">
               <h3 className="text-3xl font-display font-bold mb-4">
-                Ready to Build Something Amazing?
+                {t('stack.readyToBuild')}
               </h3>
               <p className="text-muted-foreground text-lg mb-8 max-w-2xl mx-auto">
-                Let's discuss how our technology stack can bring your vision to life. 
-                We'll help you choose the right tools and build a solution that exceeds expectations.
+                {t('stack.readyDesc')}
               </p>
               <motion.a
                 href="/contact"
@@ -226,7 +217,7 @@ export default function StackPage() {
                 whileTap={{ scale: 0.95 }}
                 className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-xl font-semibold hover:bg-primary/90 transition-colors"
               >
-                Get Started Today
+                {t('stack.getStarted')}
               </motion.a>
             </div>
           </motion.div>

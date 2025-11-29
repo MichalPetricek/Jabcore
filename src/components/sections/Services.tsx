@@ -4,77 +4,43 @@ import { useRef } from 'react'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { DeviceMobile, Database, Globe, Layout, CheckCircle, Sparkle } from '@phosphor-icons/react'
-
-const services = [
-  {
-    icon: DeviceMobile,
-    title: 'Mobile App Development',
-    description: 'Transform your ideas into powerful native mobile applications that users love. We build high-performance iOS and Android apps with intuitive interfaces and seamless user experiences.',
-    features: [
-      'Native iOS development (Swift, SwiftUI)',
-      'Native Android development (Kotlin, Jetpack Compose)',
-      'Cross-platform solutions (React Native, Flutter)',
-      'Mobile UI/UX design and prototyping',
-      'App Store optimization and deployment',
-      'Push notifications and real-time features',
-      'Offline-first architecture',
-      'In-app purchases and monetization',
-    ],
-    highlights: ['Fast Performance', 'Native Feel', 'Scalable Architecture'],
-  },
-  {
-    icon: Database,
-    title: 'Corporate & Enterprise Systems',
-    description: 'Streamline your business operations with custom-built enterprise solutions. We create powerful systems that automate workflows, integrate with existing tools, and leverage AI to boost productivity.',
-    features: [
-      'Custom CRM and ERP systems',
-      'Business process automation',
-      'AI-powered analytics and insights',
-      'Workflow management systems',
-      'Document management solutions',
-      'Integration with existing infrastructure',
-      'Role-based access control',
-      'Real-time reporting and dashboards',
-    ],
-    highlights: ['AI-Powered', 'Fully Integrated', 'Secure & Compliant'],
-  },
-  {
-    icon: Globe,
-    title: 'Web Applications',
-    description: 'Build scalable, secure, and lightning-fast web applications that grow with your business. From SaaS platforms to complex portals, we deliver modern web solutions built on cutting-edge technologies.',
-    features: [
-      'Progressive Web Apps (PWA)',
-      'SaaS platform development',
-      'Customer and admin portals',
-      'Real-time collaboration tools',
-      'API development and integration',
-      'Cloud infrastructure setup',
-      'Database design and optimization',
-      'Security and performance monitoring',
-    ],
-    highlights: ['Cloud-Native', 'Highly Scalable', 'Enterprise-Grade'],
-  },
-  {
-    icon: Layout,
-    title: 'Modern Websites',
-    description: 'Create a stunning online presence that converts visitors into customers. We design and develop SEO-optimized, fast-loading websites that showcase your brand and drive business growth.',
-    features: [
-      'Custom website design and development',
-      'SEO optimization and strategy',
-      'Performance optimization (Core Web Vitals)',
-      'Mobile-responsive design',
-      'Content management systems (CMS)',
-      'E-commerce solutions',
-      'Analytics and conversion tracking',
-      'Ongoing maintenance and support',
-    ],
-    highlights: ['SEO-Optimized', 'High Converting', 'Lightning Fast'],
-  },
-]
+import { useTranslation } from 'react-i18next'
 
 export default function Services() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: '-100px' })
+  const { t } = useTranslation()
+
+  const services = [
+    {
+      icon: DeviceMobile,
+      title: t('services.mobile.title'),
+      description: t('services.mobile.description'),
+      features: t('services.mobile.features', { returnObjects: true }) as string[],
+      highlights: t('services.mobile.highlights', { returnObjects: true }) as string[],
+    },
+    {
+      icon: Database,
+      title: t('services.enterprise.title'),
+      description: t('services.enterprise.description'),
+      features: t('services.enterprise.features', { returnObjects: true }) as string[],
+      highlights: t('services.enterprise.highlights', { returnObjects: true }) as string[],
+    },
+    {
+      icon: Globe,
+      title: t('services.web.title'),
+      description: t('services.web.description'),
+      features: t('services.web.features', { returnObjects: true }) as string[],
+      highlights: t('services.web.highlights', { returnObjects: true }) as string[],
+    },
+    {
+      icon: Layout,
+      title: t('services.websites.title'),
+      description: t('services.websites.description'),
+      features: t('services.websites.features', { returnObjects: true }) as string[],
+      highlights: t('services.websites.highlights', { returnObjects: true }) as string[],
+    },
+  ]
 
   return (
     <section ref={ref} className="py-24 sm:py-32">
@@ -86,10 +52,10 @@ export default function Services() {
           className="text-center mb-20"
         >
           <h1 className="text-5xl sm:text-6xl font-bold mb-6" style={{ fontFamily: 'var(--font-display)' }}>
-            Our Services
+            {t('services.title')}
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            End-to-end software development services designed to transform your business and deliver exceptional results
+            {t('services.subtitle')}
           </p>
         </motion.div>
 
@@ -132,7 +98,7 @@ export default function Services() {
                     <CardContent className={`lg:p-12 pt-0 lg:pt-12 bg-secondary/20 ${isEven ? '' : 'lg:col-start-1 lg:row-start-1'}`}>
                       <h3 className="text-lg font-semibold mb-4 flex items-center gap-2">
                         <CheckCircle className="w-5 h-5 text-primary" weight="fill" />
-                        What's Included
+                        {t('services.whatsIncluded')}
                       </h3>
                       <ul className="grid gap-3">
                         {service.features.map((feature) => (

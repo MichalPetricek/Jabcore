@@ -11,6 +11,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card'
 import { toast } from 'sonner'
 import { PaperPlaneRight, EnvelopeSimple, Phone, MapPin, Clock, Copy, Check } from '@phosphor-icons/react'
+import { useTranslation } from 'react-i18next'
 
 const formSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters'),
@@ -36,35 +37,36 @@ const phoneCountries = [
   { code: '+34', country: 'Spain', flag: '🇪🇸' },
 ]
 
-const contactInfo = [
-  {
-    icon: EnvelopeSimple,
-    label: 'General Inquiries',
-    value: 'info@jabcore.cz',
-    href: 'mailto:info@jabcore.cz',
-    description: 'For general questions and business inquiries',
-  },
-  {
-    icon: EnvelopeSimple,
-    label: 'Development Team',
-    value: 'dev@jabcore.cz',
-    href: 'mailto:dev@jabcore.cz',
-    description: 'Technical support and development questions',
-  },
-  {
-    icon: Phone,
-    label: 'Phone',
-    value: '+420 792 219 454',
-    href: 'tel:+420792219454',
-    description: 'Mon-Fri, 9:00 AM - 6:00 PM CET',
-  },
-]
-
 export default function Contact() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: '-100px' })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [copiedIndex, setCopiedIndex] = useState<number | null>(null)
+  const { t } = useTranslation()
+
+  const contactInfo = [
+    {
+      icon: EnvelopeSimple,
+      label: t('contact.generalInquiries'),
+      value: 'info@jabcore.cz',
+      href: 'mailto:info@jabcore.cz',
+      description: t('contact.generalDesc'),
+    },
+    {
+      icon: EnvelopeSimple,
+      label: t('contact.devTeam'),
+      value: 'dev@jabcore.cz',
+      href: 'mailto:dev@jabcore.cz',
+      description: t('contact.devTeamDesc'),
+    },
+    {
+      icon: Phone,
+      label: t('contact.phone'),
+      value: '+420 792 219 454',
+      href: 'tel:+420792219454',
+      description: t('contact.phoneDesc'),
+    },
+  ]
 
   const form = useForm<FormData>({
     resolver: zodResolver(formSchema),
@@ -110,11 +112,10 @@ export default function Contact() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl sm:text-5xl font-bold mb-4" style={{ fontFamily: 'var(--font-display)' }}>
-            Let's Build Something Extraordinary
+            {t('contact.title')}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Ready to transform your vision into reality? Get in touch and let's discuss how we can help create 
-            a digital solution that drives real business impact.
+            {t('contact.subtitle')}
           </p>
         </motion.div>
 
@@ -161,12 +162,12 @@ export default function Contact() {
                           {copiedIndex === index ? (
                             <>
                               <Check size={16} weight="bold" />
-                              Copied
+                              {t('contact.copied')}
                             </>
                           ) : (
                             <>
                               <Copy size={16} />
-                              Copy
+                              {t('contact.copy')}
                             </>
                           )}
                         </Button>
@@ -193,10 +194,10 @@ export default function Contact() {
                     <MapPin size={24} className="text-primary" weight="bold" />
                   </div>
                   <div>
-                    <h3 className="font-semibold mb-2 text-lg">Our Location</h3>
+                    <h3 className="font-semibold mb-2 text-lg">{t('contact.ourLocation')}</h3>
                     <p className="text-muted-foreground leading-relaxed">
-                      Prague, Czech Republic<br />
-                      <span className="text-sm">Remote-first team available worldwide</span>
+                      {t('contact.locationDesc')}<br />
+                      <span className="text-sm">{t('contact.locationNote')}</span>
                     </p>
                   </div>
                 </div>
@@ -210,10 +211,10 @@ export default function Contact() {
                     <Clock size={24} className="text-primary" weight="bold" />
                   </div>
                   <div>
-                    <h3 className="font-semibold mb-2 text-lg">Business Hours</h3>
+                    <h3 className="font-semibold mb-2 text-lg">{t('contact.businessHours')}</h3>
                     <p className="text-muted-foreground leading-relaxed">
-                      Monday - Friday: 9:00 AM - 6:00 PM<br />
-                      <span className="text-sm">CET/CEST (Prague Time)</span>
+                      {t('contact.businessHoursDesc')}<br />
+                      <span className="text-sm">{t('contact.businessHoursNote')}</span>
                     </p>
                   </div>
                 </div>
@@ -230,9 +231,9 @@ export default function Contact() {
         >
           <Card className="border-2 shadow-xl">
             <CardHeader className="text-center pb-6">
-              <CardTitle className="text-3xl">Start the Conversation</CardTitle>
+              <CardTitle className="text-3xl">{t('contact.formTitle')}</CardTitle>
               <CardDescription className="text-base">
-                Share your project details below and our team will respond within 24 hours with next steps.
+                {t('contact.formDesc')}
               </CardDescription>
             </CardHeader>
             <CardContent>
@@ -243,7 +244,7 @@ export default function Contact() {
                     name="name"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Name *</FormLabel>
+                        <FormLabel>{t('contact.name')} *</FormLabel>
                         <FormControl>
                           <Input 
                             placeholder="John Doe" 
@@ -261,7 +262,7 @@ export default function Contact() {
                     name="email"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Email *</FormLabel>
+                        <FormLabel>{t('contact.email')} *</FormLabel>
                         <FormControl>
                           <Input 
                             type="email"
@@ -280,7 +281,7 @@ export default function Contact() {
                     name="company"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Company</FormLabel>
+                        <FormLabel>{t('contact.company')}</FormLabel>
                         <FormControl>
                           <Input 
                             placeholder="Acme Corporation" 
@@ -299,7 +300,7 @@ export default function Contact() {
                       name="phonePrefix"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel>Country</FormLabel>
+                          <FormLabel>{t('contact.country')}</FormLabel>
                           <Select onValueChange={field.onChange} defaultValue={field.value}>
                             <FormControl>
                               <SelectTrigger className="h-12">
@@ -327,7 +328,7 @@ export default function Contact() {
                       name="phoneNumber"
                       render={({ field }) => (
                         <FormItem>
-                          <FormLabel>Phone Number *</FormLabel>
+                          <FormLabel>{t('contact.phoneNumber')} *</FormLabel>
                           <FormControl>
                             <Input 
                               type="tel"
@@ -347,10 +348,10 @@ export default function Contact() {
                     name="message"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Message *</FormLabel>
+                        <FormLabel>{t('contact.message')} *</FormLabel>
                         <FormControl>
                           <Textarea 
-                            placeholder="Tell us about your project vision, goals, and what you'd like to build..."
+                            placeholder={t('contact.messagePlaceholder')}
                             className="min-h-[150px] resize-y"
                             {...field}
                           />
@@ -368,11 +369,11 @@ export default function Contact() {
                   >
                     {isSubmitting ? (
                       <>
-                        <span className="animate-pulse">Sending...</span>
+                        <span className="animate-pulse">{t('contact.sending')}</span>
                       </>
                     ) : (
                       <>
-                        Send Message
+                        {t('contact.sendMessage')}
                         <PaperPlaneRight className="ml-2" weight="bold" />
                       </>
                     )}

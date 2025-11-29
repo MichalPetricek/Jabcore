@@ -4,9 +4,11 @@ import { ArrowRight, Sparkle } from '@phosphor-icons/react'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import ContactModal from '@/components/ContactModal'
+import { useTranslation } from 'react-i18next'
 
 export default function CTA() {
   const [isContactModalOpen, setIsContactModalOpen] = useState(false)
+  const { t } = useTranslation()
   return (
     <section className="py-24 sm:py-32 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-accent/5 to-primary/10" />
@@ -33,18 +35,16 @@ export default function CTA() {
           >
             <Sparkle className="w-5 h-5 text-primary" weight="fill" />
             <span className="text-primary font-semibold text-sm uppercase tracking-wider">
-              Ready to Get Started?
+              {t('cta.badge')}
             </span>
           </motion.div>
 
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 gradient-text" style={{ fontFamily: 'var(--font-display)' }}>
-            Let's Build Something Amazing Together
+            {t('cta.title')}
           </h2>
           
           <p className="text-xl text-muted-foreground mb-12 leading-relaxed max-w-3xl mx-auto">
-            Whether you're a startup with a groundbreaking idea, an enterprise seeking to modernize your systems, 
-            or anywhere in between—we're here to transform your vision into a powerful digital reality. 
-            Let's have a conversation about what's possible.
+            {t('cta.description')}
           </p>
 
           <motion.div
@@ -59,7 +59,7 @@ export default function CTA() {
               className="bg-primary hover:bg-primary/90 text-primary-foreground group px-10 py-7 text-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-300"
               onClick={() => setIsContactModalOpen(true)}
             >
-              Start Your Project
+              {t('cta.startProject')}
               <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" weight="bold" />
             </Button>
             <Link to="/services">
@@ -68,7 +68,7 @@ export default function CTA() {
                 variant="outline"
                 className="border-2 px-10 py-7 text-lg font-semibold hover:bg-accent/10 transition-all duration-300"
               >
-                Explore Our Services
+                {t('cta.exploreServices')}
               </Button>
             </Link>
           </motion.div>
@@ -80,7 +80,7 @@ export default function CTA() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-sm text-muted-foreground mt-8"
           >
-            No commitment required • Free initial consultation • Fast response time
+            {t('cta.note')}
           </motion.p>
         </motion.div>
       </div>

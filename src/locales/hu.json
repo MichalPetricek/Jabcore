@@ -1,0 +1,395 @@
+{
+  "navigation": {
+    "home": "Kezdőlap",
+    "services": "Szolgáltatások",
+    "products": "Termékek",
+    "stack": "Technológiák",
+    "about": "Rólunk",
+    "contact": "Kapcsolat",
+    "followUs": "Kövess minket"
+  },
+  "hero": {
+    "badge": "Gyors. Megbízható. Megfizethető.",
+    "title": "Jabcore",
+    "subtitle": "Az új alkalmazásod magja.",
+    "description": "Növekedésre tervezett digitális termékek.",
+    "getInTouch": "Lépj kapcsolatba",
+    "viewServices": "Szolgáltatásaink megtekintése",
+    "features": {
+      "mobileWeb": "Mobil és webes alkalmazások",
+      "ai": "MI integráció",
+      "enterprise": "Vállalati megoldások",
+      "cloud": "Felhő architektúra"
+    }
+  },
+  "about": {
+    "title": "Kik vagyunk",
+    "intro1": "A Jabcore az a hely, ahol az innováció találkozik a megvalósítással.",
+    "intro1Content": "Három szenvedélyes mérnökből álló karcsú szoftverfejlesztő csapat vagyunk, akik világszínvonalú digitális termékek készítésére szakosodtak minden méretű vállalkozás számára. Az ambiciózus startupokától a megalapozott vállalkozásokig olyan megoldásokat szállítunk, amelyek exponenciális növekedést hajtanak, összetett műveleteket egyszerűsítenek és tartós versenyelőnyöket teremtenek a gyorsan fejlődő piacokon.",
+    "intro2": "A fejlesztési filozófiánk egyszerű:",
+    "intro2Bold": "építsd meg jól, építsd meg egyszer.",
+    "intro2Content": "A legmodernebb technológiát ötvözzük a csatában kipróbált mérnöki gyakorlatokkal, hogy olyan szoftvert hozzunk létre, amely nemcsak funkcionális, hanem karbantartható, végtelenül skálázható és jövőbiztos. Nem csak kódot írunk—elegáns megoldásokat tervezünk, amelyek kiállják az idő próbáját és alkalmazkodnak változó igényeidhez.",
+    "intro3": "Hárman vagyunk—nincsenek menedzserek, nincs rezsi.",
+    "intro3Content": "Ez a karcsú struktúra azt jelenti, hogy minden tag mélyen benne van a projektedben az elejétől a végéig, és közvetlen hozzáférésed van azokhoz, akik ténylegesen építik a termékedet. Ami még fontosabb, ez lehetővé teszi számunkra, hogy",
+    "intro3Pricing": "rendkívül versenyképes árakat",
+    "intro3End": "kínáljunk minőségi kompromisszumok nélkül. Kivételes mérnöki tehetségért fizetsz, nem vállalati bürokráciáért.",
+    "intro4": "Az ügyfélmunkán túl a könyörtelen tanulás és a félelem nélküli kísérletezés kultúráját ápolják. Csapatunk a technológia élvonalában marad, rendszeresen hozzájárul a nyílt forráskódú projektekhez, és saját innovatív termékeket épít. MI-képességeket integrálunk megoldásainkba a munkafolyamatok automatizálására, a felhasználói élmények javítására és az intelligens meglátások felszabadítására. Ez az innováció iránti elkötelezettség biztosítja, hogy minden projekt részesüljön a legújabb áttörő ötletekből és bevált gyakorlatokból.",
+    "valuesTitle": "Értékeink",
+    "values": {
+      "mission": {
+        "title": "Küldetés vezérelte kiválóság",
+        "description": "Azért létezünk, hogy ambiciózus ötleteket és látnoki koncepciókat kiváló digitális termékekké alakítsunk, amelyek mérhető üzleti értéket teremtenek, jelentőségteljes felhasználói elkötelezettséget hajtanak és tartós hatást generálnak a versenypiacon. Minden általunk vállalt projektet a kiválóság iránti könyörtelen törekvés és az elvárásokat meghaladó eredmények elérése iránti elkötelezettség vezérel."
+      },
+      "quality": {
+        "title": "Kompromisszummentes minőség",
+        "description": "Minden egyes kódsor, minden gondosan mérlegelt pixel, minden átgondoltan tervezett interakció megszállott részletességgel, építészeti eleganciával és hosszú távú karbantarthatósággal készül. Hisszük, hogy a minőség nem csak a hibák elkerüléséről szól—arról szól, hogy olyan szoftvert építsünk, amely intuitív, teljesítményorientált, biztonságos, skálázható és valóban kellemes használni."
+      },
+      "partnership": {
+        "title": "Valódi partnerség",
+        "description": "A sikered alapvetően a mi sikerünk. A csapatod zökkenőmentes, együttműködő kiterjesztéseként dolgozunk, teljesen elkötelezettek vagyunk egyedi kihívásaid megértése, stratégiai víziód elérése és győzelmeid megünneplése iránt. Tartós kapcsolatokat építünk az átláthatóságra, bizalomra, nyílt kommunikációra és a kiválóság iránti közös elkötelezettségre alapozva."
+      },
+      "innovation": {
+        "title": "Könyörtelen innováció",
+        "description": "A gyorsan fejlődő technológiai görbe előtt maradunk, folyamatosan felfedezve a feltörekvő keretrendszereket, módszertanokat és áttörést hozó technológiákat. Élvonalbeli MI-képességeket integrálunk, új megközelítésekkel kísérletezünk, hozzájárulunk a nyílt forráskódú közösségekhez, és folyamatosan csiszoljuk mesterségünket, hogy a holnapi innovatív megoldásokat ma szállítsuk, biztosítva, hogy terméked évekig versenyképes maradjon."
+      }
+    }
+  },
+  "services": {
+    "title": "Szolgáltatásaink",
+    "subtitle": "Teljes körű szoftverfejlesztési szolgáltatások, amelyek célja az üzleted átalakítása és kivételes eredmények elérése",
+    "whatsIncluded": "Mit tartalmaz",
+    "mobile": {
+      "title": "Mobilalkalmazás fejlesztés",
+      "description": "Alakítsd át ötleteidet olyan natív mobilalkalmazásokká, amelyeket a felhasználók imádnak. Nagy teljesítményű iOS és Android alkalmazásokat építünk intuitív felületekkel és zökkenőmentes felhasználói élménnyel.",
+      "highlights": ["Gyors teljesítmény", "Natív érzés", "Skálázható architektúra"],
+      "features": [
+        "Natív iOS fejlesztés (Swift, SwiftUI)",
+        "Natív Android fejlesztés (Kotlin, Jetpack Compose)",
+        "Keresztplatform megoldások (React Native, Flutter)",
+        "Mobil UI/UX tervezés és prototípuskészítés",
+        "App Store optimalizálás és telepítés",
+        "Push értesítések és valós idejű funkciók",
+        "Offline-first architektúra",
+        "Alkalmazáson belüli vásárlások és monetizáció"
+      ]
+    },
+    "enterprise": {
+      "title": "Üzleti és vállalati rendszerek",
+      "description": "Egyszerűsítsd üzleti műveleteidet egyedi vállalati megoldásokkal. Hatékony rendszereket hozunk létre, amelyek automatizálják a munkafolyamatokat, integrálódnak a meglévő eszközökkel és MI-t használnak a termelékenység növelésére.",
+      "highlights": ["MI-vezérelt", "Teljesen integrált", "Biztonságos és megfelelő"],
+      "features": [
+        "Egyedi CRM és ERP rendszerek",
+        "Üzleti folyamatok automatizálása",
+        "MI-vezérelt elemzések és betekintések",
+        "Munkafolyamat-kezelő rendszerek",
+        "Dokumentumkezelési megoldások",
+        "Integráció meglévő infrastruktúrával",
+        "Szerepalapú hozzáférés-ellenőrzés",
+        "Valós idejű jelentések és irányítópultok"
+      ]
+    },
+    "web": {
+      "title": "Webalkalmazások",
+      "description": "Építs skálázható, biztonságos és villámgyors webalkalmazásokat, amelyek együtt nőnek az üzleteddel. SaaS platformoktól összetett portálokig modern webes megoldásokat szállítunk élvonalbeli technológiákkal.",
+      "highlights": ["Felhő-natív", "Rendkívül skálázható", "Vállalati szintű"],
+      "features": [
+        "Progressive Web Apps (PWA)",
+        "SaaS platform fejlesztés",
+        "Ügyfél- és admin portálok",
+        "Valós idejű együttműködési eszközök",
+        "API fejlesztés és integráció",
+        "Felhőinfrastruktúra beállítás",
+        "Adatbázis tervezés és optimalizálás",
+        "Biztonsági és teljesítményfigyelés"
+      ]
+    },
+    "websites": {
+      "title": "Modern weboldalak",
+      "description": "Hozz létre lenyűgöző online jelenlétet, amely látogatókat vásárlókká alakít. SEO-optimalizált, gyors betöltésű weboldalakat tervezünk és fejlesztünk, amelyek bemutatják márkádat és üzleti növekedést hajtanak.",
+      "highlights": ["SEO-optimalizált", "Magas konverzió", "Villámgyors"],
+      "features": [
+        "Egyedi weboldal tervezés és fejlesztés",
+        "SEO optimalizálás és stratégia",
+        "Teljesítmény optimalizálás (Core Web Vitals)",
+        "Mobilra reagáló dizájn",
+        "Tartalomkezelő rendszerek (CMS)",
+        "E-kereskedelmi megoldások",
+        "Analitika és konverziókövető",
+        "Folyamatos karbantartás és támogatás"
+      ]
+    }
+  },
+  "stack": {
+    "title": "Modern stack-ünk",
+    "subtitle": "Élvonalbeli technológiák és bevált módszertanok, amelyek kivételes digitális megoldásokat tesznek lehetővé. A legjobb eszközöket kombináljuk mély szakértelemmel, hogy skálázódó termékeket építsünk.",
+    "readyToBuild": "Készen állsz valami nagyszerű építésére?",
+    "readyDesc": "Beszéljük meg, hogyan keltheti életre technológiai stack-ünk az elképzelésedet. Segítünk kiválasztani a megfelelő eszközöket és olyan megoldást építeni, amely meghaladja az elvárásokat.",
+    "getStarted": "Kezdd el ma",
+    "technologies": {
+      "solutionArchitecture": {
+        "title": "Megoldásarchitektúra",
+        "description": "Átfogó megoldásokat tervezünk, amelyek az üzleti kihívásaidhoz igazodnak. Építészeink elemzik technológiai ökoszisztémádat, hogy skálázható, karbantartható rendszereket hozzanak létre, amelyek a növekedéseddel fejlődnek.",
+        "features": [
+          "Technikai elemzés és stratégiai tervezés",
+          "Proof of concept fejlesztés",
+          "Folyamatos architektúra tulajdonlás",
+          "Méretezhetőség és teljesítmény optimalizálás"
+        ]
+      },
+      "frontendDev": {
+        "title": "Frontend fejlesztés",
+        "description": "Építs modern, reszponzív felhasználói felületeket, amelyek lekötik a felhasználókat. Kivételes digitális élményeket hozunk létre élvonalbeli keretrendszerekkel, optimalizálva teljesítményre, hozzáférhetőségre és SEO-ra minden eszközön."
+      },
+      "backendDev": {
+        "title": "Backend fejlesztés",
+        "description": "Robusztus, skálázható szerver-oldali megoldások, amelyek millió kérést kezelnek másodperc alatti válaszidővel. Biztonságos backendeket építünk RESTful API-kkal, GraphQL-lel és mikroszerviz architektúrákkal."
+      },
+      "mobileApps": {
+        "title": "Mobilalkalmazások",
+        "description": "Natív és keresztplatform mobilalkalmazások, amelyek kivételes felhasználói élményt nyújtanak. iOS, Android és keresztplatform megoldásokra specializálódtunk gyors telepítéshez alkalmas production-ready sablonokkal.",
+        "features": [
+          "Telepítésre kész mobil sablonok",
+          "Egyedi dizájn és branding",
+          "Gyors piacra lépés",
+          "Költséghatékony megoldások"
+        ]
+      },
+      "aiIntegration": {
+        "title": "MI integráció",
+        "description": "Használd ki a mesterséges intelligenciát a munkafolyamatok automatizálására és a döntéshozatal javítására. Élvonalbeli MI-t integrálunk az OpenAI-tól, Google Gemini-től és Claude-tól, hogy új képességeket nyissunk meg az üzleted számára."
+      },
+      "cloudInfra": {
+        "title": "Felhő és infrastruktúra",
+        "description": "Vállalati szintű felhőinfrastruktúra, amely az üzleteddel skálázódik. Robusztus rendszereket telepítünk automatizált CI/CD pipeline-okkal, konténerizációval, monitorozással és többrétegű biztonsággal."
+      },
+      "uxui": {
+        "title": "UX/UI tervezés",
+        "description": "Gyönyörű, intuitív felületek, amelyeket a felhasználók imádnak. Az esztétikai kiválóságot ötvözzük a használhatósági kutatással, hogy pixelpontos dizájnokat hozzunk létre, amelyek természetesen vezetik a felhasználókat és növelik az elkötelezettséget."
+      }
+    },
+    "categories": {
+      "architecture": {
+        "title": "Megoldásarchitektúra",
+        "description": "Átfogó megoldásokat tervezünk, amelyek az üzleti kihívásaidhoz igazodnak. Építészeink elemzik technológiai ökoszisztémádat, hogy skálázható, karbantartható rendszereket hozzanak létre, amelyek a növekedéseddel fejlődnek.",
+        "features": [
+          "Technikai elemzés és stratégiai tervezés",
+          "Proof of concept fejlesztés",
+          "Folyamatos architektúra tulajdonlás",
+          "Méretezhetőség és teljesítmény optimalizálás"
+        ]
+      },
+      "frontendDev": {
+        "title": "Frontend fejlesztés",
+        "description": "Építs modern, reszponzív felhasználói felületeket, amelyek lekötik a felhasználókat. Kivételes digitális élményeket hozunk létre élvonalbeli keretrendszerekkel, optimalizálva teljesítményre, hozzáférhetőségre és SEO-ra minden eszközön."
+      },
+      "backendDev": {
+        "title": "Backend fejlesztés",
+        "description": "Robusztus, skálázható szerver-oldali megoldások, amelyek millió kérést kezelnek másodperc alatti válaszidővel. Biztonságos backendeket építünk RESTful API-kkal, GraphQL-lel és mikroszerviz architektúrákkal."
+      },
+      "mobileApps": {
+        "title": "Mobilalkalmazások",
+        "description": "Natív és keresztplatform mobilalkalmazások, amelyek kivételes felhasználói élményt nyújtanak. iOS, Android és keresztplatform megoldásokra specializálódtunk gyors telepítéshez alkalmas production-ready sablonokkal.",
+        "features": [
+          "Telepítésre kész mobil sablonok",
+          "Egyedi dizájn és branding",
+          "Gyors piacra lépés",
+          "Költséghatékony megoldások"
+        ]
+      },
+      "aiIntegration": {
+        "title": "MI integráció",
+        "description": "Használd ki a mesterséges intelligenciát a munkafolyamatok automatizálására és a döntéshozatal javítására. Élvonalbeli MI-t integrálunk az OpenAI-tól, Google Gemini-től és Claude-tól, hogy új képességeket nyissunk meg az üzleted számára."
+      },
+      "cloudInfra": {
+        "title": "Felhő és infrastruktúra",
+        "description": "Vállalati szintű felhőinfrastruktúra, amely az üzleteddel skálázódik. Robusztus rendszereket telepítünk automatizált CI/CD pipeline-okkal, konténerizációval, monitorozással és többrétegű biztonsággal."
+      },
+      "uxui": {
+        "title": "UX/UI tervezés",
+        "description": "Gyönyörű, intuitív felületek, amelyeket a felhasználók imádnak. Az esztétikai kiválóságot ötvözzük a használhatósági kutatással, hogy pixelpontos dizájnokat hozzunk létre, amelyek természetesen vezetik a felhasználókat és növelik az elkötelezettséget."
+      }
+    }
+  },
+  "products": {
+    "badge": "Termékeink",
+    "title": "Alkalmazások, amelyeket neked építettünk",
+    "subtitle": "Fedezd fel innovatív alkalmazásaink csomagját, amelyeket mindennapi életed egyszerűsítésére terveztünk. Szenvedéllyel, precizitással és a felhasználói élmény középpontjában építve.",
+    "comingSoon": "Hamarosan még több nagyszerű alkalmazás...",
+    "stayTuned": "Maradj velünk a legújabb innovációkról szóló frissítésekért",
+    "pillsee": {
+      "name": "Pillsee",
+      "tagline": "Személyes gyógyszer-asszisztensed",
+      "description": "A Pillsee egy innovatív gyógyszerszkennelő és -kezelő alkalmazás, amely forradalmasítja, ahogyan könnyedén követed és kezeled receptjeidet. Egyszerűen szkeneld be gyógyszer címkéidet fejlett MI-alapú optikai karakterfelismeréssel az azonnali hozzáférésért átfogó gyógyszerinformációkhoz, beleértve az adagolási utasításokat, lehetséges mellékhatásokat és fontos figyelmeztetéseket. Állíts be intelligens emlékeztetőket, amelyek alkalmazkodnak az időbeosztásodhoz, biztosítva, hogy soha ne felejtsd el bevenni a gyógyszeredet a megfelelő időben. Kövesd gyógyszertörténetedet az idő múlásával, figyelj az adherencia mintákat, kapj figyelmeztetéseket a lehetséges gyógyszer-interakciókról új receptek hozzáadásakor, és oszd meg a részletes jelentéseket egészségügyi szolgáltatóiddal. Intuitív felülettel, amely minden korosztály számára tervezve, és zökkenőmentes szinkronizációval minden eszközödön, a Pillsee megbízható társad lesz a gyógyszer-adherencia fenntartásában és az egészségügyi utad irányításában.",
+      "available": "Elérhető",
+      "keyFeatures": "Fő funkciók",
+      "features": [
+        "MI-alapú gyógyszerfelismerés",
+        "Intelligens adagolási emlékeztetők",
+        "Gyógyszer-interakció figyelmeztetések",
+        "Recept előzmények követése"
+      ],
+      "website": "Weboldal",
+      "appStore": "App Store",
+      "googlePlay": "Google Play"
+    }
+  },
+  "servicesPreview": {
+    "title": "Mit építünk az üzletednek",
+    "subtitle": "Átfogó szoftverfejlesztési szolgáltatások egyedi igényeidhez szabva",
+    "mobileDesc": "Natív iOS és Android alkalmazások zökkenőmentes teljesítménnyel.",
+    "enterpriseDesc": "Egyedi üzleti automatizálás és MI-vezérelt megoldások.",
+    "webDesc": "Skálázható SaaS platformok sebességre és biztonságra építve.",
+    "websitesDesc": "SEO-optimalizált, magas konverziós weboldalak.",
+    "exploreAll": "Fedezd fel az összes szolgáltatást"
+  },
+  "collaboration": {
+    "title": "Hogyan dolgozunk együtt",
+    "subtitle": "A kezdeti megkereséstől a végső átadásig és hosszú távú támogatásig—átlátható folyamat, ahol teljes láthatóságot és ellenőrzést tartasz minden szakaszban.",
+    "note": "A pontos folyamat változhat a projekt konkrét követelményeitől és hatókörétől függően.",
+    "afterLaunch": "Mi történik az indítás után?",
+    "afterLaunchDesc": "Az alkalmazásfejlesztés élő folyamat. A telepítés után a felhasználók elkezdik használni megoldásodat, új ötletek merülnek fel, a funkciók fejlődnek, és az optimalizációk új növekedési és innovációs lehetőségeket nyitnak meg.",
+    "longTerm": "Ezért vagyunk itt hosszú távon—folyamatos támogatással, stratégiai funkcióbővítéssel és folyamatos fejlesztéssel. Alkalmazásod folyamatosan fejlődhet és skálázódhat az üzleteddel, alkalmazkodva az új kihívásokhoz és lehetőségekhez, ahogy felmerülnek.",
+    "steps": {
+      "inquiry": {
+        "number": "01",
+        "title": "Kezdeti megkeresés – Nem szükséges kötelezettségvállalás",
+        "description": "Oszd meg projektelvképzelésedet kapcsolati űrlapunkon vagy egy gyors beszélgetésen keresztül. Átgondolt kérdésekkel és betekintésekkel válaszolunk—nincs kötelezettség, nincs nyomás, csak lehetőségek felfedezése és a megfelelőség meghatározása."
+      },
+      "discovery": {
+        "number": "02",
+        "title": "Felfedező találkozó – Az elképzelésed megértése",
+        "description": "Online vagy személyesen találkozunk, hogy mélyen belemerüljünk céljaidba, célközönségedbe és kívánt eredményeidbe. Együtt tisztázzuk a prioritásokat, azonosítjuk a kihívásokat és stratégiai megoldásokat ajánlunk, amelyek az igényeidhez igazodnak."
+      },
+      "proposal": {
+        "number": "03",
+        "title": "Professzionális ajánlat és megoldástervezés",
+        "description": "Részletes technikai architektúrát, UI/UX maketteket, technológiai stack ajánlást és átlátható ajánlatot kapsz világos árképzéssel és ütemezéssel. Minden világos meglepetések nélkül."
+      },
+      "kickoff": {
+        "number": "04",
+        "title": "Jóváhagyás és hivatalos fejlesztésindítás",
+        "description": "Jóváhagyás után fejlesztési ütemtervvel, sprint fázisokkal és projektmenedzsment eszközökkel kezdünk. Valós idejű láthatóságot kapsz arról, hogy mit építünk és miért—minden lépésnél."
+      },
+      "prototype": {
+        "number": "05",
+        "title": "Kezdeti prototípus – Együttműködő finomítás",
+        "description": "Működő prototípust szállítunk, amely életre kelti az elképzelésedet. Felülvizsgálati ülések és visszajelzések révén finomítjuk az interakciókat és funkciókat, hogy biztosítsuk, a végső termék meghaladja az elvárásokat."
+      },
+      "delivery": {
+        "number": "06",
+        "title": "Végső átadás – Megoldásod élesedik",
+        "description": "Production-ready megoldást kapsz, amely különböző eszközökön és böngészőkön tesztelt. Áttekintő üléseket, dokumentációt biztosítunk, és ha szükséges, beállítjuk a hosztingot, támogatási megállapodásokat és integrációkat a hosszú távú sikerhez."
+      }
+    }
+  },
+  "whyChooseUs": {
+    "title": "Miért válaszd a Jabcore-t?",
+    "subtitle": "A technikai kiválóságot valódi partnerséggel kombináljuk, hogy olyan megoldásokat szállítsunk, amelyek nem csak megfelelnek az elvárásoknak—meghaladják azokat. Ez különböztet meg minket a többiektől.",
+    "reasons": {
+      "speed": {
+        "title": "Villámgyors szállítás",
+        "description": "Működő prototípusok hetekben, nem hónapokban. A piacra lépési előnyöd itt kezdődik."
+      },
+      "security": {
+        "title": "Vállalati szintű biztonság",
+        "description": "Biztonság minden kódsorba beépítve. GDPR-kompatibilis, OWASP-tanúsítvánnyal, teljesen védett."
+      },
+      "scalability": {
+        "title": "Végtelen skálázhatóság",
+        "description": "Úgy építve, hogy 100-ról 100 millió felhasználóra növekedjen. Felhő-natív architektúra, amely könnyedén skálázódik."
+      },
+      "code": {
+        "title": "Tiszta, karbantartható kód",
+        "description": "Kód, amely értékes eszközzé válik, nem technikai adósság. Dokumentált, tesztelt és fejlődésre kész."
+      },
+      "design": {
+        "title": "Felhasználó-központú dizájn",
+        "description": "Gyönyörű, intuitív felületek, amelyeket a felhasználók imádnak. Minden interakció az élvezetre tervezve."
+      },
+      "support": {
+        "title": "Elkötelezett támogatás",
+        "description": "Nem tűnünk el az indítás után. Proaktív monitorozás, gyors javítások, hosszú távú partnerség."
+      },
+      "communication": {
+        "title": "Átlátható kommunikáció",
+        "description": "Napi frissítések, heti demók, valós idejű irányítópultok. Mindig pontosan tudod, hol tart a projekted."
+      }
+    }
+  },
+  "techStack": {
+    "title": "Technológiai stack-ünk",
+    "subtitle": "A legerősebb, legmodernebb technológiákat használjuk, hogy gyors, skálázható és jövőbiztos megoldásokat építsünk. Szakértelmünk az egész fejlesztési ökoszisztémára kiterjed—frontenddel backendre, mobiltól felhőig és minden köztes területre.",
+    "notSeeingYourTech": "Nem látod az előnyben részesített technológiai stack-ed?",
+    "notSeeingDesc": "Mindig tanulunk és alkalmazkodunk. Ha konkrét technológiai követelményeid vagy preferenciáid vannak, értékeljük és integráljuk a legjobb eszközöket a projekted egyedi igényeihez. Elkötelezettségünk a helyes megoldás mellett áll, nem csak az ismerős mellett.",
+    "categories": {
+      "frontend": {
+        "title": "Frontend technológiák",
+        "description": "Gyönyörű, reszponzív és nagy teljesítményű felhasználói felületek létrehozása"
+      },
+      "backend": {
+        "title": "Backend és API-k",
+        "description": "Robusztus szerver-oldali architektúra és skálázható API fejlesztés"
+      },
+      "mobile": {
+        "title": "Mobilfejlesztés",
+        "description": "Natív és keresztplatform mobilalkalmazások"
+      },
+      "cloud": {
+        "title": "Felhő és DevOps",
+        "description": "Skálázható infrastruktúra és folyamatos szállítás"
+      },
+      "ai": {
+        "title": "MI és gépi tanulás",
+        "description": "Intelligens funkciók élvonalbeli MI-vel működtetve"
+      },
+      "design": {
+        "title": "Dizájn és prototípuskészítés",
+        "description": "Felhasználó-központú dizájn és vizuális kiválóság"
+      }
+    }
+  },
+  "cta": {
+    "badge": "Készen állsz az indulásra?",
+    "title": "Építsünk együtt valami nagyszerűt",
+    "description": "Akár egy startup vagy áttörő ötlettel, akár egy vállalat, amely modernizálni szeretné rendszereit, vagy valami köztes—azért vagyunk itt, hogy az elképzelésedet erőteljes digitális valósággá alakítsuk. Beszéljük meg, mi a lehetséges.",
+    "startProject": "Indítsd el a projektedet",
+    "exploreServices": "Fedezd fel szolgáltatásainkat",
+    "note": "Nincs kötelezettségvállalás • Ingyenes kezdeti konzultáció • Gyors válaszidő"
+  },
+  "contact": {
+    "title": "Lépj kapcsolatba velünk",
+    "subtitle": "Oszd meg projektelképzelésedet, tegyél fel kérdést vagy egyszerűen csak tervezz egy nem kötelező beszélgetést. Figyelmesen hallgatunk és olyan betekintésekkel válaszolunk, amelyek valódi értéket adnak.",
+    "getInTouch": "Lépj kapcsolatba",
+    "info": "Kapcsolati információ",
+    "letsTalk": "Beszéljünk",
+    "emailUs": "Írj nekünk",
+    "followUs": "Kövess minket",
+    "form": {
+      "name": "Neved",
+      "namePlaceholder": "Kiss János",
+      "email": "E-mail címed",
+      "emailPlaceholder": "janos@ceg.hu",
+      "company": "Cégnév (opcionális)",
+      "companyPlaceholder": "Cég Kft.",
+      "service": "Melyik szolgáltatás érdekel?",
+      "servicePlaceholder": "Válassz szolgáltatást",
+      "message": "Mesélj nekünk a projektedről",
+      "messagePlaceholder": "Írd le projekted céljait, kihívásait vagy bármilyen kérdést...",
+      "submit": "Üzenet küldése",
+      "submitting": "Küldés...",
+      "services": {
+        "mobile": "Mobilalkalmazás fejlesztés",
+        "enterprise": "Üzleti és vállalati rendszerek",
+        "web": "Webalkalmazások",
+        "websites": "Modern weboldalak",
+        "other": "Más / Nem vagyok biztos benne"
+      }
+    }
+  },
+  "footer": {
+    "rights": "Minden jog fenntartva.",
+    "company": "Jabcore Solutions s.r.o.",
+    "tagline": "Modern szoftverfejlesztés, amely átalakítja az üzletedet.",
+    "address": "Žižkova 747/29, 370 01 České Budějovice, Csehország"
+  }
+}

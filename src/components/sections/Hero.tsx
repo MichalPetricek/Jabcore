@@ -4,9 +4,11 @@ import { ArrowRight, Code, DeviceMobile, Database } from '@phosphor-icons/react'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import ContactModal from '@/components/ContactModal'
+import { useTranslation } from 'react-i18next'
 
 export default function Hero() {
   const [isContactModalOpen, setIsContactModalOpen] = useState(false)
+  const { t } = useTranslation()
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-accent/5" />
@@ -95,7 +97,7 @@ export default function Hero() {
             className="inline-flex items-center justify-center gap-2 mb-8 px-6 py-3 rounded-full bg-accent/10 border border-accent/20 backdrop-blur-sm"
           >
             <span className="text-accent font-semibold text-sm uppercase tracking-wider">
-              Fast. Reliable. Affordable.
+              {t('hero.badge')}
             </span>
           </motion.div>
 
@@ -106,7 +108,7 @@ export default function Hero() {
             className="text-6xl sm:text-7xl lg:text-8xl font-bold mb-8 gradient-text leading-tight"
             style={{ fontFamily: 'var(--font-display)' }}
           >
-            Jabcore
+            {t('hero.title')}
           </motion.h1>
 
           <motion.p
@@ -116,7 +118,7 @@ export default function Hero() {
             className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-foreground/90 mb-6"
             style={{ fontFamily: 'var(--font-display)' }}
           >
-            The core of your new app.
+            {t('hero.subtitle')}
           </motion.p>
 
           <motion.p
@@ -125,7 +127,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.3 }}
             className="text-lg sm:text-xl lg:text-2xl text-muted-foreground mb-12 max-w-4xl mx-auto leading-relaxed font-medium"
           >
-            Digital products built for growth.
+            {t('hero.description')}
           </motion.p>
 
           <motion.div
@@ -139,7 +141,7 @@ export default function Hero() {
               className="bg-primary hover:bg-primary/90 text-primary-foreground group px-10 py-7 text-lg font-semibold shadow-xl hover:shadow-2xl transition-all duration-300"
               onClick={() => setIsContactModalOpen(true)}
             >
-              Get in Touch
+              {t('hero.getInTouch')}
               <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" weight="bold" />
             </Button>
             <Link to="/services">
@@ -148,7 +150,7 @@ export default function Hero() {
                 variant="outline"
                 className="border-2 px-10 py-7 text-lg font-semibold hover:bg-accent/10 transition-all duration-300"
               >
-                View Our Services
+                {t('hero.viewServices')}
               </Button>
             </Link>
           </motion.div>
@@ -160,10 +162,10 @@ export default function Hero() {
             className="flex flex-wrap justify-center gap-8 sm:gap-12 text-sm text-muted-foreground"
           >
             {[
-              'Mobile & Web Apps',
-              'AI Integration',
-              'Enterprise Solutions',
-              'Cloud Architecture'
+              t('hero.features.mobileWeb'),
+              t('hero.features.ai'),
+              t('hero.features.enterprise'),
+              t('hero.features.cloud')
             ].map((item, i) => (
               <motion.div
                 key={item}

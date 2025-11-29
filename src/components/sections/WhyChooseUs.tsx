@@ -10,55 +10,57 @@ import {
   BracketsAngle,
   Clock
 } from '@phosphor-icons/react'
-
-const reasons = [
-  {
-    icon: Lightning,
-    title: 'Lightning-Fast Delivery',
-    description: 'Working prototypes in weeks, not months. Your time-to-market advantage starts here.',
-    gradient: 'from-yellow-500 to-orange-500',
-  },
-  {
-    icon: ShieldCheck,
-    title: 'Enterprise-Grade Security',
-    description: 'Security built into every line of code. GDPR compliant, OWASP certified, fully protected.',
-    gradient: 'from-blue-500 to-cyan-500',
-  },
-  {
-    icon: ChartLine,
-    title: 'Infinite Scalability',
-    description: 'Built to grow from 100 to 100 million users. Cloud-native architecture that scales effortlessly.',
-    gradient: 'from-purple-500 to-pink-500',
-  },
-  {
-    icon: BracketsAngle,
-    title: 'Clean, Maintainable Code',
-    description: 'Code that becomes a valuable asset, not technical debt. Documented, tested, and ready to evolve.',
-    gradient: 'from-green-500 to-emerald-500',
-  },
-  {
-    icon: Users,
-    title: 'User-Centered Design',
-    description: 'Beautiful, intuitive interfaces that users love. Every interaction designed for delight.',
-    gradient: 'from-red-500 to-rose-500',
-  },
-  {
-    icon: Headset,
-    title: 'Dedicated Support',
-    description: 'We don\'t disappear after launch. Proactive monitoring, rapid fixes, long-term partnership.',
-    gradient: 'from-indigo-500 to-violet-500',
-  },
-  {
-    icon: Clock,
-    title: 'Transparent Communication',
-    description: 'Daily updates, weekly demos, real-time dashboards. Always know exactly where your project stands.',
-    gradient: 'from-teal-500 to-cyan-500',
-  },
-]
+import { useTranslation } from 'react-i18next'
 
 export default function WhyChooseUs() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: '-100px' })
+  const { t } = useTranslation()
+
+  const reasons = [
+    {
+      icon: Lightning,
+      title: t('whyChooseUs.reasons.speed.title'),
+      description: t('whyChooseUs.reasons.speed.description'),
+      gradient: 'from-yellow-500 to-orange-500',
+    },
+    {
+      icon: ShieldCheck,
+      title: t('whyChooseUs.reasons.security.title'),
+      description: t('whyChooseUs.reasons.security.description'),
+      gradient: 'from-blue-500 to-cyan-500',
+    },
+    {
+      icon: ChartLine,
+      title: t('whyChooseUs.reasons.scalability.title'),
+      description: t('whyChooseUs.reasons.scalability.description'),
+      gradient: 'from-purple-500 to-pink-500',
+    },
+    {
+      icon: BracketsAngle,
+      title: t('whyChooseUs.reasons.code.title'),
+      description: t('whyChooseUs.reasons.code.description'),
+      gradient: 'from-green-500 to-emerald-500',
+    },
+    {
+      icon: Users,
+      title: t('whyChooseUs.reasons.design.title'),
+      description: t('whyChooseUs.reasons.design.description'),
+      gradient: 'from-red-500 to-rose-500',
+    },
+    {
+      icon: Headset,
+      title: t('whyChooseUs.reasons.support.title'),
+      description: t('whyChooseUs.reasons.support.description'),
+      gradient: 'from-indigo-500 to-violet-500',
+    },
+    {
+      icon: Clock,
+      title: t('whyChooseUs.reasons.communication.title'),
+      description: t('whyChooseUs.reasons.communication.description'),
+      gradient: 'from-teal-500 to-cyan-500',
+    },
+  ]
 
   return (
     <section ref={ref} className="py-24 sm:py-32 bg-background">
@@ -70,11 +72,10 @@ export default function WhyChooseUs() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl sm:text-5xl font-bold mb-6" style={{ fontFamily: 'var(--font-display)' }}>
-            Why Choose Jabcore?
+            {t('whyChooseUs.title')}
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            We combine technical excellence with genuine partnership to deliver solutions that don't just meet expectations—they exceed them. 
-            Here's what sets us apart from the rest.
+            {t('whyChooseUs.subtitle')}
           </p>
         </motion.div>
 

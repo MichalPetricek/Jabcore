@@ -5,33 +5,35 @@ import { Link } from 'react-router-dom'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { DeviceMobile, Database, Globe, Layout, ArrowRight } from '@phosphor-icons/react'
-
-const services = [
-  {
-    icon: DeviceMobile,
-    title: 'Mobile Apps',
-    description: 'Native iOS and Android apps with seamless performance.',
-  },
-  {
-    icon: Database,
-    title: 'Enterprise Systems',
-    description: 'Custom business automation and AI-powered solutions.',
-  },
-  {
-    icon: Globe,
-    title: 'Web Applications',
-    description: 'Scalable SaaS platforms built for speed and security.',
-  },
-  {
-    icon: Layout,
-    title: 'Websites',
-    description: 'SEO-optimized, high-converting websites.',
-  },
-]
+import { useTranslation } from 'react-i18next'
 
 export default function ServicesPreview() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: '-100px' })
+  const { t } = useTranslation()
+
+  const services = [
+    {
+      icon: DeviceMobile,
+      title: t('services.mobile.title'),
+      description: t('servicesPreview.mobileDesc'),
+    },
+    {
+      icon: Database,
+      title: t('services.enterprise.title'),
+      description: t('servicesPreview.enterpriseDesc'),
+    },
+    {
+      icon: Globe,
+      title: t('services.web.title'),
+      description: t('servicesPreview.webDesc'),
+    },
+    {
+      icon: Layout,
+      title: t('services.websites.title'),
+      description: t('servicesPreview.websitesDesc'),
+    },
+  ]
 
   return (
     <section ref={ref} className="py-24 sm:py-32 bg-secondary/30">
@@ -43,10 +45,10 @@ export default function ServicesPreview() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl sm:text-5xl font-bold mb-4" style={{ fontFamily: 'var(--font-display)' }}>
-            What We Build for Your Business
+            {t('servicesPreview.title')}
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Comprehensive software development services tailored to your unique needs
+            {t('servicesPreview.subtitle')}
           </p>
         </motion.div>
 
@@ -84,7 +86,7 @@ export default function ServicesPreview() {
         >
           <Link to="/services">
             <Button size="lg" className="group">
-              Explore All Services
+              {t('servicesPreview.exploreAll')}
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
           </Link>

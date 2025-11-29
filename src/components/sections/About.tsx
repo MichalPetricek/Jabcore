@@ -2,33 +2,35 @@ import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
 import { Card, CardContent } from '@/components/ui/card'
 import { CheckCircle, Target, Users, Lightbulb } from '@phosphor-icons/react'
-
-const values = [
-  {
-    icon: Target,
-    title: 'Mission-Driven Excellence',
-    description: 'We exist to transform ambitious ideas and visionary concepts into exceptional digital products that create measurable business value, drive meaningful user engagement, and generate lasting impact in competitive markets. Every project we undertake is guided by a relentless pursuit of excellence and a commitment to delivering outcomes that exceed expectations.',
-  },
-  {
-    icon: CheckCircle,
-    title: 'Uncompromising Quality',
-    description: 'Every single line of code, every carefully considered pixel, every thoughtfully designed interaction is crafted with obsessive attention to detail, architectural elegance, and long-term maintainability. We believe quality is not just about avoiding bugs—it\'s about building software that is intuitive, performant, secure, scalable, and genuinely delightful to use.',
-  },
-  {
-    icon: Users,
-    title: 'True Partnership',
-    description: 'Your success is fundamentally our success. We work as a seamless, collaborative extension of your team, fully invested in understanding your unique challenges, achieving your strategic vision, and celebrating your victories. We build lasting relationships based on transparency, trust, open communication, and shared commitment to excellence.',
-  },
-  {
-    icon: Lightbulb,
-    title: 'Relentless Innovation',
-    description: 'We stay ahead of the rapidly evolving technology curve, constantly exploring emerging frameworks, methodologies, and breakthrough technologies. We integrate cutting-edge AI capabilities, experiment with novel approaches, contribute to open-source communities, and continuously refine our craft to deliver tomorrow\'s innovative solutions today, ensuring your product remains competitive for years to come.',
-  },
-]
+import { useTranslation } from 'react-i18next'
 
 export default function About() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: '-100px' })
+  const { t } = useTranslation()
+
+  const values = [
+    {
+      icon: Target,
+      title: t('about.values.mission.title'),
+      description: t('about.values.mission.description'),
+    },
+    {
+      icon: CheckCircle,
+      title: t('about.values.quality.title'),
+      description: t('about.values.quality.description'),
+    },
+    {
+      icon: Users,
+      title: t('about.values.partnership.title'),
+      description: t('about.values.partnership.description'),
+    },
+    {
+      icon: Lightbulb,
+      title: t('about.values.innovation.title'),
+      description: t('about.values.innovation.description'),
+    },
+  ]
 
   return (
     <section ref={ref} className="py-24 sm:py-32 bg-secondary/30">
@@ -40,7 +42,7 @@ export default function About() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl sm:text-5xl font-bold mb-6" style={{ fontFamily: 'var(--font-display)' }}>
-            Who We Are
+            {t('about.title')}
           </h2>
         </motion.div>
 
@@ -52,28 +54,16 @@ export default function About() {
             className="mb-16 space-y-6 text-lg leading-relaxed text-muted-foreground"
           >
             <p>
-              <span className="text-foreground font-semibold">Jabcore is where innovation meets execution.</span> We're a lean 
-              software development team of three passionate engineers specializing in building world-class digital products for businesses 
-              of all sizes. From ambitious startups to established enterprises, we deliver solutions that drive exponential growth, 
-              streamline complex operations, and create lasting competitive advantages in rapidly evolving markets.
+              <span className="text-foreground font-semibold">{t('about.intro1')}</span> {t('about.intro1Content')}
             </p>
             <p>
-              Our development philosophy is simple: <span className="text-foreground font-semibold">build it right, build it once.</span> We 
-              combine cutting-edge technology with battle-tested engineering practices to create software that's not just functional, 
-              but maintainable, infinitely scalable, and future-proof. We don't just write code—we architect elegant solutions that 
-              stand the test of time and adapt to your evolving needs.
+              {t('about.intro2')} <span className="text-foreground font-semibold">{t('about.intro2Bold')}</span> {t('about.intro2Content')}
             </p>
             <p>
-              <span className="text-foreground font-semibold">We're a team of three—no managers, no overhead.</span> This lean structure 
-              means every member is deeply involved in your project from start to finish, and you get direct access to the people actually 
-              building your product. More importantly, it allows us to offer <span className="text-foreground font-semibold">highly competitive 
-              pricing</span> without compromising on quality. You're paying for exceptional engineering talent, not corporate bureaucracy.
+              <span className="text-foreground font-semibold">{t('about.intro3')}</span> {t('about.intro3Content')} <span className="text-foreground font-semibold">{t('about.intro3Pricing')}</span> {t('about.intro3End')}
             </p>
             <p>
-              Beyond client work, we cultivate a culture of relentless learning and fearless experimentation. Our team stays on the bleeding 
-              edge of technology, regularly contributing to open source projects, and building our own innovative products. We integrate 
-              AI capabilities across our solutions to automate workflows, enhance user experiences, and unlock intelligent insights. This 
-              commitment to innovation ensures that every project benefits from the latest breakthrough ideas and proven best practices.
+              {t('about.intro4')}
             </p>
           </motion.div>
 
@@ -83,7 +73,7 @@ export default function About() {
             transition={{ duration: 0.6, delay: 0.4 }}
           >
             <h3 className="text-2xl font-bold mb-8 text-center" style={{ fontFamily: 'var(--font-display)' }}>
-              Our Values
+              {t('about.valuesTitle')}
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {values.map((value, index) => {

@@ -1,0 +1,395 @@
+{
+  "navigation": {
+    "home": "Home",
+    "services": "Servizi",
+    "products": "Prodotti",
+    "stack": "Tecnologie",
+    "about": "Chi siamo",
+    "contact": "Contatti",
+    "followUs": "Seguici"
+  },
+  "hero": {
+    "badge": "Veloce. Affidabile. Conveniente.",
+    "title": "Jabcore",
+    "subtitle": "Il cuore della tua nuova app.",
+    "description": "Prodotti digitali costruiti per la crescita.",
+    "getInTouch": "Contattaci",
+    "viewServices": "Vedi i nostri servizi",
+    "features": {
+      "mobileWeb": "App mobile e web",
+      "ai": "Integrazione IA",
+      "enterprise": "Soluzioni aziendali",
+      "cloud": "Architettura cloud"
+    }
+  },
+  "about": {
+    "title": "Chi siamo",
+    "intro1": "Jabcore è dove l'innovazione incontra l'esecuzione.",
+    "intro1Content": "Siamo un team snello di sviluppo software di tre ingegneri appassionati specializzati nella creazione di prodotti digitali di livello mondiale per aziende di tutte le dimensioni. Dalle startup ambiziose alle imprese consolidate, forniamo soluzioni che guidano la crescita esponenziale, razionalizzano operazioni complesse e creano vantaggi competitivi duraturi nei mercati in rapida evoluzione.",
+    "intro2": "La nostra filosofia di sviluppo è semplice:",
+    "intro2Bold": "costruirlo bene, costruirlo una volta.",
+    "intro2Content": "Combiniamo tecnologie all'avanguardia con pratiche ingegneristiche testate sul campo per creare software che non è solo funzionale, ma manutenibile, infinitamente scalabile e a prova di futuro. Non scriviamo solo codice—progettiamo soluzioni eleganti che resistono alla prova del tempo e si adattano alle tue esigenze in evoluzione.",
+    "intro3": "Siamo un team di tre—nessun manager, nessun overhead.",
+    "intro3Content": "Questa struttura snella significa che ogni membro è profondamente coinvolto nel tuo progetto dall'inizio alla fine, e hai accesso diretto alle persone che stanno effettivamente costruendo il tuo prodotto. Ancora più importante, ci permette di offrire",
+    "intro3Pricing": "prezzi altamente competitivi",
+    "intro3End": "senza compromettere la qualità. Stai pagando per un talento ingegneristico eccezionale, non per la burocrazia aziendale.",
+    "intro4": "Oltre al lavoro per i clienti, coltiviamo una cultura di apprendimento incessante e sperimentazione coraggiosa. Il nostro team rimane all'avanguardia della tecnologia, contribuendo regolarmente a progetti open source e costruendo i nostri prodotti innovativi. Integriamo capacità di IA nelle nostre soluzioni per automatizzare i flussi di lavoro, migliorare le esperienze utente e sbloccare insights intelligenti. Questo impegno per l'innovazione assicura che ogni progetto benefici delle ultime idee rivoluzionarie e delle migliori pratiche comprovate.",
+    "valuesTitle": "I nostri valori",
+    "values": {
+      "mission": {
+        "title": "Eccellenza guidata dalla missione",
+        "description": "Esistiamo per trasformare idee ambiziose e concetti visionari in prodotti digitali eccezionali che creano valore aziendale misurabile, guidano un coinvolgimento significativo degli utenti e generano un impatto duraturo nei mercati competitivi. Ogni progetto che intraprendiamo è guidato da una ricerca incessante dell'eccellenza e da un impegno a fornire risultati che superano le aspettative."
+      },
+      "quality": {
+        "title": "Qualità senza compromessi",
+        "description": "Ogni singola riga di codice, ogni pixel attentamente considerato, ogni interazione progettata con cura è realizzata con un'attenzione ossessiva ai dettagli, eleganza architetturale e manutenibilità a lungo termine. Crediamo che la qualità non riguardi solo l'evitare bug—si tratta di costruire software intuitivo, performante, sicuro, scalabile e genuinamente piacevole da usare."
+      },
+      "partnership": {
+        "title": "Vera partnership",
+        "description": "Il tuo successo è fondamentalmente il nostro successo. Lavoriamo come un'estensione collaborativa e fluida del tuo team, completamente investiti nella comprensione delle tue sfide uniche, nel raggiungimento della tua visione strategica e nella celebrazione delle tue vittorie. Costruiamo relazioni durature basate sulla trasparenza, fiducia, comunicazione aperta e impegno condiviso verso l'eccellenza."
+      },
+      "innovation": {
+        "title": "Innovazione incessante",
+        "description": "Rimaniamo avanti rispetto alla curva tecnologica in rapida evoluzione, esplorando costantemente framework emergenti, metodologie e tecnologie rivoluzionarie. Integriamo capacità di IA all'avanguardia, sperimentiamo con approcci innovativi, contribuiamo alle comunità open-source e affiniamo continuamente il nostro mestiere per fornire le soluzioni innovative di domani oggi, assicurando che il tuo prodotto rimanga competitivo per anni a venire."
+      }
+    }
+  },
+  "services": {
+    "title": "I nostri servizi",
+    "subtitle": "Servizi di sviluppo software end-to-end progettati per trasformare la tua azienda e fornire risultati eccezionali",
+    "whatsIncluded": "Cosa è incluso",
+    "mobile": {
+      "title": "Sviluppo app mobili",
+      "description": "Trasforma le tue idee in potenti applicazioni mobili native che gli utenti amano. Costruiamo app iOS e Android ad alte prestazioni con interfacce intuitive ed esperienze utente fluide.",
+      "highlights": ["Prestazioni veloci", "Sensazione native", "Architettura scalabile"],
+      "features": [
+        "Sviluppo iOS nativo (Swift, SwiftUI)",
+        "Sviluppo Android nativo (Kotlin, Jetpack Compose)",
+        "Soluzioni cross-platform (React Native, Flutter)",
+        "Design e prototipazione UI/UX mobile",
+        "Ottimizzazione e deployment App Store",
+        "Notifiche push e funzionalità in tempo reale",
+        "Architettura offline-first",
+        "Acquisti in-app e monetizzazione"
+      ]
+    },
+    "enterprise": {
+      "title": "Sistemi aziendali e corporate",
+      "description": "Razionalizza le tue operazioni aziendali con soluzioni enterprise personalizzate. Creiamo sistemi potenti che automatizzano i flussi di lavoro, si integrano con strumenti esistenti e sfruttano l'IA per aumentare la produttività.",
+      "highlights": ["Alimentato da IA", "Completamente integrato", "Sicuro e conforme"],
+      "features": [
+        "Sistemi CRM ed ERP personalizzati",
+        "Automazione dei processi aziendali",
+        "Analitiche e insights alimentati da IA",
+        "Sistemi di gestione del flusso di lavoro",
+        "Soluzioni di gestione documentale",
+        "Integrazione con l'infrastruttura esistente",
+        "Controllo degli accessi basato sui ruoli",
+        "Reportistica e dashboard in tempo reale"
+      ]
+    },
+    "web": {
+      "title": "Applicazioni web",
+      "description": "Costruisci applicazioni web scalabili, sicure e velocissime che crescono con la tua azienda. Dalle piattaforme SaaS ai portali complessi, forniamo soluzioni web moderne costruite su tecnologie all'avanguardia.",
+      "highlights": ["Cloud-Native", "Altamente scalabile", "Livello enterprise"],
+      "features": [
+        "Progressive Web Apps (PWA)",
+        "Sviluppo piattaforme SaaS",
+        "Portali clienti e amministratori",
+        "Strumenti di collaborazione in tempo reale",
+        "Sviluppo e integrazione API",
+        "Configurazione infrastruttura cloud",
+        "Design e ottimizzazione database",
+        "Monitoraggio sicurezza e prestazioni"
+      ]
+    },
+    "websites": {
+      "title": "Siti web moderni",
+      "description": "Crea una presenza online straordinaria che converte i visitatori in clienti. Progettiamo e sviluppiamo siti web ottimizzati SEO, a caricamento rapido che mostrano il tuo brand e guidano la crescita aziendale.",
+      "highlights": ["Ottimizzato SEO", "Alta conversione", "Velocissimo"],
+      "features": [
+        "Design e sviluppo sito web personalizzato",
+        "Ottimizzazione e strategia SEO",
+        "Ottimizzazione prestazioni (Core Web Vitals)",
+        "Design responsive mobile",
+        "Sistemi di gestione contenuti (CMS)",
+        "Soluzioni e-commerce",
+        "Analitiche e tracciamento conversioni",
+        "Manutenzione e supporto continui"
+      ]
+    }
+  },
+  "stack": {
+    "title": "Il nostro stack moderno",
+    "subtitle": "Tecnologie all'avanguardia e metodologie comprovate che alimentano soluzioni digitali eccezionali. Combiniamo i migliori strumenti con una profonda esperienza per costruire prodotti che scalano.",
+    "readyToBuild": "Pronto a costruire qualcosa di straordinario?",
+    "readyDesc": "Discutiamo di come il nostro stack tecnologico può dare vita alla tua visione. Ti aiuteremo a scegliere gli strumenti giusti e a costruire una soluzione che supera le aspettative.",
+    "getStarted": "Inizia oggi",
+    "technologies": {
+      "solutionArchitecture": {
+        "title": "Architettura delle soluzioni",
+        "description": "Progettiamo soluzioni complete su misura per le tue sfide aziendali. I nostri architetti analizzano il tuo ecosistema tecnologico per creare sistemi scalabili e manutenibili che evolvono con la tua crescita.",
+        "features": [
+          "Analisi tecnica e pianificazione strategica",
+          "Sviluppo proof of concept",
+          "Proprietà continua dell'architettura",
+          "Ottimizzazione scalabilità e prestazioni"
+        ]
+      },
+      "frontendDev": {
+        "title": "Sviluppo frontend",
+        "description": "Costruisci interfacce utente moderne e responsive che catturano gli utenti. Creiamo esperienze digitali eccezionali utilizzando framework all'avanguardia, ottimizzati per prestazioni, accessibilità e SEO su tutti i dispositivi."
+      },
+      "backendDev": {
+        "title": "Sviluppo backend",
+        "description": "Soluzioni lato server robuste e scalabili che gestiscono milioni di richieste con tempi di risposta inferiori al secondo. Costruiamo backend sicuri con API RESTful, GraphQL e architetture a microservizi."
+      },
+      "mobileApps": {
+        "title": "Applicazioni mobili",
+        "description": "App mobili native e cross-platform che offrono esperienze utente eccezionali. Siamo specializzati in soluzioni iOS, Android e cross-platform con template pronti per la produzione per un deployment rapido.",
+        "features": [
+          "Template mobili pronti al deployment",
+          "Design e branding personalizzati",
+          "Time-to-market veloce",
+          "Soluzioni economicamente efficienti"
+        ]
+      },
+      "aiIntegration": {
+        "title": "Integrazione IA",
+        "description": "Sfrutta l'intelligenza artificiale per automatizzare i flussi di lavoro e migliorare il processo decisionale. Integriamo IA all'avanguardia da OpenAI, Google Gemini e Claude per sbloccare nuove possibilità per la tua azienda."
+      },
+      "cloudInfra": {
+        "title": "Cloud e infrastruttura",
+        "description": "Infrastruttura cloud di livello enterprise che scala con la tua azienda. Implementiamo sistemi robusti con pipeline CI/CD automatizzate, containerizzazione, monitoraggio e sicurezza multi-livello."
+      },
+      "uxui": {
+        "title": "Design UX/UI",
+        "description": "Interfacce belle e intuitive che gli utenti amano. Fondiamo eccellenza estetica con ricerca sull'usabilità per creare design pixel-perfect che guidano gli utenti naturalmente e favoriscono l'engagement."
+      }
+    },
+    "categories": {
+      "architecture": {
+        "title": "Architettura delle soluzioni",
+        "description": "Progettiamo soluzioni complete su misura per le tue sfide aziendali. I nostri architetti analizzano il tuo ecosistema tecnologico per creare sistemi scalabili e manutenibili che evolvono con la tua crescita.",
+        "features": [
+          "Analisi tecnica e pianificazione strategica",
+          "Sviluppo proof of concept",
+          "Proprietà continua dell'architettura",
+          "Ottimizzazione scalabilità e prestazioni"
+        ]
+      },
+      "frontendDev": {
+        "title": "Sviluppo frontend",
+        "description": "Costruisci interfacce utente moderne e responsive che catturano gli utenti. Creiamo esperienze digitali eccezionali utilizzando framework all'avanguardia, ottimizzati per prestazioni, accessibilità e SEO su tutti i dispositivi."
+      },
+      "backendDev": {
+        "title": "Sviluppo backend",
+        "description": "Soluzioni lato server robuste e scalabili che gestiscono milioni di richieste con tempi di risposta inferiori al secondo. Costruiamo backend sicuri con API RESTful, GraphQL e architetture a microservizi."
+      },
+      "mobileApps": {
+        "title": "Applicazioni mobili",
+        "description": "App mobili native e cross-platform che offrono esperienze utente eccezionali. Siamo specializzati in soluzioni iOS, Android e cross-platform con template pronti per la produzione per un deployment rapido.",
+        "features": [
+          "Template mobili pronti al deployment",
+          "Design e branding personalizzati",
+          "Time-to-market veloce",
+          "Soluzioni economicamente efficienti"
+        ]
+      },
+      "aiIntegration": {
+        "title": "Integrazione IA",
+        "description": "Sfrutta l'intelligenza artificiale per automatizzare i flussi di lavoro e migliorare il processo decisionale. Integriamo IA all'avanguardia da OpenAI, Google Gemini e Claude per sbloccare nuove possibilità per la tua azienda."
+      },
+      "cloudInfra": {
+        "title": "Cloud e infrastruttura",
+        "description": "Infrastruttura cloud di livello enterprise che scala con la tua azienda. Implementiamo sistemi robusti con pipeline CI/CD automatizzate, containerizzazione, monitoraggio e sicurezza multi-livello."
+      },
+      "uxui": {
+        "title": "Design UX/UI",
+        "description": "Interfacce belle e intuitive che gli utenti amano. Fondiamo eccellenza estetica con ricerca sull'usabilità per creare design pixel-perfect che guidano gli utenti naturalmente e favoriscono l'engagement."
+      }
+    }
+  },
+  "products": {
+    "badge": "I nostri prodotti",
+    "title": "App che abbiamo costruito per te",
+    "subtitle": "Scopri la nostra suite di applicazioni innovative progettate per semplificare la tua vita quotidiana. Costruite con passione, precisione e l'esperienza utente al centro.",
+    "comingSoon": "Altre app straordinarie in arrivo...",
+    "stayTuned": "Resta sintonizzato per aggiornamenti sulle nostre ultime innovazioni",
+    "pillsee": {
+      "name": "Pillsee",
+      "tagline": "Il tuo assistente personale per i farmaci",
+      "description": "Pillsee è un'applicazione innovativa di scansione e gestione dei farmaci che rivoluziona il modo in cui tracci e gestisci le tue prescrizioni senza sforzo. Scansiona semplicemente le etichette dei tuoi farmaci utilizzando il riconoscimento ottico dei caratteri avanzato alimentato da IA per accedere istantaneamente a informazioni complete sui farmaci incluse istruzioni sul dosaggio, potenziali effetti collaterali e avvisi importanti. Imposta promemoria intelligenti che si adattano al tuo programma e assicurati di non perdere mai l'assunzione del tuo medicinale al momento giusto. Traccia la cronologia dei tuoi farmaci nel tempo, monitora i modelli di aderenza, ricevi avvisi per potenziali interazioni farmacologiche quando aggiungi nuove prescrizioni e condividi report dettagliati con i tuoi operatori sanitari. Con un'interfaccia intuitiva progettata per tutte le età e sincronizzazione senza interruzioni su tutti i tuoi dispositivi, Pillsee diventa il tuo compagno fidato per mantenere la conformità ai farmaci e prendere il controllo del tuo percorso di salute.",
+      "available": "Disponibile",
+      "keyFeatures": "Caratteristiche principali",
+      "features": [
+        "Riconoscimento farmaci alimentato da IA",
+        "Promemoria intelligenti per il dosaggio",
+        "Avvisi di interazioni farmacologiche",
+        "Tracciamento cronologia prescrizioni"
+      ],
+      "website": "Sito web",
+      "appStore": "App Store",
+      "googlePlay": "Google Play"
+    }
+  },
+  "servicesPreview": {
+    "title": "Cosa costruiamo per la tua azienda",
+    "subtitle": "Servizi di sviluppo software completi adattati alle tue esigenze uniche",
+    "mobileDesc": "App native iOS e Android con prestazioni fluide.",
+    "enterpriseDesc": "Automazione aziendale personalizzata e soluzioni alimentate da IA.",
+    "webDesc": "Piattaforme SaaS scalabili costruite per velocità e sicurezza.",
+    "websitesDesc": "Siti web ottimizzati SEO, ad alta conversione.",
+    "exploreAll": "Esplora tutti i servizi"
+  },
+  "collaboration": {
+    "title": "Come lavoriamo insieme",
+    "subtitle": "Dalla richiesta iniziale alla consegna finale e al supporto a lungo termine—un processo trasparente dove mantieni completa visibilità e controllo in ogni fase.",
+    "note": "Il processo esatto può variare a seconda dei requisiti specifici del progetto e dell'ambito.",
+    "afterLaunch": "Cosa succede dopo il lancio?",
+    "afterLaunchDesc": "Lo sviluppo di applicazioni è un processo vivente. Dopo il deployment, gli utenti iniziano a interagire con la tua soluzione, emergono nuove idee, le funzionalità evolvono e le ottimizzazioni sbloccano nuove opportunità di crescita e innovazione.",
+    "longTerm": "Ecco perché siamo qui per il lungo termine—offrendo supporto continuo, espansione strategica delle funzionalità e miglioramento costante. La tua applicazione può evolvere costantemente e scalare insieme alla tua azienda, adattandosi a nuove sfide e opportunità man mano che si presentano.",
+    "steps": {
+      "inquiry": {
+        "number": "01",
+        "title": "Richiesta iniziale – Nessun impegno richiesto",
+        "description": "Condividi la tua visione del progetto attraverso il nostro modulo di contatto o una rapida chiamata. Risponderemo con domande e approfondimenti ponderati—nessun obbligo, nessuna pressione, solo esplorando possibilità e determinando l'idoneità."
+      },
+      "discovery": {
+        "number": "02",
+        "title": "Incontro di scoperta – Comprendere la tua visione",
+        "description": "Ci incontriamo online o di persona per immergerci nei tuoi obiettivi, pubblico target e risultati desiderati. Insieme, chiariamo le priorità, identifichiamo le sfide e raccomandiamo soluzioni strategiche su misura per le tue esigenze."
+      },
+      "proposal": {
+        "number": "03",
+        "title": "Proposta professionale e progettazione della soluzione",
+        "description": "Ricevi un'architettura tecnica dettagliata, mockup UI/UX, raccomandazione dello stack tecnologico e proposta trasparente con prezzi e tempistiche chiari. Tutto è chiaro senza sorprese."
+      },
+      "kickoff": {
+        "number": "04",
+        "title": "Approvazione e avvio ufficiale dello sviluppo",
+        "description": "Una volta approvato, partiamo con una roadmap di sviluppo, fasi di sprint e strumenti di gestione del progetto. Ottieni visibilità in tempo reale su ciò che stiamo costruendo e perché—ad ogni passo."
+      },
+      "prototype": {
+        "number": "05",
+        "title": "Primo prototipo – Raffinamento collaborativo",
+        "description": "Consegniamo un prototipo funzionale che dà vita alla tua visione. Attraverso sessioni di revisione e feedback, raffiniamo interazioni e funzionalità per garantire che il prodotto finale superi le aspettative."
+      },
+      "delivery": {
+        "number": "06",
+        "title": "Consegna finale – La tua soluzione va live",
+        "description": "Ricevi una soluzione pronta per la produzione testata su diversi dispositivi e browser. Forniamo sessioni di walkthrough, documentazione e, se necessario, configuriamo hosting, accordi di supporto e integrazioni per il successo a lungo termine."
+      }
+    }
+  },
+  "whyChooseUs": {
+    "title": "Perché scegliere Jabcore?",
+    "subtitle": "Combiniamo eccellenza tecnica con vera partnership per fornire soluzioni che non solo soddisfano le aspettative—le superano. Ecco cosa ci distingue dagli altri.",
+    "reasons": {
+      "speed": {
+        "title": "Consegna velocissima",
+        "description": "Prototipi funzionanti in settimane, non mesi. Il tuo vantaggio time-to-market inizia qui."
+      },
+      "security": {
+        "title": "Sicurezza di livello enterprise",
+        "description": "Sicurezza integrata in ogni riga di codice. Conforme GDPR, certificato OWASP, completamente protetto."
+      },
+      "scalability": {
+        "title": "Scalabilità infinita",
+        "description": "Costruito per crescere da 100 a 100 milioni di utenti. Architettura cloud-native che scala senza sforzo."
+      },
+      "code": {
+        "title": "Codice pulito e manutenibile",
+        "description": "Codice che diventa un asset prezioso, non debito tecnico. Documentato, testato e pronto per evolversi."
+      },
+      "design": {
+        "title": "Design centrato sull'utente",
+        "description": "Interfacce belle e intuitive che gli utenti amano. Ogni interazione progettata per il piacere."
+      },
+      "support": {
+        "title": "Supporto dedicato",
+        "description": "Non scompariamo dopo il lancio. Monitoraggio proattivo, correzioni rapide, partnership a lungo termine."
+      },
+      "communication": {
+        "title": "Comunicazione trasparente",
+        "description": "Aggiornamenti quotidiani, demo settimanali, dashboard in tempo reale. Sai sempre esattamente a che punto è il tuo progetto."
+      }
+    }
+  },
+  "techStack": {
+    "title": "Il nostro stack tecnologico",
+    "subtitle": "Sfruttiamo le tecnologie più potenti e moderne per costruire soluzioni veloci, scalabili e a prova di futuro. La nostra esperienza abbraccia l'intero ecosistema di sviluppo—dal frontend al backend, dal mobile al cloud e tutto ciò che sta in mezzo.",
+    "notSeeingYourTech": "Non vedi il tuo stack tecnologico preferito?",
+    "notSeeingDesc": "Stiamo sempre imparando e adattandoci. Se hai requisiti o preferenze tecnologiche specifiche, li valuteremo e integreremo i migliori strumenti per le esigenze uniche del tuo progetto. Il nostro impegno è verso la soluzione giusta, non solo quella familiare.",
+    "categories": {
+      "frontend": {
+        "title": "Tecnologie frontend",
+        "description": "Creazione di interfacce utente belle, responsive e performanti"
+      },
+      "backend": {
+        "title": "Backend e API",
+        "description": "Architettura robusta lato server e sviluppo API scalabile"
+      },
+      "mobile": {
+        "title": "Sviluppo mobile",
+        "description": "Applicazioni mobili native e cross-platform"
+      },
+      "cloud": {
+        "title": "Cloud e DevOps",
+        "description": "Infrastruttura scalabile e consegna continua"
+      },
+      "ai": {
+        "title": "IA e machine learning",
+        "description": "Funzionalità intelligenti alimentate da IA all'avanguardia"
+      },
+      "design": {
+        "title": "Design e prototipazione",
+        "description": "Design centrato sull'utente ed eccellenza visiva"
+      }
+    }
+  },
+  "cta": {
+    "badge": "Pronto a iniziare?",
+    "title": "Costruiamo qualcosa di straordinario insieme",
+    "description": "Che tu sia una startup con un'idea rivoluzionaria, un'azienda che cerca di modernizzare i propri sistemi, o ovunque nel mezzo—siamo qui per trasformare la tua visione in una potente realtà digitale. Facciamo una conversazione su ciò che è possibile.",
+    "startProject": "Avvia il tuo progetto",
+    "exploreServices": "Esplora i nostri servizi",
+    "note": "Nessun impegno richiesto • Consulenza iniziale gratuita • Tempo di risposta rapido"
+  },
+  "contact": {
+    "title": "Costruiamo qualcosa di straordinario",
+    "subtitle": "Pronto a trasformare la tua visione in realtà? Mettiti in contatto e discutiamo di come possiamo aiutare a creare una soluzione digitale che genera un reale impatto aziendale.",
+    "getInTouch": "Contattaci",
+    "generalInquiries": "Richieste generali",
+    "generalDesc": "Per domande generali e richieste commerciali",
+    "devTeam": "Team di sviluppo",
+    "devTeamDesc": "Supporto tecnico e domande di sviluppo",
+    "phone": "Telefono",
+    "phoneDesc": "Lun-Ven, 9:00 - 18:00 CET",
+    "ourLocation": "La nostra sede",
+    "locationDesc": "Praga, Repubblica Ceca",
+    "locationNote": "Team remote-first disponibile in tutto il mondo",
+    "businessHours": "Orari di lavoro",
+    "businessHoursDesc": "Lunedì - Venerdì: 9:00 - 18:00",
+    "businessHoursNote": "CET/CEST (Ora di Praga)",
+    "formTitle": "Inizia la conversazione",
+    "formDesc": "Condividi i dettagli del tuo progetto qui sotto e il nostro team risponderà entro 24 ore con i prossimi passi.",
+    "name": "Nome",
+    "email": "Email",
+    "company": "Azienda",
+    "country": "Paese",
+    "phoneNumber": "Numero di telefono",
+    "message": "Messaggio",
+    "messagePlaceholder": "Raccontaci della visione del tuo progetto, obiettivi e cosa vorresti costruire...",
+    "sendMessage": "Invia messaggio",
+    "sending": "Invio in corso...",
+    "copied": "Copiato",
+    "copy": "Copia"
+  },
+  "footer": {
+    "description": "Sviluppo software premium con integrazione IA. Costruire prodotti digitali di livello mondiale che trasformano le aziende.",
+    "quickLinks": "Link rapidi",
+    "contactUs": "Contattaci",
+    "copyright": "Tutti i diritti riservati. Progettato con precisione e passione."
+  }
+}

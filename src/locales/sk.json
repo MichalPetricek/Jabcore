@@ -1,0 +1,395 @@
+{
+  "navigation": {
+    "home": "Domov",
+    "services": "Služby",
+    "products": "Produkty",
+    "stack": "Technológie",
+    "about": "O nás",
+    "contact": "Kontakt",
+    "followUs": "Sledujte nás"
+  },
+  "hero": {
+    "badge": "Rýchlo. Spoľahlivo. Dostupne.",
+    "title": "Jabcore",
+    "subtitle": "Jadro vašej novej aplikácie.",
+    "description": "Digitálne produkty vytvorené pre rast.",
+    "getInTouch": "Napíšte nám",
+    "viewServices": "Zobraziť naše služby",
+    "features": {
+      "mobileWeb": "Mobilné & webové aplikácie",
+      "ai": "Integrácia AI",
+      "enterprise": "Firemné riešenia",
+      "cloud": "Cloudová architektúra"
+    }
+  },
+  "about": {
+    "title": "Kto sme",
+    "intro1": "Jabcore je miesto, kde sa inovácia stretáva s realizáciou.",
+    "intro1Content": "Sme malý tím troch nadšených vývojárov špecializujúcich sa na vytváranie digitálnych produktov svetovej úrovne pre firmy všetkých veľkostí. Od ambicióznych startupov po zavedené podniky dodávame riešenia, ktoré podporujú exponenciálny rast, zefektívňujú zložité operácie a vytvárajú trvalé konkurenčné výhody na rýchlo sa vyvíjajúcich trhoch.",
+    "intro2": "Naša vývojárska filozofia je jednoduchá:",
+    "intro2Bold": "postaviť to správne, postaviť to raz.",
+    "intro2Content": "Kombinujeme najmodernejšie technológie s osvedčenými inžinierskymi postupmi, aby sme vytvorili software, ktorý nie je len funkčný, ale udržateľný, nekonečne škálovateľný a pripravený do budúcnosti. Nepíšeme len kód—navrhujeme elegantné riešenia, ktoré obstoja v skúške času a prispôsobia sa vašim meniacim sa potrebám.",
+    "intro3": "Sme tím troch—žiadni manažéri, žiadna réžia.",
+    "intro3Content": "Táto štíhla štruktúra znamená, že každý člen je hlboko zapojený do vášho projektu od začiatku do konca a máte priamy prístup k ľuďom, ktorí váš produkt skutočne vytvárajú. Ešte dôležitejšie je, že nám to umožňuje ponúknuť",
+    "intro3Pricing": "vysoko konkurenčné ceny",
+    "intro3End": "bez kompromisov v kvalite. Platíte za výnimočný inžiniersky talent, nie za korporátnu byrokraciu.",
+    "intro4": "Okrem práce pre klientov kultivujeme kultúru neúnavného učenia sa a nebojácneho experimentovania. Náš tím zostáva na špici technológie, pravidelne prispieva do open source projektov a vytvára vlastné inovatívne produkty. Integrujeme AI schopnosti do našich riešení na automatizáciu pracovných postupov, vylepšenie používateľských skúseností a odomknutie inteligentných poznatkov. Tento záväzok k inováciám zabezpečuje, že každý projekt ťaží z najnovších prelomových nápadov a osvedčených postupov.",
+    "valuesTitle": "Naše hodnoty",
+    "values": {
+      "mission": {
+        "title": "Dokonalosť riadená poslaním",
+        "description": "Existujeme preto, aby sme transformovali ambiciózne nápady a vizionárske koncepty do výnimočných digitálnych produktov, ktoré vytvárajú merateľnú obchodnú hodnotu, podporujú zmysluplné zapojenie používateľov a generujú trvalý dopad na konkurenčných trhoch. Každý projekt, ktorý podnikáme, je vedený neúnavným úsilím o dokonalosť a záväzkom poskytovať výsledky, ktoré prekračujú očakávania."
+      },
+      "quality": {
+        "title": "Nekompromisná kvalita",
+        "description": "Každý jediný riadok kódu, každý starostlivo zvážený pixel, každá premyslene navrhnutá interakcia je vytvorená s posadnutou pozornosťou na detail, architektonickou eleganciou a dlhodobou udržateľnosťou. Veríme, že kvalita nie je len o vyhýbaní sa chybám—je o vytváraní softvéru, ktorý je intuitívny, výkonný, bezpečný, škálovateľný a skutočne príjemný na používanie."
+      },
+      "partnership": {
+        "title": "Skutočné partnerstvo",
+        "description": "Váš úspech je zásadne náš úspech. Pracujeme ako bezproblémové, spolupracujúce rozšírenie vášho tímu, plne investovaní do pochopenia vašich jedinečných výziev, dosiahnutia vašej strategickej vízie a osláv vašich víťazstiev. Budujeme trvalé vzťahy založené na transparentnosti, dôvere, otvorenej komunikácii a zdieľanom záväzku k dokonalosti."
+      },
+      "innovation": {
+        "title": "Neúnavná inovácia",
+        "description": "Zostávame pred rýchlo sa vyvíjajúcou technologickou krivkou, neustále skúmame novovznikajúce frameworky, metodológie a prelomové technológie. Integrujeme najmodernejšie AI schopnosti, experimentujeme s novými prístupmi, prispievame do open-source komunít a neustále zdokonaľujeme naše remeslo, aby sme dodávali zajtrajšie inovatívne riešenia dnes a zabezpečili, že váš produkt zostane konkurencieschopný po mnoho rokov."
+      }
+    }
+  },
+  "services": {
+    "title": "Naše služby",
+    "subtitle": "Komplexné služby vývoja softvéru navrhnuté na transformáciu vášho podnikania a poskytovanie výnimočných výsledkov",
+    "whatsIncluded": "Čo je zahrnuté",
+    "mobile": {
+      "title": "Vývoj mobilných aplikácií",
+      "description": "Premeňte svoje nápady na výkonné natívne mobilné aplikácie, ktoré používatelia milujú. Vytvárame vysoko výkonné iOS a Android aplikácie s intuitívnymi rozhraniami a bezproblémovou používateľskou skúsenosťou.",
+      "highlights": ["Rýchly výkon", "Natívny pocit", "Škálovateľná architektúra"],
+      "features": [
+        "Natívny iOS vývoj (Swift, SwiftUI)",
+        "Natívny Android vývoj (Kotlin, Jetpack Compose)",
+        "Cross-platform riešenia (React Native, Flutter)",
+        "Mobilný UI/UX dizajn a prototypovanie",
+        "Optimalizácia a nasadenie do App Store",
+        "Push notifikácie a real-time funkcie",
+        "Offline-first architektúra",
+        "In-app nákupy a monetizácia"
+      ]
+    },
+    "enterprise": {
+      "title": "Firemné & podnikové systémy",
+      "description": "Zefektívnite svoje obchodné operácie pomocou firemných riešení na mieru. Vytvárame výkonné systémy, ktoré automatizujú pracovné postupy, integrujú sa s existujúcimi nástrojmi a využívajú AI na zvýšenie produktivity.",
+      "highlights": ["Poháňané AI", "Plne integrované", "Bezpečné a kompatibilné"],
+      "features": [
+        "Vlastné CRM a ERP systémy",
+        "Automatizácia obchodných procesov",
+        "AI-poháňaná analytika a poznatky",
+        "Systémy riadenia pracovných postupov",
+        "Riešenia správy dokumentov",
+        "Integrácia s existujúcou infraštruktúrou",
+        "Riadenie prístupu podľa rolí",
+        "Real-time reportovanie a dashboardy"
+      ]
+    },
+    "web": {
+      "title": "Webové aplikácie",
+      "description": "Vytvárajte škálovateľné, bezpečné a bleskovo rýchle webové aplikácie, ktoré rastú s vaším podnikaním. Od SaaS platforiem po zložité portály dodávame moderné webové riešenia postavené na najmodernejších technológiách.",
+      "highlights": ["Cloud-natívne", "Vysoko škálovateľné", "Podnikovej úrovne"],
+      "features": [
+        "Progressive Web Apps (PWA)",
+        "Vývoj SaaS platforiem",
+        "Zákaznícke a administrátorské portály",
+        "Nástroje pre real-time spoluprácu",
+        "Vývoj a integrácia API",
+        "Nastavenie cloudovej infraštruktúry",
+        "Dizajn a optimalizácia databáz",
+        "Monitorovanie zabezpečenia a výkonu"
+      ]
+    },
+    "websites": {
+      "title": "Moderné webové stránky",
+      "description": "Vytvorte úžasnú online prítomnosť, ktorá konvertuje návštevníkov na zákazníkov. Navrhujeme a vyvíjame SEO optimalizované, rýchlo sa načítavajúce webové stránky, ktoré prezentujú vašu značku a podporujú rast podnikania.",
+      "highlights": ["SEO optimalizované", "Vysoká konverzia", "Bleskovo rýchle"],
+      "features": [
+        "Vlastný dizajn a vývoj webových stránok",
+        "SEO optimalizácia a stratégia",
+        "Optimalizácia výkonu (Core Web Vitals)",
+        "Mobilne responzívny dizajn",
+        "Systémy správy obsahu (CMS)",
+        "E-commerce riešenia",
+        "Analytika a sledovanie konverzií",
+        "Priebežná údržba a podpora"
+      ]
+    }
+  },
+  "contact": {
+    "title": "Vytvorme niečo výnimočné",
+    "subtitle": "Pripravení transformovať svoju víziu do reality? Skontaktujte sa s nami a porozprávajme sa o tom, ako môžeme pomôcť vytvoriť digitálne riešenie, ktoré prináša skutočný obchodný dopad.",
+    "getInTouch": "Napíšte nám",
+    "generalInquiries": "Všeobecné otázky",
+    "generalDesc": "Pre všeobecné otázky a obchodné poptávky",
+    "devTeam": "Vývojársky tím",
+    "devTeamDesc": "Technická podpora a vývojárske otázky",
+    "phone": "Telefón",
+    "phoneDesc": "Pon-Pia, 9:00 - 18:00 CET",
+    "ourLocation": "Naša lokácia",
+    "locationDesc": "Praha, Česká republika",
+    "locationNote": "Remote-first tím dostupný po celom svete",
+    "businessHours": "Pracovné hodiny",
+    "businessHoursDesc": "Pondelok - Piatok: 9:00 - 18:00",
+    "businessHoursNote": "CET/CEST (Pražský čas)",
+    "formTitle": "Začnite konverzáciu",
+    "formDesc": "Zdieľajte detaily svojho projektu nižšie a náš tím odpovie do 24 hodín s ďalšími krokmi.",
+    "name": "Meno",
+    "email": "Email",
+    "company": "Firma",
+    "country": "Krajina",
+    "phoneNumber": "Telefónne číslo",
+    "message": "Správa",
+    "messagePlaceholder": "Povedzte nám o vízii vášho projektu, cieľoch a čo by ste chceli vytvoriť...",
+    "sendMessage": "Odoslať správu",
+    "sending": "Odosiela sa...",
+    "copied": "Skopírované",
+    "copy": "Kopírovať"
+  },
+  "stack": {
+    "title": "Náš moderný stack",
+    "subtitle": "Najmodernejšie technológie a osvedčené metodológie, ktoré poháňajú výnimočné digitálne riešenia. Kombinujeme najlepšie nástroje s hlbokými znalosťami na vytváranie produktov, ktoré škálujú.",
+    "readyToBuild": "Pripravení vytvoriť niečo úžasné?",
+    "readyDesc": "Poďme prediskutovať, ako môže náš technologický stack oživiť vašu víziu. Pomôžeme vám vybrať správne nástroje a vytvoriť riešenie, ktoré prekročí očakávania.",
+    "getStarted": "Začnite ešte dnes",
+    "technologies": {
+      "solutionArchitecture": {
+        "title": "Architektúra riešení",
+        "description": "Navrhujeme komplexné riešenia prispôsobené vašim obchodným výzvam. Naši architekti analyzujú váš technologický ekosystém a vytvárajú škálovateľné, udržateľné systémy, ktoré sa vyvíjajú s vaším rastom.",
+        "features": [
+          "Technická analýza & strategické plánovanie",
+          "Vývoj proof of concept",
+          "Priebežné vlastníctvo architektúry",
+          "Optimalizácia škálovateľnosti a výkonu"
+        ]
+      },
+      "frontendDev": {
+        "title": "Frontend vývoj",
+        "description": "Vytvárajte moderné, responzívne používateľské rozhrania, ktoré používateľov uchvátia. Vytvárame výnimočné digitálne zážitky pomocou najmodernejších frameworkov, optimalizované pre výkon, prístupnosť a SEO na všetkých zariadeniach."
+      },
+      "backendDev": {
+        "title": "Backend vývoj",
+        "description": "Robustné, škálovateľné riešenia na strane servera, ktoré spracovávajú milióny požiadaviek s dobou odozvy pod sekundu. Vytvárame bezpečné backendy s RESTful API, GraphQL a mikroservisnými architektúrami."
+      },
+      "mobileApps": {
+        "title": "Mobilné aplikácie",
+        "description": "Natívne a cross-platform mobilné aplikácie, ktoré poskytujú výnimočné používateľské skúsenosti. Špecializujeme sa na iOS, Android a cross-platform riešenia s produkciou pripravenými šablónami pre rýchle nasadenie.",
+        "features": [
+          "Pripravené mobilné šablóny na nasadenie",
+          "Vlastný dizajn & branding",
+          "Rýchly time-to-market",
+          "Nákladovo efektívne riešenia"
+        ]
+      },
+      "aiIntegration": {
+        "title": "Integrácia AI",
+        "description": "Využite umelú inteligenciu na automatizáciu pracovných postupov a zlepšenie rozhodovania. Integrujeme najmodernejšiu AI od OpenAI, Google Gemini a Claude na odomknutie nových možností vášho podnikania."
+      },
+      "cloudInfra": {
+        "title": "Cloud & infraštruktúra",
+        "description": "Cloudová infraštruktúra podnikovej úrovne, ktorá škáluje s vaším podnikaním. Implementujeme robustné systémy s automatizovanými CI/CD pipelines, kontajnerizáciou, monitoringom a viacvrstvým zabezpečením."
+      },
+      "uxui": {
+        "title": "UX/UI dizajn",
+        "description": "Krásne, intuitívne rozhrania, ktoré používatelia milujú. Miešame estetickú dokonalosť s výskumom použiteľnosti na vytvorenie pixel-perfektných dizajnov, ktoré používateľov vedú prirodzene a podporujú zapojenie."
+      }
+    },
+    "categories": {
+      "architecture": {
+        "title": "Architektúra riešení",
+        "description": "Navrhujeme komplexné riešenia prispôsobené vašim obchodným výzvam. Naši architekti analyzujú váš technologický ekosystém a vytvárajú škálovateľné, udržateľné systémy, ktoré sa vyvíjajú s vaším rastom.",
+        "features": [
+          "Technická analýza & strategické plánovanie",
+          "Vývoj proof of concept",
+          "Priebežné vlastníctvo architektúry",
+          "Optimalizácia škálovateľnosti a výkonu"
+        ]
+      },
+      "frontendDev": {
+        "title": "Frontend vývoj",
+        "description": "Vytvárajte moderné, responzívne používateľské rozhrania, ktoré používateľov uchvátia. Vytvárame výnimočné digitálne zážitky pomocou najmodernejších frameworkov, optimalizované pre výkon, prístupnosť a SEO na všetkých zariadeniach."
+      },
+      "backendDev": {
+        "title": "Backend vývoj",
+        "description": "Robustné, škálovateľné riešenia na strane servera, ktoré spracovávajú milióny požiadaviek s dobou odozvy pod sekundu. Vytvárame bezpečné backendy s RESTful API, GraphQL a mikroservisnými architektúrami."
+      },
+      "mobileApps": {
+        "title": "Mobilné aplikácie",
+        "description": "Natívne a cross-platform mobilné aplikácie, ktoré poskytujú výnimočné používateľské skúsenosti. Špecializujeme sa na iOS, Android a cross-platform riešenia s produkciou pripravenými šablónami pre rýchle nasadenie.",
+        "features": [
+          "Pripravené mobilné šablóny na nasadenie",
+          "Vlastný dizajn & branding",
+          "Rýchly time-to-market",
+          "Nákladovo efektívne riešenia"
+        ]
+      },
+      "aiIntegration": {
+        "title": "Integrácia AI",
+        "description": "Využite umelú inteligenciu na automatizáciu pracovných postupov a zlepšenie rozhodovania. Integrujeme najmodernejšiu AI od OpenAI, Google Gemini a Claude na odomknutie nových možností vášho podnikania."
+      },
+      "cloudInfra": {
+        "title": "Cloud & infraštruktúra",
+        "description": "Cloudová infraštruktúra podnikovej úrovne, ktorá škáluje s vaším podnikaním. Implementujeme robustné systémy s automatizovanými CI/CD pipelines, kontajnerizáciou, monitoringom a viacvrstvým zabezpečením."
+      },
+      "uxui": {
+        "title": "UX/UI dizajn",
+        "description": "Krásne, intuitívne rozhrania, ktoré používatelia milujú. Miešame estetickú dokonalosť s výskumom použiteľnosti na vytvorenie pixel-perfektných dizajnov, ktoré používateľov vedú prirodzene a podporujú zapojenie."
+      }
+    }
+  },
+  "products": {
+    "badge": "Naše produkty",
+    "title": "Aplikácie, ktoré sme vytvorili pre vás",
+    "subtitle": "Objavte našu radu inovatívnych aplikácií navrhnutých na zjednodušenie vášho každodenného života. Vytvorené s vášňou, presnosťou a používateľskou skúsenosťou v jadre.",
+    "comingSoon": "Ďalšie úžasné aplikácie už čoskoro...",
+    "stayTuned": "Sledujte aktualizácie o našich najnovších inováciách",
+    "pillsee": {
+      "name": "Pillsee",
+      "tagline": "Váš osobný asistent pre lieky",
+      "description": "Pillsee je inovatívna aplikácia na skenovanie a správu liekov, ktorá revolucionalizuje spôsob, akým sledujete a spravujete svoje recepty bez námahy. Jednoducho naskenujte štítky liekov pomocou pokročilého optického rozpoznávania znakov poháňaného AI pre okamžitý prístup ku komplexným informáciám o liekoch vrátane pokynov na dávkovanie, možných vedľajších účinkov a dôležitých varovaní. Nastavte si inteligentné pripomienky, ktoré sa prispôsobia vášmu rozvrhu a zabezpečte, že nikdy nezmeškáte užitie lieku vo správny čas. Sledujte históriu liekov v čase, monitorujte vzorce dodržiavania, dostávajte upozornenia na potenciálne liekové interakcie pri pridávaní nových receptov a zdieľajte podrobné správy so svojimi poskytovateľmi zdravotnej starostlivosti. S intuitívnym rozhraním navrhnutým pre všetky vekové kategórie a bezproblémovou synchronizáciou naprieč všetkými vašimi zariadeniami sa Pillsee stáva vaším dôveryhodným spoločníkom pre udržanie súladu s liekmi a prevzatie kontroly nad vašou zdravotnou cestou.",
+      "available": "Dostupné",
+      "keyFeatures": "Kľúčové funkcie",
+      "features": [
+        "AI-poháňané rozpoznávanie liekov",
+        "Inteligentné pripomienky dávkovania",
+        "Varovania pred liekovými interakciami",
+        "Sledovanie histórie receptov"
+      ],
+      "website": "Webová stránka",
+      "appStore": "App Store",
+      "googlePlay": "Google Play"
+    }
+  },
+  "servicesPreview": {
+    "title": "Čo vytvárame pre vaše podnikanie",
+    "subtitle": "Komplexné služby vývoja softvéru prispôsobené vašim jedinečným potrebám",
+    "mobileDesc": "Natívne iOS a Android aplikácie s bezproblémovým výkonom.",
+    "enterpriseDesc": "Vlastná automatizácia podnikania a AI-poháňané riešenia.",
+    "webDesc": "Škálovateľné SaaS platformy vytvorené pre rýchlosť a bezpečnosť.",
+    "websitesDesc": "SEO optimalizované, vysokokonverzné webové stránky.",
+    "exploreAll": "Preskúmať všetky služby"
+  },
+  "collaboration": {
+    "title": "Ako spoločne pracujeme",
+    "subtitle": "Od prvej poptávky po finálne dodanie a dlhodobú podporu—transparentný proces, kde máte úplnú viditeľnosť a kontrolu v každej fáze.",
+    "note": "Presný proces sa môže líšiť v závislosti od vašich konkrétnych požiadaviek a rozsahu projektu.",
+    "afterLaunch": "Čo sa stane po spustení?",
+    "afterLaunchDesc": "Vývoj aplikácií je živý proces. Po nasadení začínajú používatelia pracovať s vaším riešením, objavujú sa nové nápady, funkcie sa vyvíjajú a optimalizácie odomykajú nové príležitosti pre rast a inovácie.",
+    "longTerm": "Preto sme tu na dlhú dobu—ponúkame priebežnú podporu, strategické rozširovanie funkcií a neustále vylepšovanie. Vaša aplikácia sa môže neustále vyvíjať a škálovať spolu s vaším podnikaním, prispôsobovať sa novým výzvam a príležitostiam, ako sa objavujú.",
+    "steps": {
+      "inquiry": {
+        "number": "01",
+        "title": "Úvodný dotaz – bez záväzku",
+        "description": "Zdieľajte svoju projektovú víziu prostredníctvom nášho kontaktného formulára alebo rýchleho hovoru. Odpovieme premyslenými otázkami a postrehmi—žiadne záväzky, žiadny tlak, len skúmanie možností a určovanie vhodnosti."
+      },
+      "discovery": {
+        "number": "02",
+        "title": "Objavná schôdzka – porozumenie vašej vízii",
+        "description": "Stretneme sa online alebo osobne, aby sme sa ponorili hlboko do vašich cieľov, cieľového publika a požadovaných výsledkov. Spoločne objasníme priority, identifikujeme výzvy a odporučíme strategické riešenia prispôsobené vašim potrebám."
+      },
+      "proposal": {
+        "number": "03",
+        "title": "Profesionálny návrh & dizajn riešenia",
+        "description": "Obdržíte podrobnú technickú architektúru, UI/UX mockupy, odporúčanie technologického stacku a transparentný návrh s jasnou cenou a časovým harmonogramom. Všetko je jasné bez akýchkoľvek prekvapení."
+      },
+      "kickoff": {
+        "number": "04",
+        "title": "Schválenie & oficiálne zahájenie vývoja",
+        "description": "Po schválení začneme pracovať s vývojárskou mapou, sprintovými fázami a nástrojmi pre riadenie projektov. Získate viditeľnosť v reálnom čase do toho, čo vytvárame a prečo—pri každom kroku."
+      },
+      "prototype": {
+        "number": "05",
+        "title": "Prvý prototyp – spoločné zdokonaľovanie",
+        "description": "Dodáme funkčný prototyp, ktorý oživí vašu víziu. Prostredníctvom kontrolných seancí a spätnej väzby zdokonaľujeme interakcie a funkcie, aby sme zabezpečili, že finálny produkt prekročí očakávania."
+      },
+      "delivery": {
+        "number": "06",
+        "title": "Finálne dodanie – vaše riešenie je spustené",
+        "description": "Obdržíte produkčne pripravené riešenie testované naprieč zariadeniami a prehliadačmi. Poskytujeme prevodné sekcie, dokumentáciu a v prípade potreby nastavíme hosting, zmluvy o podpore a integrácie pre dlhodobý úspech."
+      }
+    }
+  },
+  "whyChooseUs": {
+    "title": "Prečo zvoliť Jabcore?",
+    "subtitle": "Kombinujeme technickú excelenciu so skutočným partnerstvom a poskytujeme riešenia, ktoré nielen spĺňajú očakávania—ale ich prekračujú. Toto nás odlišuje od ostatných.",
+    "reasons": {
+      "speed": {
+        "title": "Bleskovo rýchle dodanie",
+        "description": "Funkčné prototypy počas týždňov, nie mesiacov. Tu začína vaša výhoda v čase uvedenia na trh."
+      },
+      "security": {
+        "title": "Bezpečnosť podnikovej úrovne",
+        "description": "Bezpečnosť zabudovaná v každom riadku kódu. Kompatibilné s GDPR, certifikované OWASP, plne chránené."
+      },
+      "scalability": {
+        "title": "Nekonečná škálovateľnosť",
+        "description": "Postavené pre rast od 100 do 100 miliónov používateľov. Cloud-natívna architektúra, ktorá sa škáluje bez námahy."
+      },
+      "code": {
+        "title": "Čistý, udržateľný kód",
+        "description": "Kód, ktorý sa stáva cenným aktívom, nie technickým dlhom. Zdokumentovaný, testovaný a pripravený na vývoj."
+      },
+      "design": {
+        "title": "Dizajn zameraný na používateľa",
+        "description": "Krásne, intuitívne rozhrania, ktoré používatelia milujú. Každá interakcia navrhnutá pre potešenie."
+      },
+      "support": {
+        "title": "Dedikovaná podpora",
+        "description": "Nezmiznem po spustení. Proaktívne monitorovanie, rýchle opravy, dlhodobé partnerstvo."
+      },
+      "communication": {
+        "title": "Transparentná komunikácia",
+        "description": "Denné aktualizácie, týždenné demá, dashboardy v reálnom čase. Vždy viete presne, kde váš projekt stojí."
+      }
+    }
+  },
+  "techStack": {
+    "title": "Náš technologický stack",
+    "subtitle": "Využívame najpokročilejšie, moderné technológie na vytváranie riešení, ktoré sú rýchle, škálovateľné a pripravené do budúcnosti. Naša odbornosť pokrýva celý ekosystém vývoja—od frontendu po backend, mobilného po cloud a všetko medzi tým.",
+    "notSeeingYourTech": "Nevidíte váš preferovaný technologický stack?",
+    "notSeeingDesc": "Vždy sa učíme a adaptujeme. Ak máte konkrétne technologické požiadavky alebo preferencie, vyhodnotíme ich a integrujeme najlepšie nástroje pre jedinečné potreby vášho projektu. Náš záväzok je k správnemu riešeniu, nie len k známemu.",
+    "categories": {
+      "frontend": {
+        "title": "Frontend technológie",
+        "description": "Vytváranie krásnych, responzívnych a výkonných používateľských rozhraní"
+      },
+      "backend": {
+        "title": "Backend a API",
+        "description": "Robustná architektúra na strane servera a škálovateľný vývoj API"
+      },
+      "mobile": {
+        "title": "Mobilný vývoj",
+        "description": "Natívne a cross-platform mobilné aplikácie"
+      },
+      "cloud": {
+        "title": "Cloud a DevOps",
+        "description": "Škálovateľná infraštruktúra a kontinuálne dodávanie"
+      },
+      "ai": {
+        "title": "AI a strojové učenie",
+        "description": "Inteligentné funkcie poháňané najmodernejšou AI"
+      },
+      "design": {
+        "title": "Dizajn a prototypovanie",
+        "description": "Dizajn zameraný na používateľa a vizuálna excelencia"
+      }
+    }
+  },
+  "cta": {
+    "badge": "Pripravení začať?",
+    "title": "Vytvorme spolu niečo úžasné",
+    "description": "Či ste startup s prelomovým nápadom, podnik, ktorý chce modernizovať svoje systémy, alebo kdekoľvek medzi tým—sme tu na to, aby sme transformovali vašu víziu do silnej digitálnej reality. Porozprávajme sa o tom, čo je možné.",
+    "startProject": "Začnite svoj projekt",
+    "exploreServices": "Preskúmať naše služby",
+    "note": "Bez záväzku • Bezplatná úvodná konzultácia • Rýchly čas odozvy"
+  },
+  "footer": {
+    "description": "Premium vývoj softvéru s integráciou AI. Budovanie produktov digitálnej svetovej triedy, ktoré transformujú podniky.",
+    "quickLinks": "Rýchle odkazy",
+    "contactUs": "Kontaktujte nás",
+    "copyright": "Všetky práva vyhradené. Vytvorené s presnosťou a vášňou."
+  }
+}

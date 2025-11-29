@@ -2,74 +2,76 @@ import { motion, useInView } from 'framer-motion'
 import { useRef } from 'react'
 import { Card, CardContent } from '@/components/ui/card'
 import TechIcon from '@/components/TechIcon'
-
-const techCategories = [
-  {
-    title: 'Frontend Technologies',
-    description: 'Creating beautiful, responsive, and performant user interfaces',
-    technologies: [
-      'React',
-      'TypeScript',
-      'JavaScript',
-      'Vue.js',
-    ],
-  },
-  {
-    title: 'Backend & APIs',
-    description: 'Robust server-side architecture and scalable API development',
-    technologies: [
-      'Node.js',
-      'Python',
-      'C#',
-    ],
-  },
-  {
-    title: 'Mobile Development',
-    description: 'Native and cross-platform mobile applications',
-    technologies: [
-      'React',
-      'Swift',
-      'Kotlin',
-      'iOS',
-      'Android',
-      'Capacitor JS',
-    ],
-  },
-  {
-    title: 'Cloud & DevOps',
-    description: 'Scalable infrastructure and continuous delivery',
-    technologies: [
-      'Azure',
-      'Docker',
-      'Git',
-      'CI/CD',
-      'Ubuntu Server',
-    ],
-  },
-  {
-    title: 'AI & Machine Learning',
-    description: 'Intelligent features powered by cutting-edge AI',
-    technologies: [
-      'OpenAI',
-      'Gemini',
-      'Claude',
-    ],
-  },
-  {
-    title: 'Design & Prototyping',
-    description: 'User-centered design and visual excellence',
-    technologies: [
-      'Figma',
-      'Web Design',
-      'Prototyping',
-      'User Testing',
-    ],
-  },
-]
+import { useTranslation } from 'react-i18next'
 
 export default function TechStack() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: '-100px' })
+  const { t } = useTranslation()
+
+  const techCategories = [
+    {
+      title: t('techStack.categories.frontend.title'),
+      description: t('techStack.categories.frontend.description'),
+      technologies: [
+        'React',
+        'TypeScript',
+        'JavaScript',
+        'Vue.js',
+      ],
+    },
+    {
+      title: t('techStack.categories.backend.title'),
+      description: t('techStack.categories.backend.description'),
+      technologies: [
+        'Node.js',
+        'Python',
+        'C#',
+      ],
+    },
+    {
+      title: t('techStack.categories.mobile.title'),
+      description: t('techStack.categories.mobile.description'),
+      technologies: [
+        'React',
+        'Swift',
+        'Kotlin',
+        'iOS',
+        'Android',
+        'Capacitor JS',
+      ],
+    },
+    {
+      title: t('techStack.categories.cloud.title'),
+      description: t('techStack.categories.cloud.description'),
+      technologies: [
+        'Azure',
+        'Docker',
+        'Git',
+        'CI/CD',
+        'Ubuntu Server',
+      ],
+    },
+    {
+      title: t('techStack.categories.ai.title'),
+      description: t('techStack.categories.ai.description'),
+      technologies: [
+        'OpenAI',
+        'Gemini',
+        'Claude',
+      ],
+    },
+    {
+      title: t('techStack.categories.design.title'),
+      description: t('techStack.categories.design.description'),
+      technologies: [
+        'Figma',
+        'Web Design',
+        'Prototyping',
+        'User Testing',
+      ],
+    },
+  ]
 
   return (
     <section ref={ref} className="py-24 sm:py-32 bg-secondary/30">
@@ -81,11 +83,10 @@ export default function TechStack() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl sm:text-5xl font-bold mb-6" style={{ fontFamily: 'var(--font-display)' }}>
-            Our Technology Stack
+            {t('techStack.title')}
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            We leverage the most powerful, modern technologies to build solutions that are fast, scalable, and future-proof. 
-            Our expertise spans the entire development ecosystem—from frontend to backend, mobile to cloud, and everything in between.
+            {t('techStack.subtitle')}
           </p>
         </motion.div>
 
@@ -130,10 +131,7 @@ export default function TechStack() {
         >
           <Card className="p-8 bg-gradient-to-br from-primary/5 via-accent/5 to-primary/5 border-2 max-w-4xl mx-auto">
             <p className="text-lg text-muted-foreground leading-relaxed">
-              <span className="text-foreground font-semibold">Not seeing your preferred tech stack?</span> We're 
-              always learning and adapting. If you have specific technology requirements or preferences, we'll evaluate 
-              them and integrate the best tools for your project's unique needs. Our commitment is to the right solution, 
-              not just the familiar one.
+              <span className="text-foreground font-semibold">{t('techStack.notSeeingYourTech')}</span> {t('techStack.notSeeingDesc')}
             </p>
           </Card>
         </motion.div>

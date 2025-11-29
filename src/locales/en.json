@@ -1,0 +1,395 @@
+{
+  "navigation": {
+    "home": "Home",
+    "services": "Services",
+    "products": "Products",
+    "stack": "Stack",
+    "about": "About",
+    "contact": "Contact",
+    "followUs": "Follow us"
+  },
+  "hero": {
+    "badge": "Fast. Reliable. Affordable.",
+    "title": "Jabcore",
+    "subtitle": "The core of your new app.",
+    "description": "Digital products built for growth.",
+    "getInTouch": "Get in Touch",
+    "viewServices": "View Our Services",
+    "features": {
+      "mobileWeb": "Mobile & Web Apps",
+      "ai": "AI Integration",
+      "enterprise": "Enterprise Solutions",
+      "cloud": "Cloud Architecture"
+    }
+  },
+  "about": {
+    "title": "Who We Are",
+    "intro1": "Jabcore is where innovation meets execution.",
+    "intro1Content": "We're a lean software development team of three passionate engineers specializing in building world-class digital products for businesses of all sizes. From ambitious startups to established enterprises, we deliver solutions that drive exponential growth, streamline complex operations, and create lasting competitive advantages in rapidly evolving markets.",
+    "intro2": "Our development philosophy is simple:",
+    "intro2Bold": "build it right, build it once.",
+    "intro2Content": "We combine cutting-edge technology with battle-tested engineering practices to create software that's not just functional, but maintainable, infinitely scalable, and future-proof. We don't just write code—we architect elegant solutions that stand the test of time and adapt to your evolving needs.",
+    "intro3": "We're a team of three—no managers, no overhead.",
+    "intro3Content": "This lean structure means every member is deeply involved in your project from start to finish, and you get direct access to the people actually building your product. More importantly, it allows us to offer",
+    "intro3Pricing": "highly competitive pricing",
+    "intro3End": "without compromising on quality. You're paying for exceptional engineering talent, not corporate bureaucracy.",
+    "intro4": "Beyond client work, we cultivate a culture of relentless learning and fearless experimentation. Our team stays on the bleeding edge of technology, regularly contributing to open source projects, and building our own innovative products. We integrate AI capabilities across our solutions to automate workflows, enhance user experiences, and unlock intelligent insights. This commitment to innovation ensures that every project benefits from the latest breakthrough ideas and proven best practices.",
+    "valuesTitle": "Our Values",
+    "values": {
+      "mission": {
+        "title": "Mission-Driven Excellence",
+        "description": "We exist to transform ambitious ideas and visionary concepts into exceptional digital products that create measurable business value, drive meaningful user engagement, and generate lasting impact in competitive markets. Every project we undertake is guided by a relentless pursuit of excellence and a commitment to delivering outcomes that exceed expectations."
+      },
+      "quality": {
+        "title": "Uncompromising Quality",
+        "description": "Every single line of code, every carefully considered pixel, every thoughtfully designed interaction is crafted with obsessive attention to detail, architectural elegance, and long-term maintainability. We believe quality is not just about avoiding bugs—it's about building software that is intuitive, performant, secure, scalable, and genuinely delightful to use."
+      },
+      "partnership": {
+        "title": "True Partnership",
+        "description": "Your success is fundamentally our success. We work as a seamless, collaborative extension of your team, fully invested in understanding your unique challenges, achieving your strategic vision, and celebrating your victories. We build lasting relationships based on transparency, trust, open communication, and shared commitment to excellence."
+      },
+      "innovation": {
+        "title": "Relentless Innovation",
+        "description": "We stay ahead of the rapidly evolving technology curve, constantly exploring emerging frameworks, methodologies, and breakthrough technologies. We integrate cutting-edge AI capabilities, experiment with novel approaches, contribute to open-source communities, and continuously refine our craft to deliver tomorrow's innovative solutions today, ensuring your product remains competitive for years to come."
+      }
+    }
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "End-to-end software development services designed to transform your business and deliver exceptional results",
+    "whatsIncluded": "What's Included",
+    "mobile": {
+      "title": "Mobile App Development",
+      "description": "Transform your ideas into powerful native mobile applications that users love. We build high-performance iOS and Android apps with intuitive interfaces and seamless user experiences.",
+      "highlights": ["Fast Performance", "Native Feel", "Scalable Architecture"],
+      "features": [
+        "Native iOS development (Swift, SwiftUI)",
+        "Native Android development (Kotlin, Jetpack Compose)",
+        "Cross-platform solutions (React Native, Flutter)",
+        "Mobile UI/UX design and prototyping",
+        "App Store optimization and deployment",
+        "Push notifications and real-time features",
+        "Offline-first architecture",
+        "In-app purchases and monetization"
+      ]
+    },
+    "enterprise": {
+      "title": "Corporate & Enterprise Systems",
+      "description": "Streamline your business operations with custom-built enterprise solutions. We create powerful systems that automate workflows, integrate with existing tools, and leverage AI to boost productivity.",
+      "highlights": ["AI-Powered", "Fully Integrated", "Secure & Compliant"],
+      "features": [
+        "Custom CRM and ERP systems",
+        "Business process automation",
+        "AI-powered analytics and insights",
+        "Workflow management systems",
+        "Document management solutions",
+        "Integration with existing infrastructure",
+        "Role-based access control",
+        "Real-time reporting and dashboards"
+      ]
+    },
+    "web": {
+      "title": "Web Applications",
+      "description": "Build scalable, secure, and lightning-fast web applications that grow with your business. From SaaS platforms to complex portals, we deliver modern web solutions built on cutting-edge technologies.",
+      "highlights": ["Cloud-Native", "Highly Scalable", "Enterprise-Grade"],
+      "features": [
+        "Progressive Web Apps (PWA)",
+        "SaaS platform development",
+        "Customer and admin portals",
+        "Real-time collaboration tools",
+        "API development and integration",
+        "Cloud infrastructure setup",
+        "Database design and optimization",
+        "Security and performance monitoring"
+      ]
+    },
+    "websites": {
+      "title": "Modern Websites",
+      "description": "Create a stunning online presence that converts visitors into customers. We design and develop SEO-optimized, fast-loading websites that showcase your brand and drive business growth.",
+      "highlights": ["SEO-Optimized", "High Converting", "Lightning Fast"],
+      "features": [
+        "Custom website design and development",
+        "SEO optimization and strategy",
+        "Performance optimization (Core Web Vitals)",
+        "Mobile-responsive design",
+        "Content management systems (CMS)",
+        "E-commerce solutions",
+        "Analytics and conversion tracking",
+        "Ongoing maintenance and support"
+      ]
+    }
+  },
+  "stack": {
+    "title": "Our Modern Stack",
+    "subtitle": "Cutting-edge technologies and proven methodologies that power exceptional digital solutions. We combine the best tools with deep expertise to build products that scale.",
+    "readyToBuild": "Ready to Build Something Amazing?",
+    "readyDesc": "Let's discuss how our technology stack can bring your vision to life. We'll help you choose the right tools and build a solution that exceeds expectations.",
+    "getStarted": "Get Started Today",
+    "technologies": {
+      "solutionArchitecture": {
+        "title": "Solution Architecture",
+        "description": "We design comprehensive solutions tailored to your business challenges. Our architects analyze your technology ecosystem to craft scalable, maintainable systems that evolve with your growth.",
+        "features": [
+          "Technical analysis & strategic planning",
+          "Proof of concept development",
+          "Continuous architecture ownership",
+          "Scalability & performance optimization"
+        ]
+      },
+      "frontendDev": {
+        "title": "Frontend Development",
+        "description": "Build modern, responsive user interfaces that captivate users. We create exceptional digital experiences using cutting-edge frameworks, optimized for performance, accessibility, and SEO across all devices."
+      },
+      "backendDev": {
+        "title": "Backend Development",
+        "description": "Robust, scalable server-side solutions that handle millions of requests with sub-second response times. We build secure backends with RESTful APIs, GraphQL, and microservices architectures."
+      },
+      "mobileApps": {
+        "title": "Mobile Applications",
+        "description": "Native and cross-platform mobile apps that deliver exceptional user experiences. We specialize in iOS, Android, and cross-platform solutions with production-ready templates for fast deployment.",
+        "features": [
+          "Ready-to-deploy mobile templates",
+          "Custom design & branding",
+          "Fast time-to-market",
+          "Cost-effective solutions"
+        ]
+      },
+      "aiIntegration": {
+        "title": "AI Integration",
+        "description": "Harness artificial intelligence to automate workflows and enhance decision-making. We integrate cutting-edge AI from OpenAI, Google Gemini, and Claude to unlock new possibilities for your business."
+      },
+      "cloudInfra": {
+        "title": "Cloud & Infrastructure",
+        "description": "Enterprise-grade cloud infrastructure that scales with your business. We implement robust systems with automated CI/CD pipelines, containerization, monitoring, and multi-layered security."
+      },
+      "uxui": {
+        "title": "UX/UI Design",
+        "description": "Beautiful, intuitive interfaces that users love. We blend aesthetic excellence with usability research to create pixel-perfect designs that guide users naturally and drive engagement."
+      }
+    },
+    "categories": {
+      "architecture": {
+        "title": "Solution Architecture",
+        "description": "We design comprehensive solutions tailored to your business challenges. Our architects analyze your technology ecosystem to craft scalable, maintainable systems that evolve with your growth.",
+        "features": [
+          "Technical analysis & strategic planning",
+          "Proof of concept development",
+          "Continuous architecture ownership",
+          "Scalability & performance optimization"
+        ]
+      },
+      "frontendDev": {
+        "title": "Frontend Development",
+        "description": "Build modern, responsive user interfaces that captivate users. We create exceptional digital experiences using cutting-edge frameworks, optimized for performance, accessibility, and SEO across all devices."
+      },
+      "backendDev": {
+        "title": "Backend Development",
+        "description": "Robust, scalable server-side solutions that handle millions of requests with sub-second response times. We build secure backends with RESTful APIs, GraphQL, and microservices architectures."
+      },
+      "mobileApps": {
+        "title": "Mobile Applications",
+        "description": "Native and cross-platform mobile apps that deliver exceptional user experiences. We specialize in iOS, Android, and cross-platform solutions with production-ready templates for fast deployment.",
+        "features": [
+          "Ready-to-deploy mobile templates",
+          "Custom design & branding",
+          "Fast time-to-market",
+          "Cost-effective solutions"
+        ]
+      },
+      "aiIntegration": {
+        "title": "AI Integration",
+        "description": "Harness artificial intelligence to automate workflows and enhance decision-making. We integrate cutting-edge AI from OpenAI, Google Gemini, and Claude to unlock new possibilities for your business."
+      },
+      "cloudInfra": {
+        "title": "Cloud & Infrastructure",
+        "description": "Enterprise-grade cloud infrastructure that scales with your business. We implement robust systems with automated CI/CD pipelines, containerization, monitoring, and multi-layered security."
+      },
+      "uxui": {
+        "title": "UX/UI Design",
+        "description": "Beautiful, intuitive interfaces that users love. We blend aesthetic excellence with usability research to create pixel-perfect designs that guide users naturally and drive engagement."
+      }
+    }
+  },
+  "products": {
+    "badge": "Our Products",
+    "title": "Apps We've Built For You",
+    "subtitle": "Discover our suite of innovative applications designed to simplify your daily life. Built with passion, precision, and user experience at the core.",
+    "comingSoon": "More amazing apps coming soon...",
+    "stayTuned": "Stay tuned for updates on our latest innovations",
+    "pillsee": {
+      "name": "Pillsee",
+      "tagline": "Your Personal Medication Assistant",
+      "description": "Pillsee is an innovative medication scanning and management application that revolutionizes how you track and manage your prescriptions effortlessly. Simply scan your medication labels using advanced AI-powered optical character recognition to instantly access comprehensive medication information including dosage instructions, potential side effects, and important warnings. Set intelligent reminders that adapt to your schedule and ensure you never miss taking your medicine at the right time. Track your medication history over time, monitor adherence patterns, receive alerts for potential drug interactions when adding new prescriptions, and share detailed reports with your healthcare providers. With an intuitive interface designed for all ages and seamless synchronization across all your devices, Pillsee becomes your trusted companion for maintaining medication compliance and taking control of your health journey.",
+      "available": "Available",
+      "keyFeatures": "Key Features",
+      "features": [
+        "AI-powered medication recognition",
+        "Smart dosage reminders",
+        "Drug interaction warnings",
+        "Prescription history tracking"
+      ],
+      "website": "Website",
+      "appStore": "App Store",
+      "googlePlay": "Google Play"
+    }
+  },
+  "servicesPreview": {
+    "title": "What We Build for Your Business",
+    "subtitle": "Comprehensive software development services tailored to your unique needs",
+    "mobileDesc": "Native iOS and Android apps with seamless performance.",
+    "enterpriseDesc": "Custom business automation and AI-powered solutions.",
+    "webDesc": "Scalable SaaS platforms built for speed and security.",
+    "websitesDesc": "SEO-optimized, high-converting websites.",
+    "exploreAll": "Explore All Services"
+  },
+  "collaboration": {
+    "title": "How We Work Together",
+    "subtitle": "From initial inquiry to final delivery and long-term support—a transparent process where you maintain complete visibility and control at every stage.",
+    "note": "The exact process may vary depending on your specific project requirements and scope.",
+    "afterLaunch": "What Happens After Launch?",
+    "afterLaunchDesc": "Application development is a living process. After deployment, users start engaging with your solution, new ideas emerge, features evolve, and optimizations unlock new opportunities for growth and innovation.",
+    "longTerm": "That's why we're here for the long haul—offering continuous support, strategic feature expansion, and ongoing enhancement. Your application can constantly evolve and scale alongside your business, adapting to new challenges and opportunities as they arise.",
+    "steps": {
+      "inquiry": {
+        "number": "01",
+        "title": "Initial Inquiry – No Commitment Required",
+        "description": "Share your project vision through our contact form or a quick call. We'll respond with thoughtful questions and insights—no obligations, no pressure, just exploring possibilities and determining fit."
+      },
+      "discovery": {
+        "number": "02",
+        "title": "Discovery Meeting – Understanding Your Vision",
+        "description": "We meet online or in person to dive deep into your goals, target audience, and desired outcomes. Together, we clarify priorities, identify challenges, and recommend strategic solutions tailored to your needs."
+      },
+      "proposal": {
+        "number": "03",
+        "title": "Professional Proposal & Solution Design",
+        "description": "You receive a detailed technical architecture, UI/UX mockups, technology stack recommendation, and transparent proposal with clear pricing and timeline. Everything is clear with zero surprises."
+      },
+      "kickoff": {
+        "number": "04",
+        "title": "Approval & Official Development Kickoff",
+        "description": "Once approved, we hit the ground running with a development roadmap, sprint phases, and project management tools. You get real-time visibility into what we're building and why—at every step."
+      },
+      "prototype": {
+        "number": "05",
+        "title": "First Prototype – Collaborative Refinement",
+        "description": "We deliver a functional prototype that brings your vision to life. Through review sessions and feedback, we refine interactions and features to ensure the final product exceeds expectations."
+      },
+      "delivery": {
+        "number": "06",
+        "title": "Final Delivery – Your Solution Goes Live",
+        "description": "You receive a production-ready solution tested across devices and browsers. We provide walkthrough sessions, documentation, and if needed, set up hosting, support agreements, and integrations for long-term success."
+      }
+    }
+  },
+  "whyChooseUs": {
+    "title": "Why Choose Jabcore?",
+    "subtitle": "We combine technical excellence with genuine partnership to deliver solutions that don't just meet expectations—they exceed them. Here's what sets us apart from the rest.",
+    "reasons": {
+      "speed": {
+        "title": "Lightning-Fast Delivery",
+        "description": "Working prototypes in weeks, not months. Your time-to-market advantage starts here."
+      },
+      "security": {
+        "title": "Enterprise-Grade Security",
+        "description": "Security built into every line of code. GDPR compliant, OWASP certified, fully protected."
+      },
+      "scalability": {
+        "title": "Infinite Scalability",
+        "description": "Built to grow from 100 to 100 million users. Cloud-native architecture that scales effortlessly."
+      },
+      "code": {
+        "title": "Clean, Maintainable Code",
+        "description": "Code that becomes a valuable asset, not technical debt. Documented, tested, and ready to evolve."
+      },
+      "design": {
+        "title": "User-Centered Design",
+        "description": "Beautiful, intuitive interfaces that users love. Every interaction designed for delight."
+      },
+      "support": {
+        "title": "Dedicated Support",
+        "description": "We don't disappear after launch. Proactive monitoring, rapid fixes, long-term partnership."
+      },
+      "communication": {
+        "title": "Transparent Communication",
+        "description": "Daily updates, weekly demos, real-time dashboards. Always know exactly where your project stands."
+      }
+    }
+  },
+  "techStack": {
+    "title": "Our Technology Stack",
+    "subtitle": "We leverage the most powerful, modern technologies to build solutions that are fast, scalable, and future-proof. Our expertise spans the entire development ecosystem—from frontend to backend, mobile to cloud, and everything in between.",
+    "notSeeingYourTech": "Not seeing your preferred tech stack?",
+    "notSeeingDesc": "We're always learning and adapting. If you have specific technology requirements or preferences, we'll evaluate them and integrate the best tools for your project's unique needs. Our commitment is to the right solution, not just the familiar one.",
+    "categories": {
+      "frontend": {
+        "title": "Frontend Technologies",
+        "description": "Creating beautiful, responsive, and performant user interfaces"
+      },
+      "backend": {
+        "title": "Backend & APIs",
+        "description": "Robust server-side architecture and scalable API development"
+      },
+      "mobile": {
+        "title": "Mobile Development",
+        "description": "Native and cross-platform mobile applications"
+      },
+      "cloud": {
+        "title": "Cloud & DevOps",
+        "description": "Scalable infrastructure and continuous delivery"
+      },
+      "ai": {
+        "title": "AI & Machine Learning",
+        "description": "Intelligent features powered by cutting-edge AI"
+      },
+      "design": {
+        "title": "Design & Prototyping",
+        "description": "User-centered design and visual excellence"
+      }
+    }
+  },
+  "cta": {
+    "badge": "Ready to Get Started?",
+    "title": "Let's Build Something Amazing Together",
+    "description": "Whether you're a startup with a groundbreaking idea, an enterprise seeking to modernize your systems, or anywhere in between—we're here to transform your vision into a powerful digital reality. Let's have a conversation about what's possible.",
+    "startProject": "Start Your Project",
+    "exploreServices": "Explore Our Services",
+    "note": "No commitment required • Free initial consultation • Fast response time"
+  },
+  "contact": {
+    "title": "Let's Build Something Extraordinary",
+    "subtitle": "Ready to transform your vision into reality? Get in touch and let's discuss how we can help create a digital solution that drives real business impact.",
+    "getInTouch": "Get in Touch",
+    "generalInquiries": "General Inquiries",
+    "generalDesc": "For general questions and business inquiries",
+    "devTeam": "Development Team",
+    "devTeamDesc": "Technical support and development questions",
+    "phone": "Phone",
+    "phoneDesc": "Mon-Fri, 9:00 AM - 6:00 PM CET",
+    "ourLocation": "Our Location",
+    "locationDesc": "Prague, Czech Republic",
+    "locationNote": "Remote-first team available worldwide",
+    "businessHours": "Business Hours",
+    "businessHoursDesc": "Monday - Friday: 9:00 AM - 6:00 PM",
+    "businessHoursNote": "CET/CEST (Prague Time)",
+    "formTitle": "Start the Conversation",
+    "formDesc": "Share your project details below and our team will respond within 24 hours with next steps.",
+    "name": "Name",
+    "email": "Email",
+    "company": "Company",
+    "country": "Country",
+    "phoneNumber": "Phone Number",
+    "message": "Message",
+    "messagePlaceholder": "Tell us about your project vision, goals, and what you'd like to build...",
+    "sendMessage": "Send Message",
+    "sending": "Sending...",
+    "copied": "Copied",
+    "copy": "Copy"
+  },
+  "footer": {
+    "description": "Premium software development with AI integration. Building world-class digital products that transform businesses.",
+    "quickLinks": "Quick Links",
+    "contactUs": "Contact Us",
+    "copyright": "All rights reserved. Engineered with precision and passion."
+  }
+}

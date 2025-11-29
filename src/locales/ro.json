@@ -1,0 +1,395 @@
+{
+  "navigation": {
+    "home": "Acasă",
+    "services": "Servicii",
+    "products": "Produse",
+    "stack": "Tehnologii",
+    "about": "Despre noi",
+    "contact": "Contact",
+    "followUs": "Urmărește-ne"
+  },
+  "hero": {
+    "badge": "Rapid. De încredere. Accesibil.",
+    "title": "Jabcore",
+    "subtitle": "Nucleul noii tale aplicații.",
+    "description": "Produse digitale construite pentru creștere.",
+    "getInTouch": "Contactează-ne",
+    "viewServices": "Vezi serviciile noastre",
+    "features": {
+      "mobileWeb": "Aplicații mobile și web",
+      "ai": "Integrare AI",
+      "enterprise": "Soluții enterprise",
+      "cloud": "Arhitectură cloud"
+    }
+  },
+  "about": {
+    "title": "Cine suntem",
+    "intro1": "Jabcore este locul unde inovația întâlnește execuția.",
+    "intro1Content": "Suntem o echipă compactă de dezvoltare software formată din trei ingineri pasionați, specializați în construirea de produse digitale de clasă mondială pentru companii de toate dimensiunile. De la startup-uri ambițioase la întreprinderi consolidate, livrăm soluții care conduc la creștere exponențială, simplifică operațiuni complexe și creează avantaje competitive durabile pe piețe în rapidă evoluție.",
+    "intro2": "Filosofia noastră de dezvoltare este simplă:",
+    "intro2Bold": "construiește-l corect, construiește-l o dată.",
+    "intro2Content": "Combinăm tehnologia de vârf cu practici de inginerie testate în luptă pentru a crea software care nu este doar funcțional, ci și ușor de întreținut, scalabil la infinit și pregătit pentru viitor. Nu scriem doar cod—proiectăm soluții elegante care rezistă testului timpului și se adaptează la nevoile tale în evoluție.",
+    "intro3": "Suntem o echipă de trei—fără manageri, fără cheltuieli generale.",
+    "intro3Content": "Această structură compactă înseamnă că fiecare membru este profund implicat în proiectul tău de la început până la sfârșit, și ai acces direct la oamenii care îți construiesc efectiv produsul. Mai important, ne permite să oferim",
+    "intro3Pricing": "prețuri extrem de competitive",
+    "intro3End": "fără a face compromisuri la calitate. Plătești pentru talent de inginerie excepțional, nu pentru birocrație corporativă.",
+    "intro4": "Dincolo de munca pentru clienți, cultivăm o cultură a învățării neîncetate și a experimentării curajoase. Echipa noastră rămâne în fruntea tehnologiei, contribuind regulat la proiecte open source și construind propriile noastre produse inovatoare. Integrăm capabilități AI în soluțiile noastre pentru a automatiza fluxurile de lucru, a îmbunătăți experiențele utilizatorilor și a debloca perspective inteligente. Acest angajament față de inovație asigură că fiecare proiect beneficiază de cele mai recente idei revoluționare și cele mai bune practici dovedite.",
+    "valuesTitle": "Valorile noastre",
+    "values": {
+      "mission": {
+        "title": "Excelență condusă de misiune",
+        "description": "Existăm pentru a transforma idei ambițioase și concepte vizionare în produse digitale excepționale care creează valoare de afaceri măsurabilă, conduc angajamentul semnificativ al utilizatorilor și generează impact durabil pe piețele competitive. Fiecare proiect pe care îl întreprindem este ghidat de o căutare neobosită a excelenței și de un angajament de a livra rezultate care depășesc așteptările."
+      },
+      "quality": {
+        "title": "Calitate fără compromisuri",
+        "description": "Fiecare linie de cod, fiecare pixel atent considerat, fiecare interacțiune gândită cu atenție este creată cu atenție obsesivă la detalii, eleganță arhitecturală și mentenabilitate pe termen lung. Credem că calitatea nu înseamnă doar evitarea bug-urilor—înseamnă construirea de software care este intuitiv, performant, sigur, scalabil și cu adevărat plăcut de utilizat."
+      },
+      "partnership": {
+        "title": "Parteneriat adevărat",
+        "description": "Succesul tău este fundamental succesul nostru. Lucrăm ca o extensie colaborativă și integrată a echipei tale, pe deplin investiți în înțelegerea provocărilor tale unice, realizarea viziunii tale strategice și sărbătorirea victoriilor tale. Construim relații durabile bazate pe transparență, încredere, comunicare deschisă și angajament comun față de excelență."
+      },
+      "innovation": {
+        "title": "Inovație neîncetată",
+        "description": "Rămânem înaintea curbei tehnologice în rapidă evoluție, explorând constant framework-uri emergente, metodologii și tehnologii revoluționare. Integrăm capabilități AI de ultimă oră, experimentăm cu abordări noi, contribuim la comunitățile open-source și ne rafinăm continuu meșteșugul pentru a livra soluțiile inovatoare de mâine astăzi, asigurându-ne că produsul tău rămâne competitiv pentru ani de zile."
+      }
+    }
+  },
+  "services": {
+    "title": "Serviciile noastre",
+    "subtitle": "Servicii complete de dezvoltare software concepute pentru a transforma afacerea ta și a livra rezultate excepționale",
+    "whatsIncluded": "Ce este inclus",
+    "mobile": {
+      "title": "Dezvoltare aplicații mobile",
+      "description": "Transformă-ți ideile în aplicații mobile native puternice pe care utilizatorii le adoră. Construim aplicații iOS și Android de înaltă performanță cu interfețe intuitive și experiențe de utilizator perfecte.",
+      "highlights": ["Performanță rapidă", "Senzație nativă", "Arhitectură scalabilă"],
+      "features": [
+        "Dezvoltare iOS nativă (Swift, SwiftUI)",
+        "Dezvoltare Android nativă (Kotlin, Jetpack Compose)",
+        "Soluții cross-platform (React Native, Flutter)",
+        "Design și prototipare UI/UX mobil",
+        "Optimizare și implementare App Store",
+        "Notificări push și funcții în timp real",
+        "Arhitectură offline-first",
+        "Achiziții în aplicație și monetizare"
+      ]
+    },
+    "enterprise": {
+      "title": "Sisteme de afaceri și enterprise",
+      "description": "Simplifică operațiunile afacerii tale cu soluții enterprise personalizate. Creăm sisteme puternice care automatizează fluxurile de lucru, se integrează cu instrumentele existente și valorifică AI pentru a crește productivitatea.",
+      "highlights": ["Condus de AI", "Complet integrat", "Sigur și conform"],
+      "features": [
+        "Sisteme CRM și ERP personalizate",
+        "Automatizarea proceselor de afaceri",
+        "Analize și perspective conduse de AI",
+        "Sisteme de management al fluxurilor de lucru",
+        "Soluții de management al documentelor",
+        "Integrare cu infrastructura existentă",
+        "Control al accesului bazat pe roluri",
+        "Raportare și tablouri de bord în timp real"
+      ]
+    },
+    "web": {
+      "title": "Aplicații web",
+      "description": "Construiește aplicații web scalabile, sigure și extrem de rapide care cresc odată cu afacerea ta. De la platforme SaaS la portaluri complexe, livrăm soluții web moderne construite cu tehnologii de vârf.",
+      "highlights": ["Cloud-native", "Extrem de scalabil", "Nivel enterprise"],
+      "features": [
+        "Progressive Web Apps (PWA)",
+        "Dezvoltare platformă SaaS",
+        "Portaluri pentru clienți și administratori",
+        "Instrumente de colaborare în timp real",
+        "Dezvoltare și integrare API",
+        "Configurare infrastructură cloud",
+        "Design și optimizare bază de date",
+        "Monitorizare securitate și performanță"
+      ]
+    },
+    "websites": {
+      "title": "Site-uri web moderne",
+      "description": "Creează o prezență online impresionantă care convertește vizitatorii în clienți. Proiectăm și dezvoltăm site-uri web optimizate SEO, cu încărcare rapidă, care prezintă brandul tău și conduc creșterea afacerii.",
+      "highlights": ["Optimizat SEO", "Conversie ridicată", "Extrem de rapid"],
+      "features": [
+        "Design și dezvoltare site personalizat",
+        "Optimizare și strategie SEO",
+        "Optimizare performanță (Core Web Vitals)",
+        "Design responsiv pentru mobil",
+        "Sisteme de management al conținutului (CMS)",
+        "Soluții e-commerce",
+        "Analize și urmărire conversii",
+        "Mentenanță și suport continuu"
+      ]
+    }
+  },
+  "stack": {
+    "title": "Stack-ul nostru modern",
+    "subtitle": "Tehnologii de vârf și metodologii dovedite care permit soluții digitale excepționale. Combinăm cele mai bune instrumente cu expertiză profundă pentru a construi produse care scalează.",
+    "readyToBuild": "Pregătit să construiești ceva grozav?",
+    "readyDesc": "Să discutăm cum stack-ul nostru tehnologic poate da viață viziunii tale. Te vom ajuta să alegi instrumentele potrivite și să construiești o soluție care depășește așteptările.",
+    "getStarted": "Începe astăzi",
+    "technologies": {
+      "solutionArchitecture": {
+        "title": "Arhitectura soluțiilor",
+        "description": "Proiectăm soluții cuprinzătoare adaptate provocărilor tale de afaceri. Arhitecții noștri analizează ecosistemul tău tehnologic pentru a crea sisteme scalabile, ușor de întreținut, care evoluează odată cu creșterea ta.",
+        "features": [
+          "Analiză tehnică și planificare strategică",
+          "Dezvoltare proof of concept",
+          "Proprietate continuă asupra arhitecturii",
+          "Scalabilitate și optimizare performanță"
+        ]
+      },
+      "frontendDev": {
+        "title": "Dezvoltare frontend",
+        "description": "Construiește interfețe de utilizator moderne, responsive, care captivează utilizatorii. Creăm experiențe digitale excepționale cu framework-uri de vârf, optimizate pentru performanță, accesibilitate și SEO pe toate dispozitivele."
+      },
+      "backendDev": {
+        "title": "Dezvoltare backend",
+        "description": "Soluții robuste, scalabile pe partea de server care gestionează milioane de cereri cu timpi de răspuns sub o secundă. Construim backend-uri sigure cu API-uri RESTful, GraphQL și arhitecturi microservicii."
+      },
+      "mobileApps": {
+        "title": "Aplicații mobile",
+        "description": "Aplicații mobile native și cross-platform care oferă experiențe de utilizator excepționale. Ne specializăm în soluții iOS, Android și cross-platform cu șabloane production-ready pentru implementare rapidă.",
+        "features": [
+          "Șabloane mobile gata de implementare",
+          "Design și branding personalizat",
+          "Time-to-market rapid",
+          "Soluții rentabile"
+        ]
+      },
+      "aiIntegration": {
+        "title": "Integrare AI",
+        "description": "Valorifică inteligența artificială pentru a automatiza fluxurile de lucru și a îmbunătăți luarea deciziilor. Integrăm AI de ultimă oră de la OpenAI, Google Gemini și Claude pentru a debloca noi capabilități pentru afacerea ta."
+      },
+      "cloudInfra": {
+        "title": "Cloud și infrastructură",
+        "description": "Infrastructură cloud de nivel enterprise care scalează odată cu afacerea ta. Implementăm sisteme robuste cu pipeline-uri CI/CD automatizate, containerizare, monitorizare și securitate pe mai multe niveluri."
+      },
+      "uxui": {
+        "title": "Design UX/UI",
+        "description": "Interfețe frumoase, intuitive pe care utilizatorii le adoră. Combinăm excelența estetică cu cercetarea usabilității pentru a crea design-uri perfect pixelate care ghidează utilizatorii natural și stimulează angajamentul."
+      }
+    },
+    "categories": {
+      "architecture": {
+        "title": "Arhitectura soluțiilor",
+        "description": "Proiectăm soluții cuprinzătoare adaptate provocărilor tale de afaceri. Arhitecții noștri analizează ecosistemul tău tehnologic pentru a crea sisteme scalabile, ușor de întreținut, care evoluează odată cu creșterea ta.",
+        "features": [
+          "Analiză tehnică și planificare strategică",
+          "Dezvoltare proof of concept",
+          "Proprietate continuă asupra arhitecturii",
+          "Scalabilitate și optimizare performanță"
+        ]
+      },
+      "frontendDev": {
+        "title": "Dezvoltare frontend",
+        "description": "Construiește interfețe de utilizator moderne, responsive, care captivează utilizatorii. Creăm experiențe digitale excepționale cu framework-uri de vârf, optimizate pentru performanță, accesibilitate și SEO pe toate dispozitivele."
+      },
+      "backendDev": {
+        "title": "Dezvoltare backend",
+        "description": "Soluții robuste, scalabile pe partea de server care gestionează milioane de cereri cu timpi de răspuns sub o secundă. Construim backend-uri sigure cu API-uri RESTful, GraphQL și arhitecturi microservicii."
+      },
+      "mobileApps": {
+        "title": "Aplicații mobile",
+        "description": "Aplicații mobile native și cross-platform care oferă experiențe de utilizator excepționale. Ne specializăm în soluții iOS, Android și cross-platform cu șabloane production-ready pentru implementare rapidă.",
+        "features": [
+          "Șabloane mobile gata de implementare",
+          "Design și branding personalizat",
+          "Time-to-market rapid",
+          "Soluții rentabile"
+        ]
+      },
+      "aiIntegration": {
+        "title": "Integrare AI",
+        "description": "Valorifică inteligența artificială pentru a automatiza fluxurile de lucru și a îmbunătăți luarea deciziilor. Integrăm AI de ultimă oră de la OpenAI, Google Gemini și Claude pentru a debloca noi capabilități pentru afacerea ta."
+      },
+      "cloudInfra": {
+        "title": "Cloud și infrastructură",
+        "description": "Infrastructură cloud de nivel enterprise care scalează odată cu afacerea ta. Implementăm sisteme robuste cu pipeline-uri CI/CD automatizate, containerizare, monitorizare și securitate pe mai multe niveluri."
+      },
+      "uxui": {
+        "title": "Design UX/UI",
+        "description": "Interfețe frumoase, intuitive pe care utilizatorii le adoră. Combinăm excelența estetică cu cercetarea usabilității pentru a crea design-uri perfect pixelate care ghidează utilizatorii natural și stimulează angajamentul."
+      }
+    }
+  },
+  "products": {
+    "badge": "Produsele noastre",
+    "title": "Aplicații pe care le-am construit pentru tine",
+    "subtitle": "Descoperă suita noastră de aplicații inovatoare concepute pentru a-ți simplifica viața de zi cu zi. Construite cu pasiune, precizie și experiența utilizatorului în centru.",
+    "comingSoon": "Mai multe aplicații grozave în curând...",
+    "stayTuned": "Rămâi pe fază pentru actualizări despre cele mai recente inovații ale noastre",
+    "pillsee": {
+      "name": "Pillsee",
+      "tagline": "Asistentul tău personal de medicamente",
+      "description": "Pillsee este o aplicație inovatoare de scanare și gestionare a medicamentelor care revoluționează modul în care îți urmărești și gestionezi rețetele fără efort. Scanează pur și simplu etichetele medicamentelor cu recunoaștere optică avansată a caracterelor alimentată de AI pentru acces instantaneu la informații cuprinzătoare despre medicamente, inclusiv instrucțiuni de dozare, posibile efecte secundare și avertismente importante. Setează memento-uri inteligente care se adaptează programului tău, asigurându-te că nu uiți niciodată să iei medicamentele la momentul potrivit. Urmărește istoricul medicamentelor în timp, monitorizează tiparele de aderență, primește alerte pentru potențiale interacțiuni medicamentoase când adaugi rețete noi și partajează rapoarte detaliate cu profesioniștii tăi din sănătate. Cu o interfață intuitivă concepută pentru toate vârstele și sincronizare perfectă pe toate dispozitivele tale, Pillsee devine tovarășul tău de încredere pentru menținerea aderenței la medicamente și preluarea controlului asupra călătoriei tale de sănătate.",
+      "available": "Disponibil",
+      "keyFeatures": "Caracteristici cheie",
+      "features": [
+        "Recunoaștere medicamente alimentată de AI",
+        "Memento-uri inteligente de dozare",
+        "Alerte interacțiune medicamentoasă",
+        "Urmărire istoric rețete"
+      ],
+      "website": "Site web",
+      "appStore": "App Store",
+      "googlePlay": "Google Play"
+    }
+  },
+  "servicesPreview": {
+    "title": "Ce construim pentru afacerea ta",
+    "subtitle": "Servicii complete de dezvoltare software adaptate nevoilor tale unice",
+    "mobileDesc": "Aplicații iOS și Android native cu performanță perfectă.",
+    "enterpriseDesc": "Automatizare de afaceri personalizată și soluții conduse de AI.",
+    "webDesc": "Platforme SaaS scalabile construite pentru viteză și securitate.",
+    "websitesDesc": "Site-uri web optimizate SEO, cu conversie ridicată.",
+    "exploreAll": "Explorează toate serviciile"
+  },
+  "collaboration": {
+    "title": "Cum colaborăm",
+    "subtitle": "De la consultare inițială până la livrare finală și suport pe termen lung—un proces transparent unde păstrezi vizibilitate și control complet în fiecare fază.",
+    "note": "Procesul exact poate varia în funcție de cerințele și amploarea specifică a proiectului tău.",
+    "afterLaunch": "Ce se întâmplă după lansare?",
+    "afterLaunchDesc": "Dezvoltarea aplicațiilor este un proces viu. După implementare, utilizatorii încep să interacționeze cu soluția ta, apar idei noi, funcționalitățile evoluează și optimizările deblochează noi oportunități de creștere și inovație.",
+    "longTerm": "De aceea suntem aici pe termen lung—cu suport continuu, extindere strategică a funcționalităților și îmbunătățire continuă. Aplicația ta poate evolua și scala continuu alături de afacerea ta, adaptându-se la noi provocări și oportunități pe măsură ce apar.",
+    "steps": {
+      "inquiry": {
+        "number": "01",
+        "title": "Consultare inițială – Fără angajament necesar",
+        "description": "Împărtășește-ți viziunea proiectului prin formularul nostru de contact sau o discuție rapidă. Răspundem cu întrebări atent gândite și perspective—fără obligații, fără presiune, doar explorând posibilități și determinând potrivirea."
+      },
+      "discovery": {
+        "number": "02",
+        "title": "Întâlnire de descoperire – Înțelegerea viziunii tale",
+        "description": "Ne întâlnim online sau personal pentru a ne aprofunda în obiectivele tale, publicul țintă și rezultatele dorite. Împreună clarificăm prioritățile, identificăm provocările și recomandăm soluții strategice aliniate nevoilor tale."
+      },
+      "proposal": {
+        "number": "03",
+        "title": "Propunere profesională și design de soluție",
+        "description": "Primești o arhitectură tehnică detaliată, machete UI/UX, recomandare stack tehnologic și propunere transparentă cu prețuri și termene clare. Totul este clar fără surprize."
+      },
+      "kickoff": {
+        "number": "04",
+        "title": "Aprobare și start oficial dezvoltare",
+        "description": "Odată aprobat, începem cu o foaie de parcurs de dezvoltare, faze sprint și instrumente de management de proiect. Obții vizibilitate în timp real asupra a ceea ce construim și de ce—la fiecare pas."
+      },
+      "prototype": {
+        "number": "05",
+        "title": "Prototip inițial – Rafinare colaborativă",
+        "description": "Livrăm un prototip funcțional care dă viață viziunii tale. Prin sesiuni de revizuire și feedback, rafinăm interacțiunile și funcționalitățile pentru a ne asigura că produsul final depășește așteptările."
+      },
+      "delivery": {
+        "number": "06",
+        "title": "Livrare finală – Soluția ta devine live",
+        "description": "Primești o soluție production-ready testată pe diverse dispozitive și browsere. Oferim sesiuni de prezentare, documentație și, dacă e necesar, configurăm hosting, acorduri de suport și integrări pentru succes pe termen lung."
+      }
+    }
+  },
+  "whyChooseUs": {
+    "title": "De ce să alegi Jabcore?",
+    "subtitle": "Combinăm excelența tehnică cu parteneriat autentic pentru a livra soluții care nu doar întâlnesc așteptările—le depășesc. Asta ne diferențiază de restul.",
+    "reasons": {
+      "speed": {
+        "title": "Livrare fulgerătoare",
+        "description": "Prototipuri funcționale în săptămâni, nu luni. Avantajul tău time-to-market începe aici."
+      },
+      "security": {
+        "title": "Securitate de nivel enterprise",
+        "description": "Securitate încorporată în fiecare linie de cod. Conform GDPR, certificat OWASP, complet protejat."
+      },
+      "scalability": {
+        "title": "Scalabilitate infinită",
+        "description": "Construit pentru a crește de la 100 la 100 de milioane de utilizatori. Arhitectură cloud-native care scalează fără efort."
+      },
+      "code": {
+        "title": "Cod curat, ușor de întreținut",
+        "description": "Cod care devine un activ valoros, nu datorie tehnică. Documentat, testat și gata să evolueze."
+      },
+      "design": {
+        "title": "Design centrat pe utilizator",
+        "description": "Interfețe frumoase, intuitive pe care utilizatorii le adoră. Fiecare interacțiune concepută pentru plăcere."
+      },
+      "support": {
+        "title": "Suport dedicat",
+        "description": "Nu dispărem după lansare. Monitorizare proactivă, remedieri rapide, parteneriat pe termen lung."
+      },
+      "communication": {
+        "title": "Comunicare transparentă",
+        "description": "Actualizări zilnice, demo-uri săptămânale, tablouri de bord în timp real. Știi întotdeauna exact unde se află proiectul tău."
+      }
+    }
+  },
+  "techStack": {
+    "title": "Stack-ul nostru tehnologic",
+    "subtitle": "Valorificăm cele mai puternice, moderne tehnologii pentru a construi soluții rapide, scalabile și pregătite pentru viitor. Expertiza noastră acoperă întregul ecosistem de dezvoltare—de la frontend la backend, mobil la cloud și tot ce e între.",
+    "notSeeingYourTech": "Nu vezi stack-ul tău tehnologic preferat?",
+    "notSeeingDesc": "Învățăm și ne adaptăm întotdeauna. Dacă ai cerințe sau preferințe tehnologice specifice, le vom evalua și integra cele mai bune instrumente pentru nevoile unice ale proiectului tău. Angajamentul nostru este pentru soluția corectă, nu doar pentru cea familiară.",
+    "categories": {
+      "frontend": {
+        "title": "Tehnologii frontend",
+        "description": "Crearea de interfețe de utilizator frumoase, responsive și performante"
+      },
+      "backend": {
+        "title": "Backend și API-uri",
+        "description": "Arhitectură server-side robustă și dezvoltare API scalabilă"
+      },
+      "mobile": {
+        "title": "Dezvoltare mobilă",
+        "description": "Aplicații mobile native și cross-platform"
+      },
+      "cloud": {
+        "title": "Cloud și DevOps",
+        "description": "Infrastructură scalabilă și livrare continuă"
+      },
+      "ai": {
+        "title": "AI și machine learning",
+        "description": "Funcționalități inteligente alimentate de AI de ultimă oră"
+      },
+      "design": {
+        "title": "Design și prototipare",
+        "description": "Design centrat pe utilizator și excelență vizuală"
+      }
+    }
+  },
+  "cta": {
+    "badge": "Pregătit să începi?",
+    "title": "Să construim ceva grozav împreună",
+    "description": "Fie că ești un startup cu o idee revoluționară, o companie care dorește să-și modernizeze sistemele sau ceva între ele—suntem aici pentru a transforma viziunea ta într-o realitate digitală puternică. Să discutăm despre ce e posibil.",
+    "startProject": "Începe-ți proiectul",
+    "exploreServices": "Explorează serviciile noastre",
+    "note": "Fără angajament necesar • Consultație inițială gratuită • Timp de răspuns rapid"
+  },
+  "contact": {
+    "title": "Contactează-ne",
+    "subtitle": "Împărtășește-ți viziunea proiectului, pune o întrebare sau pur și simplu programează o discuție fără angajament. Ascultăm cu atenție și răspundem cu perspective care adaugă valoare reală.",
+    "getInTouch": "Contactează-ne",
+    "info": "Informații de contact",
+    "letsTalk": "Să discutăm",
+    "emailUs": "Trimite-ne email",
+    "followUs": "Urmărește-ne",
+    "form": {
+      "name": "Numele tău",
+      "namePlaceholder": "Ion Popescu",
+      "email": "Email-ul tău",
+      "emailPlaceholder": "ion@companie.ro",
+      "company": "Nume companie (opțional)",
+      "companyPlaceholder": "Companie SRL",
+      "service": "Ce serviciu te interesează?",
+      "servicePlaceholder": "Selectează un serviciu",
+      "message": "Spune-ne despre proiectul tău",
+      "messagePlaceholder": "Descrie obiectivele proiectului tău, provocările sau orice întrebări ai...",
+      "submit": "Trimite mesaj",
+      "submitting": "Se trimite...",
+      "services": {
+        "mobile": "Dezvoltare aplicații mobile",
+        "enterprise": "Sisteme de afaceri și enterprise",
+        "web": "Aplicații web",
+        "websites": "Site-uri web moderne",
+        "other": "Altceva / Nu sunt sigur"
+      }
+    }
+  },
+  "footer": {
+    "rights": "Toate drepturile rezervate.",
+    "company": "Jabcore Solutions s.r.o.",
+    "tagline": "Dezvoltare software modernă care transformă afacerea ta.",
+    "address": "Žižkova 747/29, 370 01 České Budějovice, Republica Cehă"
+  }
+}

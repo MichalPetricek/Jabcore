@@ -1,10 +1,13 @@
 import { motion, AnimatePresence } from 'framer-motion'
-import { Moon, Sun, List, X, GithubLogo, LinkedinLogo, TwitterLogo, InstagramLogo, Code, Envelope } from '@phosphor-icons/react'
+import { Moon, Sun, List, X, GithubLogo, LinkedinLogo, FacebookLogo, InstagramLogo, Code, Envelope } from '@phosphor-icons/react'
 import { Button } from '@/components/ui/button'
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import ContactModal from '@/components/ContactModal'
+import LanguageSwitcher from '@/components/LanguageSwitcher'
+import logoTransparent from '@/assets/images/transparent.png'
+import { useTranslation } from 'react-i18next'
 
 interface NavigationProps {
   theme: 'light' | 'dark'
@@ -15,21 +18,22 @@ export default function Navigation({ theme, onToggleTheme }: NavigationProps) {
   const [isOpen, setIsOpen] = useState(false)
   const [isContactOpen, setIsContactOpen] = useState(false)
   const location = useLocation()
+  const { t } = useTranslation()
 
   const navItems = [
-    { label: 'Home', href: '/' },
-    { label: 'Services', href: '/services' },
-    { label: 'Products', href: '/products' },
-    { label: 'Stack', href: '/stack' },
-    { label: 'About', href: '/about' },
-    { label: 'Contact', href: '/contact' },
+    { label: t('navigation.home'), href: '/' },
+    { label: t('navigation.services'), href: '/services' },
+    { label: t('navigation.products'), href: '/products' },
+    { label: t('navigation.stack'), href: '/stack' },
+    { label: t('navigation.about'), href: '/about' },
+    { label: t('navigation.contact'), href: '/contact' },
   ]
 
   const socialLinks = [
-    { icon: GithubLogo, label: 'GitHub', href: '#' },
-    { icon: LinkedinLogo, label: 'LinkedIn', href: '#' },
-    { icon: TwitterLogo, label: 'Twitter', href: '#' },
-    { icon: InstagramLogo, label: 'Instagram', href: '#' },
+    { icon: GithubLogo, label: 'GitHub', href: 'https://github.com/Jabcore-dev' },
+    { icon: LinkedinLogo, label: 'LinkedIn', href: 'https://www.linkedin.com/company/jabcore' },
+    { icon: FacebookLogo, label: 'Facebook', href: 'https://www.facebook.com/profile.php?id=61584245041851' },
+    { icon: InstagramLogo, label: 'Instagram', href: 'https://www.instagram.com/jabcore.dev/' },
   ]
 
   const isActive = (href: string) => location.pathname === href
@@ -51,10 +55,8 @@ export default function Navigation({ theme, onToggleTheme }: NavigationProps) {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2 }}
         >
-          <Link to="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
-              <Code className="w-5 h-5 text-primary-foreground" weight="bold" />
-            </div>
+          <Link to="/" className="flex items-center gap-3">
+            <img src={logoTransparent} alt="Jabcore" className="w-10 h-10 rounded-lg object-contain" />
             <span className="text-xl font-display font-bold gradient-text">Jabcore</span>
           </Link>
         </motion.div>
@@ -85,6 +87,13 @@ export default function Navigation({ theme, onToggleTheme }: NavigationProps) {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5 }}
             >
+              <LanguageSwitcher />
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.55 }}
+            >
               <Button
                 variant="ghost"
                 size="icon"
@@ -105,7 +114,7 @@ export default function Navigation({ theme, onToggleTheme }: NavigationProps) {
                   key={social.label}
                   initial={{ opacity: 0, y: -20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.55 + index * 0.05 }}
+                  transition={{ delay: 0.6 + index * 0.05 }}
                 >
                   <a
                     href={social.href}
@@ -121,6 +130,7 @@ export default function Navigation({ theme, onToggleTheme }: NavigationProps) {
         </div>
 
         <div className="md:hidden flex items-center gap-2">
+          <LanguageSwitcher />
           <Button
             variant="ghost"
             size="icon"
@@ -198,12 +208,12 @@ export default function Navigation({ theme, onToggleTheme }: NavigationProps) {
                     size="lg"
                   >
                     <Envelope className="mr-2" />
-                    Contact Us
+                    {t('contact.getInTouch')}
                   </Button>
                   
                   <div>
                     <p className="text-xs text-muted-foreground mb-3">
-                      Follow us
+                      {t('navigation.followUs')}
                     </p>
                     <div className="flex gap-3">
                       {socialLinks.map((social, index) => {
