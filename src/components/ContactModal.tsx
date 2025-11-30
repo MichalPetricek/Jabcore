@@ -71,8 +71,6 @@ export default function ContactModal({ open, onOpenChange }: ContactModalProps) 
     
     await new Promise(resolve => setTimeout(resolve, 1500))
     
-    console.log('Form submitted:', data)
-    
     toast.success('Message sent successfully!', {
       description: "We'll respond within 24 hours to discuss your project.",
     })

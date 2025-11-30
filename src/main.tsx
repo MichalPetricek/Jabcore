@@ -6,7 +6,6 @@ import { ErrorFallback } from './ErrorFallback.tsx'
 import './lib/i18n'
 
 import "./main.css"
-import "./styles/theme.css"
 import "./index.css"
 
 createRoot(document.getElementById('root')!).render(

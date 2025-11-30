@@ -79,9 +79,15 @@ All logos are imported as assets and render with smooth transitions when theme c
 
 ## 📦 Installation
 
-The website is ready to run in the Spark environment. All dependencies are pre-installed.
+```bash
+npm install
+```
 
 ## 🚀 Development
+
+```bash
+npm run dev
+```
 
 The site is built as a multi-page application with React Router for navigation.
 
