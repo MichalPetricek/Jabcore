@@ -365,6 +365,8 @@
     "devTeam": "Team di sviluppo",
     "devTeamDesc": "Supporto tecnico e domande di sviluppo",
     "phone": "Telefono",
+    "phoneValue": "+39 312 345 6789",
+    "phonePrefix": "+39",
     "phoneDesc": "Lun-Ven, 9:00 - 18:00 CET",
     "ourLocation": "La nostra sede",
     "locationDesc": "Praga, Repubblica Ceca",

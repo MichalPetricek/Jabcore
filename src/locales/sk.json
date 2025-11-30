@@ -128,6 +128,8 @@
     "devTeam": "Vývojársky tím",
     "devTeamDesc": "Technická podpora a vývojárske otázky",
     "phone": "Telefón",
+    "phoneValue": "+421 912 345 678",
+    "phonePrefix": "+421",
     "phoneDesc": "Pon-Pia, 9:00 - 18:00 CET",
     "ourLocation": "Naša lokácia",
     "locationDesc": "Praha, Česká republika",

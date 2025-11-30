@@ -365,6 +365,8 @@
     "devTeam": "Development Team",
     "devTeamDesc": "Technical support and development questions",
     "phone": "Phone",
+    "phoneValue": "+420 792 219 454",
+    "phonePrefix": "+420",
     "phoneDesc": "Mon-Fri, 9:00 AM - 6:00 PM CET",
     "ourLocation": "Our Location",
     "locationDesc": "Prague, Czech Republic",

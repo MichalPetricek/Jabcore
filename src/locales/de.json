@@ -365,6 +365,8 @@
     "devTeam": "Entwicklungsteam",
     "devTeamDesc": "Technischer Support und Entwicklungsfragen",
     "phone": "Telefon",
+    "phoneValue": "+49 176 2345 6789",
+    "phonePrefix": "+49",
     "phoneDesc": "Mo-Fr, 9:00 - 18:00 CET",
     "ourLocation": "Unser Standort",
     "locationDesc": "Prag, Tschechische Republik",

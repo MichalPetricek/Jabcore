@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import * as z from 'zod'
@@ -10,6 +10,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle } from '@/components/ui/dialog'
 import { toast } from 'sonner'
 import { PaperPlaneRight } from '@phosphor-icons/react'
+import { useTranslation } from 'react-i18next'
 
 const formSchema = z.object({
   name: z.string().min(2, 'Name must be at least 2 characters'),
@@ -33,6 +34,10 @@ const phoneCountries = [
   { code: '+33', country: 'France', flag: '🇫🇷' },
   { code: '+39', country: 'Italy', flag: '🇮🇹' },
   { code: '+34', country: 'Spain', flag: '🇪🇸' },
+  { code: '+31', country: 'Netherlands', flag: '🇳🇱' },
+  { code: '+351', country: 'Portugal', flag: '🇵🇹' },
+  { code: '+36', country: 'Hungary', flag: '🇭🇺' },
+  { code: '+40', country: 'Romania', flag: '🇷🇴' },
 ]
 
 interface ContactModalProps {
@@ -42,18 +47,24 @@ interface ContactModalProps {
 
 export default function ContactModal({ open, onOpenChange }: ContactModalProps) {
   const [isSubmitting, setIsSubmitting] = useState(false)
+  const { t, i18n } = useTranslation()
 
   const form = useForm<FormData>({
     resolver: zodResolver(formSchema),
     defaultValues: {
       name: '',
       email: '',
-      phonePrefix: '+420',
+      phonePrefix: t('contact.phonePrefix'),
       phoneNumber: '',
       message: '',
       company: '',
     },
   })
+
+  // Update phonePrefix when language changes
+  useEffect(() => {
+    form.setValue('phonePrefix', t('contact.phonePrefix'))
+  }, [i18n.language, form, t])
 
   const onSubmit = async (data: FormData) => {
     setIsSubmitting(true)
@@ -75,9 +86,9 @@ export default function ContactModal({ open, onOpenChange }: ContactModalProps) 
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto">
         <DialogHeader>
-          <DialogTitle className="text-2xl">Start the Conversation</DialogTitle>
+          <DialogTitle className="text-2xl">{t('contact.formTitle')}</DialogTitle>
           <DialogDescription>
-            Share your project details below and our team will respond within 24 hours with next steps.
+            {t('contact.formDesc')}
           </DialogDescription>
         </DialogHeader>
         
@@ -88,7 +99,7 @@ export default function ContactModal({ open, onOpenChange }: ContactModalProps) 
               name="name"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Name *</FormLabel>
+                  <FormLabel>{t('contact.name')} *</FormLabel>
                   <FormControl>
                     <Input 
                       placeholder="John Doe" 
@@ -106,7 +117,7 @@ export default function ContactModal({ open, onOpenChange }: ContactModalProps) 
               name="email"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Email *</FormLabel>
+                  <FormLabel>{t('contact.email')} *</FormLabel>
                   <FormControl>
                     <Input 
                       type="email"
@@ -125,7 +136,7 @@ export default function ContactModal({ open, onOpenChange }: ContactModalProps) 
               name="company"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Company</FormLabel>
+                  <FormLabel>{t('contact.company')}</FormLabel>
                   <FormControl>
                     <Input 
                       placeholder="Acme Corporation" 
@@ -144,8 +155,8 @@ export default function ContactModal({ open, onOpenChange }: ContactModalProps) 
                 name="phonePrefix"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Country</FormLabel>
-                    <Select onValueChange={field.onChange} defaultValue={field.value}>
+                    <FormLabel>{t('contact.country')}</FormLabel>
+                    <Select onValueChange={field.onChange} value={field.value}>
                       <FormControl>
                         <SelectTrigger className="h-12">
                           <SelectValue placeholder="Code" />
@@ -172,7 +183,7 @@ export default function ContactModal({ open, onOpenChange }: ContactModalProps) 
                 name="phoneNumber"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Phone Number *</FormLabel>
+                    <FormLabel>{t('contact.phoneNumber')} *</FormLabel>
                     <FormControl>
                       <Input 
                         type="tel"
@@ -192,10 +203,10 @@ export default function ContactModal({ open, onOpenChange }: ContactModalProps) 
               name="message"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Message *</FormLabel>
+                  <FormLabel>{t('contact.message')} *</FormLabel>
                   <FormControl>
                     <Textarea 
-                      placeholder="Tell us about your project vision, goals, and what you'd like to build..."
+                      placeholder={t('contact.messagePlaceholder')}
                       className="min-h-[150px] resize-y"
                       {...field}
                     />
@@ -213,11 +224,11 @@ export default function ContactModal({ open, onOpenChange }: ContactModalProps) 
             >
               {isSubmitting ? (
                 <>
-                  <span className="animate-pulse">Sending...</span>
+                  <span className="animate-pulse">{t('contact.sending')}</span>
                 </>
               ) : (
                 <>
-                  Send Message
+                  {t('contact.sendMessage')}
                   <PaperPlaneRight className="ml-2" weight="bold" />
                 </>
               )}

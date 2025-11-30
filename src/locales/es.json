@@ -365,6 +365,8 @@
     "devTeam": "Equipo de desarrollo",
     "devTeamDesc": "Soporte técnico y preguntas de desarrollo",
     "phone": "Teléfono",
+    "phoneValue": "+34 612 345 678",
+    "phonePrefix": "+34",
     "phoneDesc": "Lun-Vie, 9:00 AM - 6:00 PM CET",
     "ourLocation": "Nuestra ubicación",
     "locationDesc": "Praga, República Checa",

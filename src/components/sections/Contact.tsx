@@ -1,5 +1,5 @@
 import { motion, useInView } from 'framer-motion'
-import { useRef, useState } from 'react'
+import { useRef, useState, useEffect } from 'react'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import * as z from 'zod'
@@ -35,6 +35,10 @@ const phoneCountries = [
   { code: '+33', country: 'France', flag: '🇫🇷' },
   { code: '+39', country: 'Italy', flag: '🇮🇹' },
   { code: '+34', country: 'Spain', flag: '🇪🇸' },
+  { code: '+31', country: 'Netherlands', flag: '🇳🇱' },
+  { code: '+351', country: 'Portugal', flag: '🇵🇹' },
+  { code: '+36', country: 'Hungary', flag: '🇭🇺' },
+  { code: '+40', country: 'Romania', flag: '🇷🇴' },
 ]
 
 export default function Contact() {
@@ -42,7 +46,7 @@ export default function Contact() {
   const isInView = useInView(ref, { once: true, margin: '-100px' })
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [copiedIndex, setCopiedIndex] = useState<number | null>(null)
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
 
   const contactInfo = [
     {
@@ -62,8 +66,8 @@ export default function Contact() {
     {
       icon: Phone,
       label: t('contact.phone'),
-      value: '+420 792 219 454',
-      href: 'tel:+420792219454',
+      value: t('contact.phoneValue'),
+      href: `tel:${t('contact.phoneValue').replace(/\s/g, '')}`,
       description: t('contact.phoneDesc'),
     },
   ]
@@ -74,11 +78,16 @@ export default function Contact() {
       name: '',
       company: '',
       email: '',
-      phonePrefix: '+420',
+      phonePrefix: t('contact.phonePrefix'),
       phoneNumber: '',
       message: '',
     },
   })
+
+  // Update phonePrefix when language changes
+  useEffect(() => {
+    form.setValue('phonePrefix', t('contact.phonePrefix'))
+  }, [i18n.language, form, t])
 
   const handleCopy = async (text: string, index: number) => {
     await navigator.clipboard.writeText(text)
@@ -301,7 +310,7 @@ export default function Contact() {
                       render={({ field }) => (
                         <FormItem>
                           <FormLabel>{t('contact.country')}</FormLabel>
-                          <Select onValueChange={field.onChange} defaultValue={field.value}>
+                          <Select onValueChange={field.onChange} value={field.value}>
                             <FormControl>
                               <SelectTrigger className="h-12">
                                 <SelectValue placeholder="Code" />
