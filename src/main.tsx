@@ -8,8 +8,13 @@ import './lib/i18n'
 import "./main.css"
 import "./index.css"
 
-createRoot(document.getElementById('root')!).render(
-  <ErrorBoundary FallbackComponent={ErrorFallback}>
-    <App />
-   </ErrorBoundary>
-)
+// Přesměruj jabcore.eu na jabcore.cz
+if (window.location.hostname === 'jabcore.eu' || window.location.hostname === 'www.jabcore.eu') {
+  window.location.replace('https://jabcore.cz' + window.location.pathname + window.location.search + window.location.hash)
+} else {
+  createRoot(document.getElementById('root')!).render(
+    <ErrorBoundary FallbackComponent={ErrorFallback}>
+      <App />
+    </ErrorBoundary>
+  )
+}
