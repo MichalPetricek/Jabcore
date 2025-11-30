@@ -23,7 +23,7 @@ export default function Navigation({ theme, onToggleTheme }: NavigationProps) {
   const navItems = [
     { label: t('navigation.home'), href: '/' },
     { label: t('navigation.services'), href: '/services' },
-    { label: t('navigation.products'), href: '/products' },
+    // { label: t('navigation.products'), href: '/products' },
     { label: t('navigation.stack'), href: '/stack' },
     { label: t('navigation.about'), href: '/about' },
     { label: t('navigation.contact'), href: '/contact' },
