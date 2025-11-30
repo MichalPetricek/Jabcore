@@ -12,7 +12,7 @@
     "badge": "Veloce. Affidabile. Conveniente.",
     "title": "Jabcore",
     "subtitle": "Il cuore della tua nuova app.",
-    "description": "Prodotti digitali costruiti per la crescita.",
+    "description": "Sviluppo software con integrazione AI. Creiamo prodotti digitali di livello mondiale che trasformano le aziende.",
     "getInTouch": "Contattaci",
     "viewServices": "Vedi i nostri servizi",
     "features": {
@@ -354,6 +354,7 @@
     "description": "Che tu sia una startup con un'idea rivoluzionaria, un'azienda che cerca di modernizzare i propri sistemi, o ovunque nel mezzo—siamo qui per trasformare la tua visione in una potente realtà digitale. Facciamo una conversazione su ciò che è possibile.",
     "startProject": "Avvia il tuo progetto",
     "exploreServices": "Esplora i nostri servizi",
+    "learnAboutUs": "Scopri di più su di noi",
     "note": "Nessun impegno richiesto • Consulenza iniziale gratuita • Tempo di risposta rapido"
   },
   "contact": {
@@ -389,7 +390,7 @@
     "copy": "Copia"
   },
   "footer": {
-    "description": "Sviluppo software premium con integrazione IA. Costruire prodotti digitali di livello mondiale che trasformano le aziende.",
+    "description": "Sviluppo software con integrazione AI. Creiamo prodotti digitali di livello mondiale che trasformano le aziende.",
     "quickLinks": "Link rapidi",
     "contactUs": "Contattaci",
     "copyright": "Tutti i diritti riservati. Progettato con precisione e passione."

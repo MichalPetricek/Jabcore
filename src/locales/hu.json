@@ -12,7 +12,7 @@
     "badge": "Gyors. Megbízható. Megfizethető.",
     "title": "Jabcore",
     "subtitle": "Az új alkalmazásod magja.",
-    "description": "Növekedésre tervezett digitális termékek.",
+    "description": "Szoftverfejlesztés MI-integrációval. Világszínvonalú digitális termékeket építünk, amelyek üzleteket transzformálnak.",
     "getInTouch": "Lépj kapcsolatba",
     "viewServices": "Szolgáltatásaink megtekintése",
     "features": {
@@ -354,6 +354,7 @@
     "description": "Akár egy startup vagy áttörő ötlettel, akár egy vállalat, amely modernizálni szeretné rendszereit, vagy valami köztes—azért vagyunk itt, hogy az elképzelésedet erőteljes digitális valósággá alakítsuk. Beszéljük meg, mi a lehetséges.",
     "startProject": "Indítsd el a projektedet",
     "exploreServices": "Fedezd fel szolgáltatásainkat",
+    "learnAboutUs": "Tudj meg többet rólunk",
     "note": "Nincs kötelezettségvállalás • Ingyenes kezdeti konzultáció • Gyors válaszidő"
   },
   "contact": {

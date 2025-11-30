@@ -12,7 +12,7 @@
     "badge": "Rychle. Spolehlivě. Dostupně.",
     "title": "Jabcore",
     "subtitle": "Jádro vaší nové aplikace.",
-    "description": "Digitální produkty vytvořené pro růst.",
+    "description": "Vývoj softwaru s integrací AI. Vytváříme digitální produkty světové úrovně, které transformují podnikání.",
     "getInTouch": "Napište nám",
     "viewServices": "Zobrazit naše služby",
     "features": {
@@ -60,7 +60,7 @@
     "whatsIncluded": "Co je zahrnuto",
     "mobile": {
       "title": "Vývoj mobilních aplikací",
-      "description": "Přeměňte své nápady v výkonné nativní mobilní aplikace, které uživatelé milují. Vytváříme vysoce výkonné iOS a Android aplikace s intuitivními rozhraními a bezproblémovou uživatelskou zkušeností.",
+      "description": "Přeměňte své nápady ve výkonné nativní mobilní aplikace, které uživatelé milují. Vytváříme vysoce výkonné iOS a Android aplikace s intuitivními rozhraními a bezproblémovou uživatelskou zkušeností.",
       "highlights": ["Rychlý výkon", "Nativní pocit", "Škálovatelná architektura"],
       "features": [
         "Nativní iOS vývoj (Swift, SwiftUI)",
@@ -180,7 +180,7 @@
       },
       "frontendDev": {
         "title": "Frontend vývoj",
-        "description": "Vytváříme moderní, responzivní uživatelská rozhraní, která uživatele uchvátí. Vytváříme výjimečné digitální zážitky pomocí nejmodernějších frameworků, optimalizované pro výkon, přístupnost a SEO na všech zařízeních."
+        "description": "Tvoříme moderní, responzivní uživatelská rozhraní, která uživatele uchvátí. Dodáváme výjimečné digitální zážitky pomocí nejmodernějších frameworků, optimalizované pro výkon, přístupnost a SEO na všech zařízeních."
       },
       "backendDev": {
         "title": "Backend vývoj",
@@ -219,7 +219,7 @@
     "pillsee": {
       "name": "Pillsee",
       "tagline": "Váš osobní asistent pro léky",
-      "description": "Pillsee je inovativní aplikace pro skenování a správu léků, která revolucionalizuje způsob, jakým sledujete a spravujete své recepty bez námahy. Jednoduše naskenujte štítky léků pomocí pokročilého optického rozpoznávání znaků poháněného AI pro okamžitý přístup ke komplexním informacím o lécích včetně pokynů k dávkování, možných vedlejších účinků a důležitých varování. Nastavte si inteligentní připomínky, které se přizpůsobí vašemu rozvrhu a zajistí, že nikdy nezmeškáte užití léku ve správný čas. Sledujte historii léků v čase, monitorujte vzorce dodržování, dostávejte upozornění na potenciální lékové interakce při přidávání nových receptů a sdílejte podrobné zprávy se svými poskytovateli zdravotní péče. S intuitivním rozhraním navrženým pro všechny věkové kategorie a bezproblémovou synchronizací napříč všemi vašimi zařízeními se Pillsee stává vaším důvěryhodným společníkem pro udržení souladu s léky a převzetí kontroly nad vaší zdravotní cestou.",
+      "description": "Pillsee je inovativní aplikace pro skenování a správu léků, která revolucionuje způsob, jakým sledujete a spravujete své recepty bez námahy. Jednoduše naskenujte štítky léků pomocí pokročilého optického rozpoznávání znaků poháněného AI pro okamžitý přístup ke komplexním informacím o lécích včetně pokynů k dávkování, možných vedlejších účinků a důležitých varování. Nastavte si inteligentní připomínky, které se přizpůsobí vašemu rozvrhu a zajistí, že nikdy nezmeškáte užití léku ve správný čas. Sledujte historii léků v čase, monitorujte vzorce dodržování, dostávejte upozornění na potenciální lékové interakce při přidávání nových receptů a sdílejte podrobné zprávy se svými poskytovateli zdravotní péče. S intuitivním rozhraním navrženým pro všechny věkové kategorie a bezproblémovou synchronizací napříč všemi vašimi zařízeními se Pillsee stává vaším důvěryhodným společníkem pro udržení souladu s léky a převzetí kontroly nad vaší zdravotní cestou.",
       "available": "Dostupné",
       "keyFeatures": "Klíčové funkce",
       "features": [
@@ -292,7 +292,7 @@
       },
       "security": {
         "title": "Bezpečnost podnikové úrovně",
-        "description": "Bezpečnost zabudovaná v každém řádku kódu. Kompatibilní s GDPR, certifikováno OWASP, plně chráněno."
+        "description": "Bezpečnost zabudovaná v každém řádku kódu. V souladu s GDPR, certifikováno OWASP, plně chráněno."
       },
       "scalability": {
         "title": "Nekonečná škálovatelnost",
@@ -319,7 +319,7 @@
   "techStack": {
     "title": "Náš technologický stack",
     "subtitle": "Využíváme nejmodernější technologie k vytváření řešení, která jsou rychlá, škálovatelná a připravená do budoucnosti. Naše expertíza pokrývá celý vývojový ekosystém—od frontendu po backend, mobile po cloud a všechno mezi tím.",
-    "notSeeingYourTech": "Nevidíte váš preferovaný tech stack?",
+    "notSeeingYourTech": "Nevidíte svůj oblíbený tech stack?",
     "notSeeingDesc": "Neustále se učíme a přizpůsobujeme. Pokud máte specifické technologické požadavky nebo preference, vyhodnotíme je a integrujeme nejlepší nástroje pro unikátní potřeby vašeho projektu. Náš závazek je ke správnému řešení, ne jen k známému.",
     "categories": {
       "frontend": {
@@ -352,8 +352,9 @@
     "badge": "Připraveni začít?",
     "title": "Pojďme společně vytvořit něco úžasného",
     "description": "Ať už jste startup s průlomovým nápadem, podnik hledající modernizaci vašich systémů, nebo kdekoliv mezi tím—jsme tu, abychom transformovali vaši vizi do výkonné digitální reality. Pojďme si popovídat o tom, co je možné.",
-    "startProject": "Začněte váš projekt",
+    "startProject": "Zahajte svůj projekt",
     "exploreServices": "Prozkoumejte naše služby",
+    "learnAboutUs": "Více o nás",
     "note": "Bez závazku • Bezplatná úvodní konzultace • Rychlá odpověď"
   },
   "contact": {
@@ -389,7 +390,7 @@
     "copy": "Kopírovat"
   },
   "footer": {
-    "description": "Prémiový vývoj softwaru s integrací AI. Vytváříme digitální produkty světové úrovně, které transformují podnikání.",
+    "description": "Vývoj softwaru s integrací AI. Vytváříme digitální produkty světové úrovně, které transformují podnikání.",
     "quickLinks": "Rychlé odkazy",
     "contactUs": "Kontaktujte nás",
     "copyright": "Všechna práva vyhrazena. Vytvořeno s precizností a vášní."

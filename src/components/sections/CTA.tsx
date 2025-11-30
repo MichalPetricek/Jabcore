@@ -6,7 +6,11 @@ import { useState } from 'react'
 import ContactModal from '@/components/ContactModal'
 import { useTranslation } from 'react-i18next'
 
-export default function CTA() {
+interface CTAProps {
+  variant?: 'default' | 'services'
+}
+
+export default function CTA({ variant = 'default' }: CTAProps) {
   const [isContactModalOpen, setIsContactModalOpen] = useState(false)
   const { t } = useTranslation()
   return (
@@ -62,15 +66,27 @@ export default function CTA() {
               {t('cta.startProject')}
               <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" weight="bold" />
             </Button>
-            <Link to="/services">
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-2 px-10 py-7 text-lg font-semibold hover:bg-accent/10 transition-all duration-300"
-              >
-                {t('cta.exploreServices')}
-              </Button>
-            </Link>
+            {variant === 'default' ? (
+              <Link to="/services">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="border-2 px-10 py-7 text-lg font-semibold hover:bg-accent/10 transition-all duration-300"
+                >
+                  {t('cta.exploreServices')}
+                </Button>
+              </Link>
+            ) : (
+              <Link to="/about">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="border-2 px-10 py-7 text-lg font-semibold hover:bg-accent/10 transition-all duration-300"
+                >
+                  {t('cta.learnAboutUs')}
+                </Button>
+              </Link>
+            )}
           </motion.div>
 
           <motion.p

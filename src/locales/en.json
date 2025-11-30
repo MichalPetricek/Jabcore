@@ -12,7 +12,7 @@
     "badge": "Fast. Reliable. Affordable.",
     "title": "Jabcore",
     "subtitle": "The core of your new app.",
-    "description": "Digital products built for growth.",
+    "description": "Software development with AI integration. Building world-class digital products that transform businesses.",
     "getInTouch": "Get in Touch",
     "viewServices": "View Our Services",
     "features": {
@@ -354,6 +354,7 @@
     "description": "Whether you're a startup with a groundbreaking idea, an enterprise seeking to modernize your systems, or anywhere in between—we're here to transform your vision into a powerful digital reality. Let's have a conversation about what's possible.",
     "startProject": "Start Your Project",
     "exploreServices": "Explore Our Services",
+    "learnAboutUs": "Learn About Us",
     "note": "No commitment required • Free initial consultation • Fast response time"
   },
   "contact": {
@@ -389,7 +390,7 @@
     "copy": "Copy"
   },
   "footer": {
-    "description": "Premium software development with AI integration. Building world-class digital products that transform businesses.",
+    "description": "Software development with AI integration. Building world-class digital products that transform businesses.",
     "quickLinks": "Quick Links",
     "contactUs": "Contact Us",
     "copyright": "All rights reserved. Engineered with precision and passion."

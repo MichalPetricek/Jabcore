@@ -11,9 +11,12 @@ import {
 } from '@phosphor-icons/react'
 import TechIcon from '@/components/TechIcon'
 import { useTranslation } from 'react-i18next'
+import { useState } from 'react'
+import ContactModal from '@/components/ContactModal'
 
 export default function StackPage() {
   const { t } = useTranslation()
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false)
   
   const fadeInUp = {
     initial: { opacity: 0, y: 60 },
@@ -211,18 +214,20 @@ export default function StackPage() {
               <p className="text-muted-foreground text-lg mb-8 max-w-2xl mx-auto">
                 {t('stack.readyDesc')}
               </p>
-              <motion.a
-                href="/contact"
+              <motion.button
+                onClick={() => setIsContactModalOpen(true)}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-xl font-semibold hover:bg-primary/90 transition-colors"
               >
                 {t('stack.getStarted')}
-              </motion.a>
+              </motion.button>
             </div>
           </motion.div>
         </div>
       </section>
+
+      <ContactModal open={isContactModalOpen} onOpenChange={setIsContactModalOpen} />
     </div>
   )
 }

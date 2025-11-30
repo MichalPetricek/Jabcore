@@ -12,7 +12,7 @@
     "badge": "Schnell. Zuverlässig. Erschwinglich.",
     "title": "Jabcore",
     "subtitle": "Der Kern Ihrer neuen App.",
-    "description": "Digitale Produkte für Wachstum entwickelt.",
+    "description": "Softwareentwicklung mit KI-Integration. Wir bauen digitale Produkte von Weltklasse, die Unternehmen transformieren.",
     "getInTouch": "Kontaktieren Sie uns",
     "viewServices": "Unsere Dienstleistungen ansehen",
     "features": {
@@ -354,6 +354,7 @@
     "description": "Ob Sie ein Startup mit einer bahnbrechenden Idee sind, ein Unternehmen, das seine Systeme modernisieren möchte, oder irgendwo dazwischen—wir sind hier, um Ihre Vision in eine leistungsstarke digitale Realität zu verwandeln. Lassen Sie uns ein Gespräch darüber führen, was möglich ist.",
     "startProject": "Starten Sie Ihr Projekt",
     "exploreServices": "Erkunden Sie unsere Dienstleistungen",
+    "learnAboutUs": "Mehr über uns",
     "note": "Keine Verpflichtung erforderlich • Kostenloses Erstgespräch • Schnelle Antwortzeit"
   },
   "contact": {
@@ -389,7 +390,7 @@
     "copy": "Kopieren"
   },
   "footer": {
-    "description": "Premium-Softwareentwicklung mit KI-Integration. Wir bauen digitale Produkte von Weltklasse, die Unternehmen transformieren.",
+    "description": "Softwareentwicklung mit KI-Integration. Wir bauen digitale Produkte von Weltklasse, die Unternehmen transformieren.",
     "quickLinks": "Schnelllinks",
     "contactUs": "Kontaktieren Sie uns",
     "copyright": "Alle Rechte vorbehalten. Mit Präzision und Leidenschaft entwickelt."

@@ -12,7 +12,7 @@
     "badge": "Rapide. Fiable. Abordable.",
     "title": "Jabcore",
     "subtitle": "Le cœur de votre nouvelle application.",
-    "description": "Produits numériques conçus pour la croissance.",
+    "description": "Développement logiciel avec intégration IA. Nous créons des produits numériques de classe mondiale qui transforment les entreprises.",
     "getInTouch": "Contactez-nous",
     "viewServices": "Voir nos services",
     "features": {
@@ -354,6 +354,7 @@
     "description": "Que vous soyez une startup avec une idée révolutionnaire, une entreprise cherchant à moderniser vos systèmes, ou quelque part entre les deux—nous sommes là pour transformer votre vision en une puissante réalité numérique. Ayons une conversation sur ce qui est possible.",
     "startProject": "Démarrez votre projet",
     "exploreServices": "Explorer nos services",
+    "learnAboutUs": "En savoir plus sur nous",
     "note": "Aucun engagement requis • Consultation initiale gratuite • Temps de réponse rapide"
   },
   "contact": {
@@ -389,7 +390,7 @@
     "copy": "Copier"
   },
   "footer": {
-    "description": "Développement logiciel premium avec intégration IA. Construire des produits numériques de classe mondiale qui transforment les entreprises.",
+    "description": "Développement logiciel avec intégration IA. Nous créons des produits numériques de classe mondiale qui transforment les entreprises.",
     "quickLinks": "Liens rapides",
     "contactUs": "Contactez-nous",
     "copyright": "Tous droits réservés. Conçu avec précision et passion."
