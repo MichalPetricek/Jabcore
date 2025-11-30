@@ -1,4 +1,30 @@
 {
+  "seo": {
+    "home": {
+      "description": "A Jabcore oferece desenvolvimento web profissional, soluções digitais modernas e consultoria. Especializamo-nos em React, TypeScript e tecnologias modernas.",
+      "keywords": "desenvolvimento web, React, TypeScript, soluções digitais, Jabcore, programação, software"
+    },
+    "services": {
+      "description": "Oferecemos serviços completos de desenvolvimento web, desenvolvimento de aplicações móveis, integração de IA, soluções cloud e design UX/UI.",
+      "keywords": "desenvolvimento web, aplicações móveis, integração IA, soluções cloud, UX design, UI design, React, TypeScript"
+    },
+    "products": {
+      "description": "Descubra os nossos próprios produtos e aplicações. PillSee e outras soluções inovadoras criadas pela equipa Jabcore.",
+      "keywords": "produtos, aplicações, PillSee, aplicações móveis, Jabcore"
+    },
+    "stack": {
+      "description": "Trabalhamos com as tecnologias mais modernas: React, TypeScript, Node.js, Python, integração de IA, soluções cloud e mais.",
+      "keywords": "tecnologia, stack, React, TypeScript, Node.js, Python, IA, cloud, Docker, Azure"
+    },
+    "about": {
+      "description": "Conheça a equipa Jabcore. Somos um grupo de desenvolvedores e designers apaixonados criando soluções digitais modernas.",
+      "keywords": "sobre nós, equipa, Jabcore, desenvolvedores, designers, história da empresa"
+    },
+    "contact": {
+      "description": "Contacte-nos para uma consulta gratuita sobre o seu projeto. Ajudamos com desenvolvimento web, aplicações móveis ou soluções de IA.",
+      "keywords": "contacto, consulta, projeto, colaboração, Jabcore"
+    }
+  },
   "navigation": {
     "home": "Início",
     "services": "Serviços",

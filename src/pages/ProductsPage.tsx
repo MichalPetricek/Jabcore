@@ -9,12 +9,7 @@ import { useSEO } from '@/hooks/useSEO'
 export default function ProductsPage() {
   const { t } = useTranslation()
   
-  useSEO({
-    title: 'Produkty | Jabcore - Naše aplikace a řešení',
-    description: 'Objevte naše vlastní produkty a aplikace. PillSee a další inovativní řešení vytvořená týmem Jabcore.',
-    keywords: 'produkty, aplikace, PillSee, mobilní aplikace, Jabcore',
-    url: 'https://jabcore.cz/products',
-  })
+  useSEO({ page: 'products', url: 'https://jabcore.cz/products' })
   
   const products = [
     {

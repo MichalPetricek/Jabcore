@@ -1,4 +1,30 @@
 {
+  "seo": {
+    "home": {
+      "description": "Jabcore oferuje profesjonalne tworzenie stron internetowych, nowoczesne rozwiązania cyfrowe i doradztwo. Specjalizujemy się w React, TypeScript i nowoczesnych technologiach.",
+      "keywords": "tworzenie stron, React, TypeScript, rozwiązania cyfrowe, Jabcore, programowanie, oprogramowanie"
+    },
+    "services": {
+      "description": "Oferujemy kompleksowe usługi tworzenia stron, aplikacji mobilnych, integracji AI, rozwiązań chmurowych i projektowania UX/UI.",
+      "keywords": "tworzenie stron, aplikacje mobilne, integracja AI, rozwiązania chmurowe, UX design, UI design, React, TypeScript"
+    },
+    "products": {
+      "description": "Odkryj nasze własne produkty i aplikacje. PillSee i inne innowacyjne rozwiązania stworzone przez zespół Jabcore.",
+      "keywords": "produkty, aplikacje, PillSee, aplikacje mobilne, Jabcore"
+    },
+    "stack": {
+      "description": "Pracujemy z najnowocześniejszymi technologiami: React, TypeScript, Node.js, Python, integracja AI, rozwiązania chmurowe i więcej.",
+      "keywords": "technologia, stack, React, TypeScript, Node.js, Python, AI, chmura, Docker, Azure"
+    },
+    "about": {
+      "description": "Poznaj zespół Jabcore. Jesteśmy grupą pasjonatów programistów i projektantów tworzących nowoczesne rozwiązania cyfrowe.",
+      "keywords": "o nas, zespół, Jabcore, programiści, projektanci, historia firmy"
+    },
+    "contact": {
+      "description": "Skontaktuj się z nami w sprawie bezpłatnej konsultacji projektu. Pomożemy Ci w tworzeniu stron, aplikacji mobilnych lub rozwiązań AI.",
+      "keywords": "kontakt, konsultacja, projekt, współpraca, Jabcore"
+    }
+  },
   "navigation": {
     "home": "Strona główna",
     "services": "Usługi",

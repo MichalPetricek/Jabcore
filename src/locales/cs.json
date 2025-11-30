@@ -1,4 +1,30 @@
 {
+  "seo": {
+    "home": {
+      "description": "Jabcore nabízí profesionální webový vývoj, moderní digitální řešení a konzultace. Specializujeme se na React, TypeScript a moderní technologie.",
+      "keywords": "webový vývoj, web development, React, TypeScript, digitální řešení, Jabcore, programování, software"
+    },
+    "services": {
+      "description": "Nabízíme kompletní služby webového vývoje, tvorbu mobilních aplikací, AI integrace, cloud řešení a UX/UI design.",
+      "keywords": "webový vývoj, mobilní aplikace, AI integrace, cloud řešení, UX design, UI design, React, TypeScript"
+    },
+    "products": {
+      "description": "Objevte naše vlastní produkty a aplikace. PillSee a další inovativní řešení vytvořená týmem Jabcore.",
+      "keywords": "produkty, aplikace, PillSee, mobilní aplikace, Jabcore"
+    },
+    "stack": {
+      "description": "Pracujeme s nejmodernějšími technologiemi: React, TypeScript, Node.js, Python, AI integrace, cloud řešení a další.",
+      "keywords": "technologie, stack, React, TypeScript, Node.js, Python, AI, cloud, Docker, Azure"
+    },
+    "about": {
+      "description": "Poznejte tým Jabcore. Jsme skupina nadšených vývojářů a designérů, kteří vytváří moderní digitální řešení.",
+      "keywords": "o nás, tým, Jabcore, vývojáři, designéři, příběh firmy"
+    },
+    "contact": {
+      "description": "Kontaktujte nás pro nezávaznou konzultaci vašeho projektu. Rádi vám pomůžeme s webovým vývojem, mobilními aplikacemi nebo AI řešeními.",
+      "keywords": "kontakt, konzultace, projekt, spolupráce, Jabcore"
+    }
+  },
   "navigation": {
     "home": "Domů",
     "services": "Služby",

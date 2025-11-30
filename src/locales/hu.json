@@ -1,4 +1,30 @@
 {
+  "seo": {
+    "home": {
+      "description": "A Jabcore professzionális webfejlesztést, modern digitális megoldásokat és tanácsadást kínál. React, TypeScript és modern technológiákra specializálódunk.",
+      "keywords": "webfejlesztés, React, TypeScript, digitális megoldások, Jabcore, programozás, szoftver"
+    },
+    "services": {
+      "description": "Teljes körű webfejlesztési szolgáltatásokat, mobilalkalmazás-fejlesztést, AI integrációt, felhőmegoldásokat és UX/UI designt kínálunk.",
+      "keywords": "webfejlesztés, mobilalkalmazások, AI integráció, felhőmegoldások, UX design, UI design, React, TypeScript"
+    },
+    "products": {
+      "description": "Fedezze fel saját termékeinket és alkalmazásainkat. PillSee és más innovatív megoldások a Jabcore csapattól.",
+      "keywords": "termékek, alkalmazások, PillSee, mobilalkalmazások, Jabcore"
+    },
+    "stack": {
+      "description": "A legmodernebb technológiákkal dolgozunk: React, TypeScript, Node.js, Python, AI integráció, felhőmegoldások és még több.",
+      "keywords": "technológia, stack, React, TypeScript, Node.js, Python, AI, felhő, Docker, Azure"
+    },
+    "about": {
+      "description": "Ismerje meg a Jabcore csapatot. Lelkes fejlesztők és designerek vagyunk, akik modern digitális megoldásokat hoznak létre.",
+      "keywords": "rólunk, csapat, Jabcore, fejlesztők, designerek, cégtörténet"
+    },
+    "contact": {
+      "description": "Lépjen kapcsolatba velünk ingyenes konzultációért. Segítünk webfejlesztésben, mobilalkalmazásokban vagy AI megoldásokban.",
+      "keywords": "kapcsolat, konzultáció, projekt, együttműködés, Jabcore"
+    }
+  },
   "navigation": {
     "home": "Kezdőlap",
     "services": "Szolgáltatások",

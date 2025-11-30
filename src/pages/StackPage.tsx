@@ -19,12 +19,7 @@ export default function StackPage() {
   const { t } = useTranslation()
   const [isContactModalOpen, setIsContactModalOpen] = useState(false)
   
-  useSEO({
-    title: 'Technologie | Jabcore - Náš technologický stack',
-    description: 'Pracujeme s nejmodernějšími technologiemi: React, TypeScript, Node.js, Python, AI integrace, cloud řešení a další. Podívejte se na náš kompletní stack.',
-    keywords: 'technologie, stack, React, TypeScript, Node.js, Python, AI, cloud, Docker, Azure',
-    url: 'https://jabcore.cz/stack',
-  })
+  useSEO({ page: 'stack', url: 'https://jabcore.cz/stack' })
   
   const fadeInUp = {
     initial: { opacity: 0, y: 60 },

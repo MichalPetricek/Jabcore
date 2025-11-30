@@ -1,4 +1,30 @@
 {
+  "seo": {
+    "home": {
+      "description": "Jabcore biedt professionele webontwikkeling, moderne digitale oplossingen en advies. Wij specialiseren in React, TypeScript en moderne technologieën.",
+      "keywords": "webontwikkeling, React, TypeScript, digitale oplossingen, Jabcore, programmeren, software"
+    },
+    "services": {
+      "description": "Wij bieden complete webontwikkelingsdiensten, mobiele app-ontwikkeling, AI-integratie, cloudoplossingen en UX/UI-design.",
+      "keywords": "webontwikkeling, mobiele apps, AI-integratie, cloudoplossingen, UX design, UI design, React, TypeScript"
+    },
+    "products": {
+      "description": "Ontdek onze eigen producten en applicaties. PillSee en andere innovatieve oplossingen gemaakt door het Jabcore-team.",
+      "keywords": "producten, applicaties, PillSee, mobiele apps, Jabcore"
+    },
+    "stack": {
+      "description": "Wij werken met de meest moderne technologieën: React, TypeScript, Node.js, Python, AI-integratie, cloudoplossingen en meer.",
+      "keywords": "technologie, stack, React, TypeScript, Node.js, Python, AI, cloud, Docker, Azure"
+    },
+    "about": {
+      "description": "Maak kennis met het Jabcore-team. Wij zijn een groep gepassioneerde ontwikkelaars en designers die moderne digitale oplossingen creëren.",
+      "keywords": "over ons, team, Jabcore, ontwikkelaars, designers, bedrijfsverhaal"
+    },
+    "contact": {
+      "description": "Neem contact met ons op voor een gratis consultatie over uw project. Wij helpen u met webontwikkeling, mobiele apps of AI-oplossingen.",
+      "keywords": "contact, consultatie, project, samenwerking, Jabcore"
+    }
+  },
   "navigation": {
     "home": "Home",
     "services": "Diensten",

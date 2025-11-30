@@ -1,40 +1,38 @@
 import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
+
+type PageKey = 'home' | 'services' | 'products' | 'stack' | 'about' | 'contact';
 
 interface SEOProps {
-  title?: string;
-  description?: string;
-  keywords?: string;
+  page: PageKey;
   image?: string;
   url?: string;
   type?: string;
 }
 
-const defaultSEO = {
-  title: 'Jabcore | Profesionální webový vývoj a digitální řešení',
-  description: 'Jabcore nabízí profesionální webový vývoj, moderní digitální řešení a konzultace. Specializujeme se na React, TypeScript a moderní technologie.',
-  keywords: 'webový vývoj, web development, React, TypeScript, digitální řešení, Jabcore, programování, software',
-  image: 'https://jabcore.cz/og-image.png',
-  url: 'https://jabcore.cz',
-  type: 'website',
-};
+const BASE_URL = 'https://jabcore.cz';
 
 export function useSEO({
-  title = defaultSEO.title,
-  description = defaultSEO.description,
-  keywords = defaultSEO.keywords,
-  image = defaultSEO.image,
-  url = defaultSEO.url,
-  type = defaultSEO.type,
-}: SEOProps = {}) {
+  page,
+  image = `${BASE_URL}/og-image.png`,
+  url = BASE_URL,
+  type = 'website',
+}: SEOProps) {
+  const { t } = useTranslation();
+
+  const title = 'Jabcore';
+  const description = t(`seo.${page}.description`);
+  const keywords = t(`seo.${page}.keywords`);
+
   useEffect(() => {
     // Update document title
     document.title = title;
 
     // Helper function to update or create meta tag
-    const updateMetaTag = (selector: string, attribute: string, content: string) => {
+    const updateMetaTag = (selector: string, content: string) => {
       let element = document.querySelector(selector) as HTMLMetaElement;
       if (element) {
-        element.setAttribute(attribute === 'property' ? 'content' : 'content', content);
+        element.setAttribute('content', content);
       } else {
         element = document.createElement('meta');
         if (selector.includes('property=')) {
@@ -48,22 +46,22 @@ export function useSEO({
     };
 
     // Update meta tags
-    updateMetaTag('meta[name="description"]', 'content', description);
-    updateMetaTag('meta[name="keywords"]', 'content', keywords);
-    updateMetaTag('meta[name="title"]', 'content', title);
+    updateMetaTag('meta[name="description"]', description);
+    updateMetaTag('meta[name="keywords"]', keywords);
+    updateMetaTag('meta[name="title"]', title);
 
     // Open Graph
-    updateMetaTag('meta[property="og:title"]', 'content', title);
-    updateMetaTag('meta[property="og:description"]', 'content', description);
-    updateMetaTag('meta[property="og:image"]', 'content', image);
-    updateMetaTag('meta[property="og:url"]', 'content', url);
-    updateMetaTag('meta[property="og:type"]', 'content', type);
+    updateMetaTag('meta[property="og:title"]', title);
+    updateMetaTag('meta[property="og:description"]', description);
+    updateMetaTag('meta[property="og:image"]', image);
+    updateMetaTag('meta[property="og:url"]', url);
+    updateMetaTag('meta[property="og:type"]', type);
 
     // Twitter
-    updateMetaTag('meta[property="twitter:title"]', 'content', title);
-    updateMetaTag('meta[property="twitter:description"]', 'content', description);
-    updateMetaTag('meta[property="twitter:image"]', 'content', image);
-    updateMetaTag('meta[property="twitter:url"]', 'content', url);
+    updateMetaTag('meta[property="twitter:title"]', title);
+    updateMetaTag('meta[property="twitter:description"]', description);
+    updateMetaTag('meta[property="twitter:image"]', image);
+    updateMetaTag('meta[property="twitter:url"]', url);
 
     // Canonical URL
     let canonical = document.querySelector('link[rel="canonical"]') as HTMLLinkElement;
