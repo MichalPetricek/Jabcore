@@ -4,9 +4,13 @@ import { ErrorBoundary } from "react-error-boundary";
 import App from './App.tsx'
 import { ErrorFallback } from './ErrorFallback.tsx'
 import './lib/i18n'
+import { initEmailJS } from './lib/emailjs'
 
 import "./main.css"
 import "./index.css"
+
+// Inicializace EmailJS
+initEmailJS()
 
 // Přesměruj jabcore.eu na jabcore.cz
 if (window.location.hostname === 'jabcore.eu' || window.location.hostname === 'www.jabcore.eu') {

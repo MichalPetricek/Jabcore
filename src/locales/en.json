@@ -413,7 +413,11 @@
     "sendMessage": "Send Message",
     "sending": "Sending...",
     "copied": "Copied",
-    "copy": "Copy"
+    "copy": "Copy",
+    "successTitle": "Message sent successfully!",
+    "successDesc": "We'll respond within 24 hours with next steps for your project.",
+    "errorTitle": "Something went wrong",
+    "errorDesc": "Failed to send message. Please try again or contact us directly."
   },
   "footer": {
     "description": "Software development with AI integration. Building world-class digital products that transform businesses.",
