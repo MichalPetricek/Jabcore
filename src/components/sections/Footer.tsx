@@ -1,3 +1,4 @@
+import { memo, useMemo } from 'react'
 import { GithubLogo, LinkedinLogo, FacebookLogo, InstagramLogo, Code, EnvelopeSimple, Phone } from '@phosphor-icons/react'
 import logoWhite from '@/assets/images/white.png'
 import logoBlack from '@/assets/images/black.png'
@@ -9,16 +10,16 @@ interface FooterProps {
   onToggleTheme: () => void
 }
 
-export default function Footer({ theme, onToggleTheme }: FooterProps) {
-  const currentYear = new Date().getFullYear()
+const Footer = memo(function Footer({ theme, onToggleTheme }: FooterProps) {
+  const currentYear = useMemo(() => new Date().getFullYear(), [])
   const { t } = useTranslation()
 
-  const socialLinks = [
+  const socialLinks = useMemo(() => [
     { icon: GithubLogo, label: 'GitHub', href: 'https://github.com/Jabcore-dev' },
     { icon: LinkedinLogo, label: 'LinkedIn', href: 'https://www.linkedin.com/company/jabcore' },
     { icon: FacebookLogo, label: 'Facebook', href: 'https://www.facebook.com/profile.php?id=61584245041851' },
     { icon: InstagramLogo, label: 'Instagram', href: 'https://www.instagram.com/jabcore.dev/' },
-  ]
+  ], [])
 
   const contactInfo = [
     {
@@ -164,4 +165,6 @@ export default function Footer({ theme, onToggleTheme }: FooterProps) {
       </div>
     </footer>
   )
-}
+})
+
+export default Footer

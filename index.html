@@ -43,11 +43,21 @@
     <link rel="icon" type="image/png" href="/src/assets/images/transparent.png" />
     <link rel="apple-touch-icon" href="/src/assets/images/transparent.png" />
     
-    <!-- Fonts -->
+    <!-- Fonts - optimized loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    </noscript>
     <link href="/src/main.css" rel="stylesheet" />
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="/src/assets/images/transparent.png" as="image" />
+    
+    <!-- DNS prefetch for external resources -->
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
     
     <!-- Single Page Apps for GitHub Pages - redirect script -->
     <script type="text/javascript">

@@ -1,9 +1,11 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Navigation from '@/components/sections/Navigation'
 import Footer from '@/components/sections/Footer'
 import ScrollToTop from '@/components/ScrollToTop'
 import { Toaster } from '@/components/ui/sonner'
+
+// Direct imports - no lazy loading for instant navigation
 import HomePage from '@/pages/HomePage'
 import ServicesPage from '@/pages/ServicesPage'
 import ProductsPage from '@/pages/ProductsPage'
@@ -27,12 +29,12 @@ function App() {
     }
   }, [])
 
-  const toggleTheme = () => {
+  const toggleTheme = useCallback(() => {
     const newTheme = theme === 'light' ? 'dark' : 'light'
     setTheme(newTheme)
     localStorage.setItem('theme', newTheme)
     document.documentElement.classList.toggle('dark', newTheme === 'dark')
-  }
+  }, [theme])
 
   return (
     <Router>
