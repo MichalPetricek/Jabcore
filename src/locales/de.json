@@ -413,7 +413,11 @@
     "sendMessage": "Nachricht senden",
     "sending": "Wird gesendet...",
     "copied": "Kopiert",
-    "copy": "Kopieren"
+    "copy": "Kopieren",
+    "successTitle": "Nachricht erfolgreich gesendet!",
+    "successDesc": "Wir werden innerhalb von 24 Stunden mit den nächsten Schritten für Ihr Projekt antworten.",
+    "errorTitle": "Etwas ist schiefgelaufen",
+    "errorDesc": "Nachricht konnte nicht gesendet werden. Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt."
   },
   "footer": {
     "description": "Softwareentwicklung mit KI-Integration. Wir bauen digitale Produkte von Weltklasse, die Unternehmen transformieren.",

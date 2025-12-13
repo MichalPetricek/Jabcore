@@ -175,7 +175,11 @@
     "sendMessage": "Odoslať správu",
     "sending": "Odosiela sa...",
     "copied": "Skopírované",
-    "copy": "Kopírovať"
+    "copy": "Kopírovať",
+    "successTitle": "Správa úspešne odoslaná!",
+    "successDesc": "Odpovieme do 24 hodín s ďalšími krokmi pre váš projekt.",
+    "errorTitle": "Niečo sa pokazilo",
+    "errorDesc": "Nepodarilo sa odoslať správu. Skúste to prosím znova alebo nás kontaktujte priamo."
   },
   "stack": {
     "title": "Náš moderný stack",

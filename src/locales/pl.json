@@ -175,7 +175,11 @@
     "sendMessage": "Wyślij wiadomość",
     "sending": "Wysyłanie...",
     "copied": "Skopiowano",
-    "copy": "Kopiuj"
+    "copy": "Kopiuj",
+    "successTitle": "Wiadomość wysłana pomyślnie!",
+    "successDesc": "Odpowiemy w ciągu 24 godzin z kolejnymi krokami dla Twojego projektu.",
+    "errorTitle": "Coś poszło nie tak",
+    "errorDesc": "Nie udało się wysłać wiadomości. Spróbuj ponownie lub skontaktuj się z nami bezpośrednio."
   },
   "stack": {
     "title": "Nasz nowoczesny stos",
